@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Theory 2026 - Baltimore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Serif+4:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2c5282;
+            --accent-color: #3182ce;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f7fafc;
+            --border-color: #e2e8f0;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+
+        .hero {
+            background: var(--gradient);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .location-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+
+        .location-badge a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .location-badge a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .conferences-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .conference-card {
+            background: var(--bg-primary);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .conference-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            position: relative;
+        }
+
+        .card-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--accent-color);
+        }
+
+        .conference-title {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: clamp(1.3rem, 3vw, 1.6rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .conference-date {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        .organizers-section h3 {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .organizers-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .organizer-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+        }
+
+        .organizer-link:hover {
+            background-color: rgba(49, 130, 206, 0.1);
+            text-decoration: underline;
+        }
+
+        .organizer-separator {
+            color: var(--text-secondary);
+            margin: 0 0.25rem;
+        }
+
+        .birthday-celebration {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border: none;
+            color: white;
+        }
+
+        .birthday-celebration .card-header {
+            background: rgba(0,0,0,0.1);
+        }
+
+        .birthday-celebration .organizers-section h3 {
+            color: rgba(255,255,255,0.95);
+        }
+
+        .birthday-celebration .organizer-link {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .birthday-celebration .organizer-link:hover {
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .icm-section {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .icm-text {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        .icm-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .icm-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-text {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 3rem 1rem;
+            }
+            
+            .main-content {
+                padding: 2rem 1rem;
+            }
+            
+            .conferences-grid {
+                gap: 2rem;
+            }
+            
+            .card-header, .card-body {
+                padding: 1.5rem;
+            }
+            
+            .organizers-list {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+            
+            .organizer-separator {
+                display: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .conference-card {
+                transition: none;
+            }
+            
+            .conference-card:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Category Theory 2026</h1>
+            <div class="hero-subtitle">Baltimore, Maryland • Summer 2026</div>
+            <div class="location-badge">
+                To be held on the <a href="https://www.jhu.edu/life/campuses/homewood/">Homewood Campus of Johns Hopkins University</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="conferences-grid">
+            <article class="conference-card">
+                <div class="card-header">
+                    <h2 class="conference-title">International Category Theory Conference</h2>
+                    <div class="conference-date">July 13 – 18, 2026</div>
+                </div>
+                <div class="card-body">
+                    <div class="organizers-section">
+                        <h3>Organizers</h3>
+                        <div class="organizers-list">
+                            <a href="https://mathstats.case.edu/faculty/nick-gurski/" class="organizer-link">Nick Gurski</a><span class="organizer-separator">•</span>
+                            <a href="http://phck.net" class="organizer-link">Philip Hackney</a><span class="organizer-separator">•</span>
+                            <a href="https://people.reed.edu/~aosorno/" class="organizer-link">Angélica Osorno</a><span class="organizer-separator">•</span>
+                            <a href="https://emilyriehl.github.io/" class="organizer-link">Emily Riehl</a><span class="organizer-separator">•</span>
+                            <a href="https://sites.google.com/view/msarazola/home" class="organizer-link">Maru Sarazola</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="conference-card birthday-celebration">
+                <div class="card-header">
+                    <h2 class="conference-title">Dominic Verity's 60th Birthday Conference</h2>
+                    <div class="conference-date">July 20 – 22, 2026</div>
+                </div>
+                <div class="card-body">
+                    <div class="organizers-section">
+                        <h3>Organizers</h3>
+                        <div class="organizers-list">
+                            <a href="https://yukimaehara.github.io/" class="organizer-link">Yuki Maehara</a><span class="organizer-separator">•</span>
+                            <a href="https://emilyriehl.github.io/" class="organizer-link">Emily Riehl</a><span class="organizer-separator">•</span>
+                            <a href="https://paula-verdugo.github.io/" class="organizer-link">Paula Verdugo</a><span class="organizer-separator">•</span>
+                            <a href="https://sites.google.com/view/jonathanweinberger" class="organizer-link">Jonathan Weinberger</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <section class="icm-section">
+            <p class="icm-text">
+                Both conferences are official satellites of the <a href="https://www.mathunion.org/icm/icm-2026" class="icm-link">International Congress of Mathematicians</a>, Philadelphia, July 23 – 30, 2026
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-text">
+            Category Theory 2026 • Baltimore
+        </div>
+    </footer>
+</body>
+</html>
