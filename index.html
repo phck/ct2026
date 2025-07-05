@@ -12,12 +12,14 @@
             --primary-color: #1a365d;
             --secondary-color: #2c5282;
             --accent-color: #3182ce;
+            --committee-color: #2d3748;
             --text-primary: #1a202c;
             --text-secondary: #4a5568;
             --bg-primary: #ffffff;
             --bg-secondary: #f7fafc;
             --border-color: #e2e8f0;
             --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --committee-gradient: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
         }
 
         * {
@@ -104,9 +106,49 @@
 
         .conferences-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 3rem;
             margin-bottom: 4rem;
+        }
+
+        /* Desktop layout: 2 columns for organizers, 1 for committee */
+        @media (min-width: 769px) {
+            .conferences-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                    "ct26-org dv60-org"
+                    "ct26-committee .";
+            }
+            
+            .ct26-organizers {
+                grid-area: ct26-org;
+            }
+            
+            .dv60-organizers {
+                grid-area: dv60-org;
+            }
+            
+            .ct26-committee {
+                grid-area: ct26-committee;
+            }
+        }
+
+        /* Mobile layout: stacked in correct order */
+        @media (max-width: 768px) {
+            .conferences-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .ct26-organizers {
+                order: 1;
+            }
+            
+            .ct26-committee {
+                order: 2;
+            }
+            
+            .dv60-organizers {
+                order: 3;
+            }
         }
 
         .conference-card {
@@ -140,6 +182,28 @@
             background: var(--accent-color);
         }
 
+        .committee-card {
+            background: var(--bg-primary);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .committee-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .committee-card .card-header {
+            background: var(--committee-gradient);
+        }
+
+        .committee-card .card-header::after {
+            background: var(--committee-color);
+        }
+
         .conference-title {
             font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             font-size: clamp(1.3rem, 3vw, 1.6rem);
@@ -158,7 +222,8 @@
             padding: 2rem;
         }
 
-        .organizers-section h3 {
+        .organizers-section h3,
+        .committee-section h3 {
             font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             color: var(--primary-color);
             margin-bottom: 1rem;
@@ -166,14 +231,24 @@
             font-weight: 600;
         }
 
-        .organizers-list {
+        .committee-card .committee-section h3 {
+            color: var(--committee-color);
+        }
+
+        .organizers-list,
+        .committee-list {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
             margin-bottom: 1.5rem;
         }
 
-        .organizer-link {
+        .committee-list {
+            margin-bottom: 0;
+        }
+
+        .organizer-link,
+        .committee-link {
             color: var(--accent-color);
             text-decoration: none;
             font-weight: 500;
@@ -182,12 +257,23 @@
             transition: background-color 0.2s ease;
         }
 
-        .organizer-link:hover {
+        .organizer-link:hover,
+        .committee-link:hover {
             background-color: rgba(49, 130, 206, 0.1);
             text-decoration: underline;
         }
 
-        .organizer-separator {
+        .committee-link.chair {
+            font-weight: 600;
+            color: var(--committee-color);
+        }
+
+        .committee-link.chair:hover {
+            background-color: rgba(45, 55, 72, 0.1);
+        }
+
+        .organizer-separator,
+        .committee-separator {
             color: var(--text-secondary);
             margin: 0 0.25rem;
         }
@@ -269,22 +355,26 @@
                 padding: 1.5rem;
             }
             
-            .organizers-list {
+            .organizers-list,
+            .committee-list {
                 flex-direction: column;
                 gap: 0.25rem;
             }
             
-            .organizer-separator {
+            .organizer-separator,
+            .committee-separator {
                 display: none;
             }
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .conference-card {
+            .conference-card,
+            .committee-card {
                 transition: none;
             }
             
-            .conference-card:hover {
+            .conference-card:hover,
+            .committee-card:hover {
                 transform: none;
             }
         }
@@ -296,14 +386,14 @@
             <h1>Category Theory 2026</h1>
             <div class="hero-subtitle">Baltimore, Maryland • Summer 2026</div>
             <div class="location-badge">
-                To be held on the <a href="https://www.jhu.edu/life/campuses/homewood/">Homewood Campus of Johns Hopkins University</a>
+                To be held on the <a href="https://www.jhu.edu/life/campuses/homewood/">Homewood Campus of Johns Hopkins University</a> and Online
             </div>
         </div>
     </header>
 
     <main class="main-content">
         <div class="conferences-grid">
-            <article class="conference-card">
+            <article class="conference-card ct26-organizers">
                 <div class="card-header">
                     <h2 class="conference-title">International Category Theory Conference</h2>
                     <div class="conference-date">July 13 – 18, 2026</div>
@@ -322,14 +412,14 @@
                 </div>
             </article>
 
-            <article class="conference-card birthday-celebration">
+            <article class="conference-card birthday-celebration dv60-organizers">
                 <div class="card-header">
                     <h2 class="conference-title">Dominic Verity's 60th Birthday Conference</h2>
                     <div class="conference-date">July 20 – 22, 2026</div>
                 </div>
                 <div class="card-body">
                     <div class="organizers-section">
-                        <h3>Organizers</h3>
+                        <h3>Organizers and Scientific Committee</h3>
                         <div class="organizers-list">
                             <a href="https://yukimaehara.github.io/" class="organizer-link">Yuki Maehara</a><span class="organizer-separator">•</span>
                             <a href="https://emilyriehl.github.io/" class="organizer-link">Emily Riehl</a><span class="organizer-separator">•</span>
@@ -339,11 +429,32 @@
                     </div>
                 </div>
             </article>
+
+            <article class="committee-card ct26-committee">
+                <div class="card-header">
+                    <h2 class="conference-title">Scientific Committee</h2>
+                    <div class="conference-date">International Category Theory Conference</div>
+                </div>
+                <div class="card-body">
+                    <div class="committee-section">
+                        <div class="committee-list">
+                            <a href="https://profiles.ucalgary.ca/kristine-bauer" class="committee-link chair">Kristine Bauer (Chair)</a><span class="committee-separator">•</span>
+                            <a href="https://www.zurab.online" class="committee-link">Zurab Janelidze</a><span class="committee-separator">•</span>
+                            <a href="https://sites.google.com/view/jspl-personal-webpage/" class="committee-link">JS Lemay</a><span class="committee-separator">•</span>
+                            <a href="https://scholar.google.com/citations?user=LLakkVwAAAAJ" class="committee-link">Ignacio López Franco</a><span class="committee-separator">•</span>
+                            <a href="https://nsnyder1.pages.iu.edu/" class="committee-link">Noah Snyder</a><span class="committee-separator">•</span>
+                            <a href="https://ncatlab.org/nlab/show/Todd+Trimble" class="committee-link">Todd Trimble</a><span class="committee-separator">•</span>
+                            <a href="http://www.math.ntua.gr/~cvasilak/" class="committee-link">Christina Vasilakopoulou</a><span class="committee-separator">•</span>
+                            <a href="https://www.sci.brooklyn.cuny.edu/~noson/" class="committee-link">Noson Yanofsky</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
 
         <section class="icm-section">
             <p class="icm-text">
-                Both conferences are official satellites of the <a href="https://www.mathunion.org/icm/icm-2026" class="icm-link">International Congress of Mathematicians</a>, Philadelphia, July 23 – 30, 2026
+                Both conferences are official satellites of the <a href="https://www.icm2026.org/" class="icm-link">International Congress of Mathematicians</a>, Philadelphia, July 23 – 30, 2026
             </p>
         </section>
     </main>
