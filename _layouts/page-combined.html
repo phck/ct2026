@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<header class="header">
+    <div class="logo-container">
+        <img src="{{ '/assets/ct26-logo.svg' | relative_url }}" alt="CT2026 Logo" class="logo-ct26">
+        <img src="{{ '/assets/dv60-logo.svg' | relative_url }}" alt="DV60 Logo" class="logo-dv60">
+    </div>
+    
+    <h1 class="main-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+    {% if page.date_location %}<p class="location-date">{{ page.date_location }}</p>{% endif %}
+</header>
+
+<main class="main-content">
+    <div class="section">
+        {{ content }}
+    </div>
+</main>

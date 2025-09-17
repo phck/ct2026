@@ -1,468 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category Theory 2026 - Baltimore</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Serif+4:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #1a365d;
-            --secondary-color: #2c5282;
-            --accent-color: #3182ce;
-            --committee-color: #2d3748;
-            --text-primary: #1a202c;
-            --text-secondary: #4a5568;
-            --bg-primary: #ffffff;
-            --bg-secondary: #f7fafc;
-            --border-color: #e2e8f0;
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --committee-gradient: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
-        }
+---
+layout: default
+title: Category Theory 2026 - Baltimore
+conference: ct26
+nav_order: 1
+nav_title: "Home"
+nav_show: true
+---
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<header class="header">
+    <div class="logo-container">
+        <img src="{{ '/assets/ct26-logo.svg' | relative_url }}" alt="CT2026 Logo" class="logo-ct26">
+        <img src="{{ '/assets/dv60-logo.svg' | relative_url }}" alt="DV60 Logo" class="logo-dv60">
+    </div>
+    
+    <h1 class="main-title">Category Theory 2026</h1>
+    <p class="subtitle">The International Category Theory Conference & Dominic Verity's 60th Birthday Conference</p>
+    <p class="location-date">Baltimore • July 2026</p>
+    <p class="venue-text">
+        To be held on the <a href="https://www.jhu.edu/life/campuses/homewood/" class="venue-link">Homewood Campus of Johns Hopkins University</a> and Online
+    </p>
+</header>
 
-        body {
-            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--bg-primary);
-        }
+<section class="registration-section">
+    <button class="registration-btn registration-btn--disabled" disabled>
+        Registration Opens Soon
+    </button>
+</section>
 
-        .hero {
-            background: var(--gradient);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-            opacity: 0.3;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .hero-subtitle {
-            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-            margin-bottom: 2rem;
-            opacity: 0.95;
-            font-weight: 300;
-        }
-
-        .location-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.3);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            margin-top: 1rem;
-        }
-
-        .location-badge a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .location-badge a:hover {
-            text-decoration: underline;
-        }
-
-        .main-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        .conferences-grid {
-            display: grid;
-            gap: 3rem;
-            margin-bottom: 4rem;
-        }
-
-        /* Desktop layout: 2 columns for organizers, 1 for committee */
-        @media (min-width: 769px) {
-            .conferences-grid {
-                grid-template-columns: 1fr 1fr;
-                grid-template-areas: 
-                    "ct26-org dv60-org"
-                    "ct26-committee .";
-            }
+<main class="main-content">
+    
+    <section class="about-conferences">
+        <h2 class="about-title">About the Conferences</h2>
+        <div class="conferences-grid">
+            <div class="conference-card">
+                <h3 class="conference-card-title"><a href="{{ '/ct/' | relative_url }}">International Category Theory Conference</a></h3>
+                <p class="conference-date">July 13 – 18, 2026</p>
+                <p class="conference-description">
+                    The first iteration of the International Category Theory Conference to be held in the United States. This premier annual gathering brings together the global category theory community for invited talks, contributed presentations, and collaborative research.
+                </p>
+            </div>
             
-            .ct26-organizers {
-                grid-area: ct26-org;
-            }
-            
-            .dv60-organizers {
-                grid-area: dv60-org;
-            }
-            
-            .ct26-committee {
-                grid-area: ct26-committee;
-            }
-        }
-
-        /* Mobile layout: stacked in correct order */
-        @media (max-width: 768px) {
-            .conferences-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .ct26-organizers {
-                order: 1;
-            }
-            
-            .ct26-committee {
-                order: 2;
-            }
-            
-            .dv60-organizers {
-                order: 3;
-            }
-        }
-
-        .conference-card {
-            background: var(--bg-primary);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid var(--border-color);
-        }
-
-        .conference-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-
-        .card-header {
-            padding: 2rem;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            position: relative;
-        }
-
-        .card-header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--accent-color);
-        }
-
-        .committee-card {
-            background: var(--bg-primary);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid var(--border-color);
-        }
-
-        .committee-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-
-        .committee-card .card-header {
-            background: var(--committee-gradient);
-        }
-
-        .committee-card .card-header::after {
-            background: var(--committee-color);
-        }
-
-        .conference-title {
-            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: clamp(1.3rem, 3vw, 1.6rem);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            line-height: 1.3;
-        }
-
-        .conference-date {
-            font-size: 1.1rem;
-            opacity: 0.95;
-            font-weight: 500;
-        }
-
-        .card-body {
-            padding: 2rem;
-        }
-
-        .organizers-section h3,
-        .committee-section h3 {
-            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        .committee-card .committee-section h3 {
-            color: var(--committee-color);
-        }
-
-        .organizers-list,
-        .committee-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .committee-list {
-            margin-bottom: 0;
-        }
-
-        .organizer-link,
-        .committee-link {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.25rem 0.5rem;
-            border-radius: 6px;
-            transition: background-color 0.2s ease;
-        }
-
-        .organizer-link:hover,
-        .committee-link:hover {
-            background-color: rgba(49, 130, 206, 0.1);
-            text-decoration: underline;
-        }
-
-        .committee-link.chair {
-            font-weight: 600;
-            color: var(--committee-color);
-        }
-
-        .committee-link.chair:hover {
-            background-color: rgba(45, 55, 72, 0.1);
-        }
-
-        .organizer-separator,
-        .committee-separator {
-            color: var(--text-secondary);
-            margin: 0 0.25rem;
-        }
-
-        .birthday-celebration {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            border: none;
-            color: white;
-        }
-
-        .birthday-celebration .card-header {
-            background: rgba(0,0,0,0.1);
-        }
-
-        .birthday-celebration .organizers-section h3 {
-            color: rgba(255,255,255,0.95);
-        }
-
-        .birthday-celebration .organizer-link {
-            color: rgba(255,255,255,0.9);
-        }
-
-        .birthday-celebration .organizer-link:hover {
-            background-color: rgba(255,255,255,0.2);
-            color: white;
-        }
-
-        .icm-section {
-            text-align: center;
-            margin-top: 3rem;
-            padding: 2rem;
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
-
-        .icm-text {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-        }
-
-        .icm-link {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .icm-link:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-
-        .footer-text {
-            opacity: 0.8;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                padding: 3rem 1rem;
-            }
-            
-            .main-content {
-                padding: 2rem 1rem;
-            }
-            
-            .conferences-grid {
-                gap: 2rem;
-            }
-            
-            .card-header, .card-body {
-                padding: 1.5rem;
-            }
-            
-            .organizers-list,
-            .committee-list {
-                flex-direction: column;
-                gap: 0.25rem;
-            }
-            
-            .organizer-separator,
-            .committee-separator {
-                display: none;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .conference-card,
-            .committee-card {
-                transition: none;
-            }
-            
-            .conference-card:hover,
-            .committee-card:hover {
-                transform: none;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Category Theory 2026</h1>
-            <div class="hero-subtitle">Baltimore, Maryland • Summer 2026</div>
-            <div class="location-badge">
-                To be held on the <a href="https://www.jhu.edu/life/campuses/homewood/">Homewood Campus of Johns Hopkins University</a> and Online
+            <div class="conference-card dv60-card">
+                <h3 class="conference-card-title"><a href="{{ '/dv60/' | relative_url }}">Dominic Verity's 60th Birthday Conference</a></h3>
+                <p class="conference-date">July 20 – 22, 2026</p>
+                <p class="conference-description">
+                    A celebration of Dominic Verity's remarkable contributions to category theory and homotopy theory on the occasion of his 60th birthday. This conference will highlight the lasting impact of his research and its continued influence on the field.
+                </p>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="main-content">
-        <div class="conferences-grid">
-            <article class="conference-card ct26-organizers">
-                <div class="card-header">
-                    <h2 class="conference-title">International Category Theory Conference</h2>
-                    <div class="conference-date">July 13 – 18, 2026</div>
-                </div>
-                <div class="card-body">
-                    <div class="organizers-section">
-                        <h3>Organizers</h3>
-                        <div class="organizers-list">
-                            <a href="https://mathstats.case.edu/faculty/nick-gurski/" class="organizer-link">Nick Gurski</a><span class="organizer-separator">•</span>
-                            <a href="http://phck.net" class="organizer-link">Philip Hackney</a><span class="organizer-separator">•</span>
-                            <a href="https://people.reed.edu/~aosorno/" class="organizer-link">Angélica Osorno</a><span class="organizer-separator">•</span>
-                            <a href="https://emilyriehl.github.io/" class="organizer-link">Emily Riehl</a><span class="organizer-separator">•</span>
-                            <a href="https://sites.google.com/view/msarazola/home" class="organizer-link">Maru Sarazola</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="conference-card birthday-celebration dv60-organizers">
-                <div class="card-header">
-                    <h2 class="conference-title">Dominic Verity's 60th Birthday Conference</h2>
-                    <div class="conference-date">July 20 – 22, 2026</div>
-                </div>
-                <div class="card-body">
-                    <div class="organizers-section">
-                        <h3>Organizers and Scientific Committee</h3>
-                        <div class="organizers-list">
-                            <a href="https://yukimaehara.github.io/" class="organizer-link">Yuki Maehara</a><span class="organizer-separator">•</span>
-                            <a href="https://emilyriehl.github.io/" class="organizer-link">Emily Riehl</a><span class="organizer-separator">•</span>
-                            <a href="https://paula-verdugo.github.io/" class="organizer-link">Paula Verdugo</a><span class="organizer-separator">•</span>
-                            <a href="https://sites.google.com/view/jonathanweinberger" class="organizer-link">Jonathan Weinberger</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="committee-card ct26-committee">
-                <div class="card-header">
-                    <h2 class="conference-title">Scientific Committee</h2>
-                    <div class="conference-date">International Category Theory Conference</div>
-                </div>
-                <div class="card-body">
-                    <div class="committee-section">
-                        <div class="committee-list">
-                            <a href="https://profiles.ucalgary.ca/kristine-bauer" class="committee-link chair">Kristine Bauer (Chair)</a><span class="committee-separator">•</span>
-                            <a href="https://www.zurab.online" class="committee-link">Zurab Janelidze</a><span class="committee-separator">•</span>
-                            <a href="https://sites.google.com/view/jspl-personal-webpage/" class="committee-link">JS Lemay</a><span class="committee-separator">•</span>
-                            <a href="https://scholar.google.com/citations?user=LLakkVwAAAAJ" class="committee-link">Ignacio López Franco</a><span class="committee-separator">•</span>
-                            <a href="https://nsnyder1.pages.iu.edu/" class="committee-link">Noah Snyder</a><span class="committee-separator">•</span>
-                            <a href="https://ncatlab.org/nlab/show/Todd+Trimble" class="committee-link">Todd Trimble</a><span class="committee-separator">•</span>
-                            <a href="http://www.math.ntua.gr/~cvasilak/" class="committee-link">Christina Vasilakopoulou</a><span class="committee-separator">•</span>
-                            <a href="https://www.sci.brooklyn.cuny.edu/~noson/" class="committee-link">Noson Yanofsky</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
+    <section class="support-section">
+        <div class="support-content">
+            <p>With support from Johns Hopkins University</p>
+            <div class="jhu-logo-container">
+                <img src="{{ '/assets/jhu-logo.svg' | relative_url }}" alt="Johns Hopkins University" class="jhu-logo">
+            </div>
         </div>
+    </section>
 
-        <section class="icm-section">
-            <p class="icm-text">
-                Both conferences are official satellites of the <a href="https://www.icm2026.org/" class="icm-link">International Congress of Mathematicians</a>, Philadelphia, July 23 – 30, 2026
-            </p>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-text">
-            Category Theory 2026 • Baltimore
-        </div>
-    </footer>
-</body>
-</html>
+    <section class="icm-section">
+        <p class="icm-text">
+            Both conferences are official satellites of the <a href="https://www.icm2026.org/" class="icm-link">International Congress of Mathematicians</a>, Philadelphia, July 23 – 30, 2026
+        </p>
+    </section>
+</main>

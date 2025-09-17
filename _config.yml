@@ -1,0 +1,16 @@
+# Site settings
+title: Category Theory 2026
+description: "The International Category Theory Conference 2026 & Dominic Verity's 60th Birthday Conference"
+baseurl: ""
+url: "https://ct2026.com"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md

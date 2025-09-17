@@ -1,0 +1,15 @@
+    <nav class="nav">
+        <details class="nav-details">
+            <summary class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </summary>
+            <ul class="nav-list">
+                {%- assign nav_pages = site.pages | where: "nav_show", true | sort: "nav_order" -%}
+                {%- for nav_page in nav_pages -%}
+                <li><a href="{{ nav_page.url | relative_url }}" class="nav-link">{{ nav_page.nav_title }}</a></li>
+                {%- endfor -%}
+            </ul>
+        </details>
+    </nav>

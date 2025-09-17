@@ -1,0 +1,219 @@
+/* Base Navigation Container */
+.nav {
+    background-color: var(--ct26-primary-sage);
+    padding: 0.75rem;
+    border-bottom: 2px solid var(--ct26-primary-dark);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    order: -1;
+}
+
+.nav-details {
+    position: relative;
+}
+
+.nav-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border: 1px solid var(--neutral-light);
+    border-radius: 0;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    box-shadow: none;
+    backdrop-filter: none;
+    transition: background-color 0.2s ease;
+    list-style: none;
+}
+
+.nav-toggle::-webkit-details-marker {
+    display: none;
+}
+
+.nav-toggle::marker {
+    display: none;
+}
+
+.nav-toggle:hover {
+    background-color: var(--neutral-lightest);
+}
+
+.hamburger {
+    width: 20px;
+    height: 2px;
+    background-color: var(--ct26-primary-dark);
+    border-radius: 1px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+.nav-link {
+    color: var(--ct26-primary-light);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(242, 242, 242, 0.2);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        background: none;
+        border: none;
+        padding: 0;
+        position: static;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--ct26-primary-sage);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 999;
+        transform: translateY(-100%);
+        transition: transform 0.2s ease;
+    }
+    
+    .nav-details[open] .nav-list {
+        transform: translateY(0);
+    }
+    
+    .nav-details[open]::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        z-index: 998;
+        pointer-events: auto;
+    }
+    
+    .nav-list li {
+        width: 100%;
+        border-bottom: 1px solid rgba(242, 242, 242, 0.1);
+    }
+    
+    .nav-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        width: 100%;
+        border-radius: 0;
+        text-align: left;
+    }
+    
+    .nav-link:hover {
+        background-color: rgba(242, 242, 242, 0.15);
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
+    
+    .nav-details {
+        position: static;
+    }
+    
+    .nav-details summary {
+        display: none;
+    }
+    
+    .nav-details {
+        open: true;
+    }
+    
+    .nav-details .nav-list,
+    .nav-details[open] .nav-list {
+        position: static;
+        display: flex !important;
+        opacity: 1;
+        visibility: visible;
+        flex-direction: row;
+        justify-content: center;
+        background: none;
+        padding: 0;
+        border: none;
+        gap: 1.5rem;
+        max-width: 800px;
+        margin: 0 auto;
+        transform: none !important;
+        box-shadow: none;
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 3px;
+    }
+}
+
+/* DV60 Theme Overrides */
+.dv60-theme .nav {
+    background-color: var(--dv60-primary-teal);
+    border-bottom-color: var(--dv60-primary-dark);
+}
+
+.dv60-theme .hamburger {
+    background-color: var(--dv60-primary-dark);
+}
+
+.dv60-theme .nav-list {
+    background-color: var(--dv60-primary-teal);
+    border-bottom-color: var(--dv60-primary-dark);
+}
+
+@media (max-width: 768px) {
+    .dv60-theme .nav {
+        background: none;
+        border: none;
+    }
+    
+    .dv60-theme .nav-list {
+        background-color: var(--dv60-primary-teal);
+    }
+}
