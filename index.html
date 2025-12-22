@@ -12,7 +12,7 @@ nav_show: true
         <img src="{{ '/assets/ct26-logo.svg' | relative_url }}" alt="CT2026 Logo" class="logo-ct26">
         <img src="{{ '/assets/dv60-logo.svg' | relative_url }}" alt="DV60 Logo" class="logo-dv60">
     </div>
-    
+
     <h1 class="main-title">Category Theory 2026</h1>
     <p class="subtitle">The International Category Theory Conference & Discoveries and Vistas</p>
     <p class="location-date">Baltimore • July 2026</p>
@@ -21,10 +21,23 @@ nav_show: true
     </p>
 </header>
 
+<div class="hero-image-section">
+    <picture>
+        <source srcset="{{ '/assets/images/jhu-campus-aerial.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/jhu-campus-aerial.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/jhu-campus-aerial.jpg' | relative_url }}" alt="Johns Hopkins University Homewood Campus" class="hero-image">
+    </picture>
+</div>
+
 <section class="registration-section">
-    <button class="registration-btn registration-btn--disabled" disabled>
-        Registration Opens Soon
-    </button>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="{{ '/ct/submit/' | relative_url }}" class="registration-btn" style="display: inline-block; text-decoration: none;">
+            CT2026 Abstract Submission
+        </a>
+        <button class="registration-btn registration-btn--disabled" disabled>
+            Registration Opens Soon
+        </button>
+    </div>
 </section>
 
 <main class="main-content">

@@ -19,7 +19,11 @@ nav_show: true
 </header>
 
 <div class="hero-image-section">
-    <img src="{{ '/assets/images/dom-hero.jpg' | relative_url }}" alt="Dominic Verity" class="hero-image">
+    <picture>
+        <source srcset="{{ '/assets/images/dom-hero.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/dom-hero.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/dom-hero.jpg' | relative_url }}" alt="Dominic Verity" class="hero-image">
+    </picture>
 </div>
 
 <main class="main-content">

@@ -51,6 +51,10 @@ a:hover {
     text-decoration: underline;
 }
 
+code, pre {
+    font-family: var(--font-display);
+}
+
 /* Header */
 .header {
     padding: 2rem 1rem 1rem;
@@ -120,6 +124,10 @@ a:hover {
 /* Section Styling */
 .section {
     margin-bottom: 3rem;
+}
+
+.main-content > .section:last-child {
+    margin-bottom: 0;
 }
 
 .section-title {
