@@ -26,6 +26,6 @@ Abstracts are due on January 20, 2026 by 11:59PM EST.
 
 ## Technical Considerations
 
-Submit both the LaTeX source and a compiled PDF for your abstract, using filenames in the pattern `YourFullName_ct2026.tex` / `YourFullName_ct2026.pdf`.
+Submit the LaTeX source for your abstract, using a filename in the pattern `YourFullName_ct2026.tex`.
 
 LaTeX source for accepted abstracts will be compiled to PDF (using PDFLaTeX) for inclusion in the program booklet, and will also be converted to an accessible, mobile-friendly web version (using [LaTeXML](https://math.nist.gov/~BMiller/LaTeXML/)).
