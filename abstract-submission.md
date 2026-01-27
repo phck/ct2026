@@ -17,11 +17,11 @@ Selection will be based on the submitted abstract and references, and the commit
 Please submit your completed abstract, prepared using the LaTeX template, through the conference submission portal.
 We look forward to receiving your work.
 
-Abstracts are due on January 20, 2026 by 11:59PM EST.
+Abstracts were due on January 20, 2026 by 11:59PM EST.
 
 <div style="display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; flex-wrap: wrap;">
     <a href="{{ '/assets/ct2026-abstract-template.tex' | relative_url }}" class="registration-btn" download style="display: inline-block; text-decoration: none;">Download LaTeX Template</a>
-    <a href="https://www.mathprograms.org/db/programs/1856" class="registration-btn" style="display: inline-block; text-decoration: none;">Submit Abstract</a>
+    <button class="registration-btn registration-btn--disabled" disabled>Submissions Closed</button>
 </div>
 
 ## Technical Considerations
