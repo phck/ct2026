@@ -190,6 +190,38 @@ code, pre {
     margin-bottom: 0;
 }
 
+.section h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ct26-primary-dark);
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.section table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.section table th,
+.section table td {
+    border: 1px solid var(--neutral-light);
+    padding: 0.5rem 0.9rem;
+    text-align: left;
+}
+
+.section table th {
+    background-color: var(--ct26-primary-dark);
+    color: var(--ct26-primary-light);
+    font-weight: 600;
+}
+
+.section table tr:nth-child(even) {
+    background-color: var(--neutral-lightest);
+}
+
 .dv60-section .section-title {
     border-bottom-color: var(--dv60-primary-teal);
 }
@@ -307,6 +339,7 @@ code, pre {
 }
 
 .registration-btn {
+    display: inline-block;
     background-color: var(--ct26-secondary-blue);
     color: white;
     border: none;
@@ -316,6 +349,7 @@ code, pre {
     font-family: var(--font-body);
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 2px 8px rgba(107, 140, 174, 0.3);
 }
@@ -623,6 +657,18 @@ code, pre {
 
 .dv60-theme .icm-link {
     font-weight: 600;
+}
+
+.dv60-theme .registration-section {
+    background-color: var(--dv60-primary-light);
+}
+
+.dv60-theme .registration-btn {
+    background-color: var(--dv60-primary-dark);
+}
+
+.dv60-theme .registration-btn:hover {
+    background-color: var(--dv60-primary-teal);
 }
 
 /* Responsive Design */
