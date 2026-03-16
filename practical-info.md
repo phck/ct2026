@@ -62,7 +62,7 @@ Participants who prefer to stay in an apartment can search on [AirBNB](https://w
 
 ## Registration
 
-Please register for the conference by filling out the [online form](https://docs.google.com/forms/d/16-245zGi2eKdna8jZ2Wi456Ad8jiY7jUFg5qSDozDbs/edit?ts=69a5cacf). Registration will close on May 15th, anywhere on Earth.
+Please register for the conference by filling out the [online form](https://docs.google.com/forms/d/e/1FAIpQLScbsnKttE6PVBuNfiHCUOjIo7eiafMrtjnQr5VpsZdEJCkKAw/viewform?usp=dialog). Registration will close on May 15th, anywhere on Earth.
 
 Registration to participate _virtually_ is free. Registration to attend _in person_ comes with the following fees, to be collected closer to the conference date:
 
