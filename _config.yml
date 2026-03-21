@@ -4,6 +4,9 @@ description: "The International Category Theory Conference 2026 & Dominic Verity
 baseurl: ""
 url: "https://ct2026.com"
 
+plugins:
+  - jekyll-redirect-from
+
 # Exclude from processing
 exclude:
   - .sass-cache/

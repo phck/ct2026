@@ -10,6 +10,7 @@ gem "bigdecimal"
 gem "webrick"
 
 gem "kramdown-parser-gfm"
+gem "jekyll-redirect-from"
 
 platforms :windows do
   gem "tzinfo", "~> 1.2"
