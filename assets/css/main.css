@@ -671,6 +671,24 @@ code, pre {
     background-color: var(--dv60-primary-teal);
 }
 
+.email-template {
+    background-color: white;
+    border: 1px solid var(--neutral-light);
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.email-template pre {
+    margin: 0;
+    font-family: monospace;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.6;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo-container {

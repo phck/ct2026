@@ -76,6 +76,8 @@ Registration to participate _virtually_ is free. Registration to attend _in pers
 
 We will provide receipts for reimbursement purposes. Undergraduates, masters, and PhD students are all eligible for the student rate. Please contact [categorytheory2026@gmail.com](mailto:categorytheory2026@gmail.com) with questions.
 
+We hope to offer travel support for some participants — see the [Travel Support page](/travel-support/) for details and to apply. Travel support applications are due April 15.
+
 ## Social Events
 
 *Details about conference dinners, receptions, and excursions will be announced closer to the conference dates.*
