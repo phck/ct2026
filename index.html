@@ -65,9 +65,17 @@ nav_show: true
 
     <section class="support-section">
         <div class="support-content">
-            <p>With support from Johns Hopkins University</p>
-            <div class="jhu-logo-container">
-                <img src="{{ '/assets/jhu-logo.svg' | relative_url }}" alt="Johns Hopkins University" class="jhu-logo">
+            <p>With support from Johns Hopkins University and the U.S. National Science Foundation (DMS-2554832)</p>
+            <div class="support-logos">
+                <div class="jhu-logo-container">
+                    <img src="{{ '/assets/jhu-logo.svg' | relative_url }}" alt="Johns Hopkins University" class="jhu-logo">
+                </div>
+                <div class="nsf-logo-container">
+                    <picture>
+                        <source srcset="{{ '/assets/nsf-logo.webp' | relative_url }}" type="image/webp">
+                        <img src="{{ '/assets/nsf-logo.png' | relative_url }}" alt="U.S. National Science Foundation" class="nsf-logo">
+                    </picture>
+                </div>
             </div>
         </div>
     </section>
