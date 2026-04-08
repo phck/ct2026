@@ -50,7 +50,7 @@ Within the city, participants may get around via the [Johns Hopkins Campus Shutt
 
 There are various local hotel options, listed in order of increasing distance from the Homewood campus:
 
-* [The Study at Johns Hopkins](https://www.thestudyatjohnshopkins.com/)
+* [The Study at Johns Hopkins](https://www.thestudyatjohnshopkins.com/), which offers a [special rate](https://www.thestudyatjohnshopkins.com/book/dates-of-stay?groupID=5206846) for either or both conferences.
 * [The Colonnade](https://www.hilton.com/en/hotels/bwicudt-inn-at-the-colonnade-baltimore/), which offers special rates for [CT2026](https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=BWICUDT&arrivalDate=2026-07-12&departureDate=2026-07-18&groupCode=CDTJW7&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink) and [DV60](https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=BWICUDT&arrivalDate=2026-07-19&departureDate=2026-07-22&groupCode=CDTDM3&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink)
 * [Hotel Ulysses](https://ash.world/hotels/ulysses/)
 * [Hotel Revival Baltimore](https://hotelrevivalbaltimore.com/)
