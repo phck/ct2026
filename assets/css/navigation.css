@@ -192,6 +192,12 @@
     }
 }
 
+@media print {
+    .nav {
+        display: none;
+    }
+}
+
 /* DV60 Theme Overrides */
 .dv60-theme .nav {
     background-color: var(--dv60-primary-teal);
