@@ -8,9 +8,9 @@ permalink: /register/
 nav_show: false
 ---
 
-~~Please register for the conference by filling out the [online form](https://docs.google.com/forms/d/e/1FAIpQLScbsnKttE6PVBuNfiHCUOjIo7eiafMrtjnQr5VpsZdEJCkKAw/viewform?usp=dialog).~~ Registration closed on **May 15th**.
+Virtual registration is free and is still open: [register here](https://docs.google.com/forms/d/e/1FAIpQLScbsnKttE6PVBuNfiHCUOjIo7eiafMrtjnQr5VpsZdEJCkKAw/viewform?usp=dialog).
 
-Registration to participate _virtually_ is free. Registration to attend _in person_ comes with the following fees, to be collected closer to the conference date:
+In-person registration closed on May 15 and the fees below will be collected closer to the conference date.
 
 | | CT26 | DV60 | Both |
 |---|---|---|---|
