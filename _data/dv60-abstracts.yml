@@ -1,0 +1,35 @@
+- slug: john-bourke
+  title: Bicategorical enrichment in algebra
+  author: John Bourke
+  permalink: /dv60/abstracts/john-bourke/
+  source_file: bourke.tex
+- slug: valeria-de-paiva
+  title: Fibrational Semantics for Coexisting Implications
+  author: Valeria de Paiva
+  permalink: /dv60/abstracts/valeria-de-paiva/
+  source_file: de_paiva.tex
+- slug: nick-gurski
+  title: Parity and flexibility
+  author: Nick Gurski
+  permalink: /dv60/abstracts/nick-gurski/
+  source_file: gurski.tex
+- slug: steve-lack
+  title: Normal isofibrations
+  author: Steve Lack
+  permalink: /dv60/abstracts/steve-lack/
+  source_file: lack.tex
+- slug: félix-loubaton
+  title: Triangles and globes
+  author: Félix Loubaton
+  permalink: /dv60/abstracts/félix-loubaton/
+  source_file: loubaton.tex
+- slug: yuki-maehara
+  title: Towards a homotopy theory of algebraic weak 𝜔-categories
+  author: Yuki Maehara
+  permalink: /dv60/abstracts/yuki-maehara/
+  source_file: maehara.tex
+- slug: martina-rovelli
+  title: From (∞,𝑛)-categories to (∞,∞)-categories
+  author: Martina Rovelli
+  permalink: /dv60/abstracts/martina-rovelli/
+  source_file: rovelli.tex

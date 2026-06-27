@@ -1,0 +1,107 @@
+---
+layout: abstract
+title: "Weak ∞-categories via fat Delta"
+author: "Stiéphen Pradal"
+slug: stiéphen-pradal
+permalink: /ct/abstracts/stiéphen-pradal/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Weak <math id="m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories via fat Delta</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Stiéphen Pradal
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Understanding higher categories boils down to understanding their coherence complexity.
+In a nutshell, coherences are equations between operations such as composition and units, and may be strict (genuine equality) or weak (up to higher homotopies).
+Simplicial methods provide some of the most effective tools for modelling these objects.
+However, when these techniques are used to encode higher categorical structures, the degeneracy relations enforce strict coherence conditions on units.
+While often harmless, this rigidity becomes problematic in contexts where weak unit structures are essential, notably in the study of the cobordism <math id="p1.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-category <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">5</span>]</cite> and in Simpson’s conjectures <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>.
+To address this issue, J. Kock <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite> introduced the category <math id="p1.m2" class="ltx_Math" alttext="\underline{\smash{\Delta}}" display="inline"><munder accentunder="true"><mi mathvariant="normal">Δ</mi><mo>¯</mo></munder></math>, named fat Delta, as a variant of the simplex category that allows degeneracies to be treated up to homotopy, at the cost of a localisation at the class of <em class="ltx_emph ltx_font_italic">vertical</em> morphisms.
+In this work, we develop a model of weak <math id="p1.m3" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories based on <math id="p1.m4" class="ltx_Math" alttext="\underline{\smash{\Delta}}" display="inline"><munder accentunder="true"><mi mathvariant="normal">Δ</mi><mo>¯</mo></munder></math>-spaces, analogous to the role played by complete Segal spaces <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite> in the simplicial setting.
+Pursuing J. Kock’s original idea of using <math id="p1.m5" class="ltx_Math" alttext="\underline{\smash{\Delta}}" display="inline"><munder accentunder="true"><mi mathvariant="normal">Δ</mi><mo>¯</mo></munder></math> to approach Simpson’s conjectures, we aim to bring new insights to the study of these conjectures and more generally to the theory of weak <math id="p1.m6" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">We introduce the notion of <em class="ltx_emph ltx_font_italic">fat <math id="p2.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-category</em>, defined as simplicial presheaf over <math id="p2.m2" class="ltx_Math" alttext="\underline{\smash{\Delta}}" display="inline"><munder accentunder="true"><mi mathvariant="normal">Δ</mi><mo>¯</mo></munder></math>, a.k.a. <math id="p2.m3" class="ltx_Math" alttext="\underline{\smash{\Delta}}" display="inline"><munder accentunder="true"><mi mathvariant="normal">Δ</mi><mo>¯</mo></munder></math>-space, satisfying appropriate vertical, Segal, and completeness conditions.
+The vertical condition plays a central role: it allows degeneracy data, and in particular units, to be reconstructed up to homotopy, therefore yielding weak unit structures.
+These conditions are extracted as left Bousfield localisations of the Reedy model structure on <math id="p2.m4" class="ltx_Math" alttext="\underline{\smash{\Delta}}" display="inline"><munder accentunder="true"><mi mathvariant="normal">Δ</mi><mo>¯</mo></munder></math>-spaces with respect to the Kan–Quillen model structure on simplicial sets.
+In particular, we can show the following.</p>
+</div>
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Proposition 1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">There is a simplicial, left proper and combinatorial model structure on <math id="Thmproposition1.p1.m1" class="ltx_Math" alttext="\underline{\smash{\Delta}}" display="inline"><munder accentunder="true"><mi mathvariant="normal">Δ</mi><mo>¯</mo></munder></math>-spaces such that the cofibrations are monomorphisms and the fibrant objects are fat <math id="Thmproposition1.p1.m2" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories.</span></p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">We further explore alternative characterisations of the conditions.
+By adapting the notions of <em class="ltx_emph ltx_font_italic">horn</em> and <em class="ltx_emph ltx_font_italic">saturation</em> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">6</span>]</cite> to the <math id="p3.m1" class="ltx_Math" alttext="\underline{\smash{\Delta}}" display="inline"><munder accentunder="true"><mi mathvariant="normal">Δ</mi><mo>¯</mo></munder></math>-space context, we provide a reformulation of the vertical and Segal conditions in terms of horns, and of the completeness in terms of saturation.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Finally, we discuss ongoing work comparing fat <math id="p4.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories with other established models of weak <math id="p4.m2" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories.
+In particular, we outline a conjectural Quillen equivalence with Harpaz’s model of quasi-unital <math id="p4.m3" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>.
+This model is based on marked semisimplicial spaces, which allows us to form a natural functor by assigning to each <math id="p4.m4" class="ltx_Math" alttext="\underline{\smash{\Delta}}" display="inline"><munder accentunder="true"><mi mathvariant="normal">Δ</mi><mo>¯</mo></munder></math>-space its underlying semisimplicial space and space of markings.
+Conversely, by appropriately using the <em class="ltx_emph ltx_font_italic"><math id="p4.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>-degenerate marked semisimplex</em> introduced in <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>, one can construct the functor in the opposite direction.</p>
+</div>
+<div id="Thmproposition2" class="ltx_theorem ltx_theorem_conjecture">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Conjecture 2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The functors induce a Quillen equivalence between the model categories encoding quasi-unital <math id="Thmproposition2.p1.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories and fat <math id="Thmproposition2.p1.m2" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories.</span></p>
+</div>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+C. Simpson, <em class="ltx_emph ltx_font_italic">Homotopy Theory of Higher Categories: From Segal Categories to n-Categories and Beyond</em>, Cambridge University Press, 2011.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+J. Kock, <em class="ltx_emph ltx_font_italic">Weak identity arrows in higher categories</em>, International Mathematics Research Papers, 2006, p.69163.
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+C. Rezk, <em class="ltx_emph ltx_font_italic">A model for the homotopy theory of homotopy theory</em>, Transactions of the American Mathematical Society 353, no. 3 (2021), p.973-1007.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+Y. Harpaz, <em class="ltx_emph ltx_font_italic">Quasi-unital <math id="bib.bib4.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories</em>, Algebraic &amp; Geometric Topology, 15, no. 4 (2015), p. 2303-2381.
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+J. Lurie, <em class="ltx_emph ltx_font_italic">On the classification of topological field theories</em>, Current developments in mathematics, no. 1 (2008), p.129-280.
+
+</span>
+</li>
+<li id="bib.bib6" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock">
+E. Riehl, <em class="ltx_emph ltx_font_italic">Complicial sets, an overture</em>, preprint <a href="https://arxiv.org/abs/1610.06801" title="" class="ltx_ref ltx_href">arXiv:1610.06801</a>, 2016.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

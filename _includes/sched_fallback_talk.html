@@ -1,0 +1,10 @@
+{%- comment -%}
+One talk line for the no-JS schedule fallback (see schedule.html <noscript>).
+Param: talk = a schedule.yml talk hash ({slug, time, last, name?, mode?}).
+Joins to _data/abstracts.yml by slug for title/author/permalink.
+The whole "name — title" is wrapped in the abstract link; (Zoom) trails outside it.
+{%- endcomment -%}
+{%- assign abs = site.data.abstracts | where: "slug", include.talk.slug | first -%}
+{%- assign who = include.talk.name | default: abs.author | default: include.talk.last | default: include.talk.slug -%}
+{%- capture label -%}{{ who }}{% if abs.title %} — {{ abs.title }}{% endif %}{%- endcapture -%}
+<li><span class="t">{{ include.talk.time }}</span> {% if abs.permalink %}<a href="{{ abs.permalink | relative_url }}">{{ label }}</a>{% else %}{{ label }}{% endif %}{% if include.talk.mode == "zoom" %} <span class="z">(Zoom)</span>{% endif %}</li>

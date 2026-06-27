@@ -9,6 +9,25 @@
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css?v=5' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/navigation.css?v=2' | relative_url }}">
+
+    {%- comment -%} Per-page assets (declared in a page's front matter) {%- endcomment -%}
+    {%- for href in page.extra_css -%}
+    <link rel="stylesheet" href="{{ href | relative_url }}">
+    {%- endfor -%}
+    {%- for src in page.extra_js -%}
+    <script defer src="{{ src | relative_url }}"></script>
+    {%- endfor -%}
+
+    <!-- No-JS fallback: the JS-driven <details> nav renders empty without JS,
+         so hide it and style the plain <noscript> nav list (see navigation.html).
+         This <style> only applies when scripting is disabled; zero effect otherwise. -->
+    <noscript>
+        <style>
+            .nav { display: none; }
+            .nav-fallback { padding: 0.6rem 1rem; border-bottom: 2px solid var(--ct26-primary-dark); line-height: 1.8; }
+            .nav-fallback a { color: var(--ct26-primary-dark); margin-right: 1.25rem; }
+        </style>
+    </noscript>
 </head>
 <body class="{% if page.conference %}{{ page.conference }}-theme{% endif %}">
     {% include navigation.html %}

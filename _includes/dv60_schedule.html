@@ -1,0 +1,85 @@
+{%- comment -%}
+  DV60 programme — pure-Liquid, no JS. Reads _data/dv60-schedule.yml and joins
+  talks to _data/dv60-abstracts.yml by slug for title + link. Drop
+  {% include dv60_schedule.html %} into dv60.html, and load the component
+  styles from that page's front matter:
+    extra_css: ["/assets/css/dv60-schedule.css?v=1"]
+
+  Layout: the DOM is day-major (each day's header + cards are emitted together),
+  but every card carries an explicit grid-row (its time slot) and grid-column
+  (its day), so on DESKTOP CSS Grid lays them out as a time-aligned matrix —
+  same-time cards share a row and auto-size to equal height. Breaks are emitted
+  as separate elements that span grid-column 1 / span k, where k = the number of
+  days that have that break (so 10:30 spans all 3 columns; lunch / 15:30 span 2,
+  leaving Wednesday — morning only — blank).
+
+  On MOBILE the grid container becomes display:block, the grid placement goes
+  inert, and cards simply flow in day-major DOM order (Mon's day, then Tue, then
+  Wed). Breaks are hidden on mobile (as in CT's no-JS fallback).
+
+  Item types: talks have slug (-> abstract) or name (no abstract yet -> "TBA");
+  socials have `until`; breaks live in the per-day `breaks:` list.
+  Component styles live in assets/css/dv60-schedule.css; the DV60 palette
+  vars (--dv60-*) come from assets/css/main.css.
+{%- endcomment -%}
+{%- assign abstracts = site.data['dv60-abstracts'] -%}
+{%- assign sched = site.data['dv60-schedule'] -%}
+
+{%- comment -%} master sorted list of distinct time slots across all days {%- endcomment -%}
+{%- assign times_str = "" -%}
+{%- for day in sched.days -%}
+  {%- for t in day.talks -%}{%- assign times_str = times_str | append: t.time | append: "," -%}{%- endfor -%}
+  {%- if day.breaks -%}{%- for b in day.breaks -%}{%- assign times_str = times_str | append: b.time | append: "," -%}{%- endfor -%}{%- endif -%}
+  {%- if day.socials -%}{%- for s in day.socials -%}{%- assign times_str = times_str | append: s.time | append: "," -%}{%- endfor -%}{%- endif -%}
+{%- endfor -%}
+{%- assign slots = times_str | split: "," | uniq | sort -%}
+
+<div class="dvsched">
+  <p class="dvs-note">All talks in {{ sched.room }} &middot; times shown in Baltimore (EDT, UTC&minus;4).</p>
+  <div class="dvs-grid">
+    {%- comment -%} day columns: header (row 1) + talks/socials placed by time slot {%- endcomment -%}
+    {%- for day in sched.days -%}
+      {%- assign c = forloop.index -%}
+      <div class="dvs-dayhead{% if forloop.first %} dvs-h0{% endif %}" style="grid-row:1;grid-column:{{ c }}">{{ day.full }}</div>
+      {%- assign stream = day.talks -%}
+      {%- if day.socials -%}{%- assign stream = stream | concat: day.socials -%}{%- endif -%}
+      {%- assign stream = stream | sort: "time" -%}
+      {%- for item in stream -%}
+        {%- assign r = 0 -%}
+        {%- for s in slots -%}{%- if s == item.time -%}{%- assign r = forloop.index | plus: 1 -%}{%- endif -%}{%- endfor -%}
+        {%- if item.until -%}
+          <div class="dvs-card social" style="grid-row:{{ r }};grid-column:{{ c }}">
+            <div class="dvs-time mono">{{ item.time }} &ndash; {{ item.until }}</div>
+            <div class="dvs-name">{{ item.title }}</div>
+            {%- if item.venue -%}<div class="dvs-venue">{{ item.venue }}</div>{%- endif -%}
+          </div>
+        {%- else -%}
+          {%- assign abs = "" -%}
+          {%- if item.slug -%}{%- assign abs = abstracts | where: "slug", item.slug | first -%}{%- endif -%}
+          {%- assign who = item.name | default: abs.author | default: item.slug -%}
+          <div class="dvs-card talk" style="grid-row:{{ r }};grid-column:{{ c }}">
+            <div class="dvs-top"><span class="dvs-time mono">{{ item.time }}</span>{% if sched.talk_minutes %}<span class="dvs-kind">{{ sched.talk_minutes }} min</span>{% endif %}</div>
+            <div class="dvs-name">{% if abs.permalink %}<a class="lnk" href="{{ abs.permalink | relative_url }}">{{ who }}</a>{% else %}{{ who }}{% endif %}{% if item.mode == "zoom" %} <span class="dvs-tag">Zoom</span>{% endif %}</div>
+            {%- if abs.title -%}<div class="dvs-title">{% if abs.permalink %}<a class="lnk" href="{{ abs.permalink | relative_url }}">{{ abs.title }}</a>{% else %}{{ abs.title }}{% endif %}</div>{%- else -%}<div class="dvs-tba">TBA</div>{%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+
+    {%- comment -%} spanning break rows (desktop only): one per break time slot {%- endcomment -%}
+    {%- for slot in slots -%}
+      {%- assign r = forloop.index | plus: 1 -%}
+      {%- assign brk = "" -%}
+      {%- assign span = 0 -%}
+      {%- for day in sched.days -%}
+        {%- if day.breaks -%}
+          {%- assign hit = day.breaks | where: "time", slot | first -%}
+          {%- if hit -%}{%- assign brk = hit -%}{%- assign span = span | plus: 1 -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if brk != "" -%}
+        <div class="dvs-brk" style="grid-row:{{ r }};grid-column:1 / span {{ span }}">{{ slot }} &middot; {{ brk.title }}</div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>

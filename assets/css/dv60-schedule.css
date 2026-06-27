@@ -1,0 +1,41 @@
+.dvsched{color:var(--dv60-primary-dark);font-family:var(--font-body),sans-serif;line-height:1.45;max-width:900px;margin:0 auto;text-align:left}
+.dvsched .mono{font-family:var(--font-display),monospace;font-variant-numeric:tabular-nums}
+.dvsched .dvs-note{font-size:13px;color:#5b6b62;margin:0 0 1.5rem}
+
+/* mobile: plain block flow (day-major); desktop: time-aligned 3-col matrix */
+.dvsched .dvs-grid{display:block}
+@media(min-width:721px){
+  .dvsched .dvs-grid{display:grid;grid-template-columns:repeat(3,1fr);column-gap:18px;row-gap:10px;align-items:stretch}
+}
+
+.dvsched .dvs-dayhead{border-bottom:2px solid var(--dv60-primary-teal);padding-bottom:6px;margin:0;font-family:var(--font-display),monospace;font-size:17px;font-weight:600;color:var(--dv60-primary-dark)}
+
+/* talk / social chips */
+.dvsched .dvs-card{position:relative;background:#fff;border:1px solid #d7e6dd;border-radius:10px;padding:10px 13px 11px 15px;overflow:hidden}
+.dvsched .dvs-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c,var(--dv60-primary-teal))}
+.dvsched .dvs-top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.dvsched .dvs-time{font-size:12px;color:#5b6b62}
+.dvsched .dvs-kind{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--dv60-primary-teal);font-weight:600}
+.dvsched .dvs-name{font-weight:600;margin-top:2px;font-size:15px;line-height:1.3}
+.dvsched .dvs-title{margin-top:2px;font-size:13.5px;opacity:.9;line-height:1.35}
+.dvsched .dvs-tba{margin-top:2px;font-size:13px;color:#7a8a80;font-style:italic}
+.dvsched .dvs-venue{margin-top:2px;font-size:12px;color:#5b6b62;line-height:1.3}
+.dvsched .dvs-card a.lnk{color:inherit;text-decoration:none;border-bottom:1px solid #d7e6dd}
+.dvsched .dvs-card a.lnk:hover{border-bottom-color:var(--c,var(--dv60-primary-teal))}
+.dvsched .dvs-tag{font-size:10.5px;color:#5b6b62;border:1px solid #d7e6dd;border-radius:999px;padding:1px 7px;margin-left:5px;white-space:nowrap}
+.dvsched .dvs-card.talk{--c:var(--dv60-primary-teal)}
+.dvsched .dvs-card.social{--c:#E6C866} /* dinner: a normal chip, just the logo-yellow stripe */
+
+/* break: subtle spanning divider — desktop only */
+.dvsched .dvs-brk{display:none}
+@media(min-width:721px){
+  .dvsched .dvs-brk{display:flex;align-items:center;gap:10px;color:#8a978d;font-size:11px;letter-spacing:.04em;text-transform:uppercase;margin:0 2px}
+  .dvsched .dvs-brk::before,.dvsched .dvs-brk::after{content:"";height:1px;background:#dde7e1;flex:1}
+}
+
+/* mobile vertical rhythm (grid gaps don't apply when display:block) */
+@media(max-width:720px){
+  .dvsched .dvs-card{margin-bottom:9px}
+  .dvsched .dvs-dayhead{margin:1.9rem 0 .7rem}
+  .dvsched .dvs-dayhead.dvs-h0{margin-top:0}
+}

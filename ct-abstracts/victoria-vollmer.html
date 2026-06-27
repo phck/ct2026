@@ -1,0 +1,79 @@
+---
+layout: abstract
+title: "On the Category of Graded Monads"
+author: "Victoria Vollmer"
+slug: victoria-vollmer
+permalink: /ct/abstracts/victoria-vollmer/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">On the Category of Graded Monads</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Victoria Vollmer
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Joint work with:<span class="ltx_text ltx_font_medium"> Marco Paviotti, Dominic Orchard</span></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Monads have become an invaluable tool in both pure mathematics and computer science. However, in many practical applications, we encounter situations where monads need to carry additional structure or parameters, necessitating a generalization known as <em class="ltx_emph ltx_font_italic">graded monads</em>. Graded monads allow us to refine the coarse-grained structure of classical monads by decorating them with grades from an indexing monoid, enabling finer control over composition and interaction of effects.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">To develop a robust formal theory for graded monads, we follow the approach that proved successful for classical monads: we seek a 2-categorical perspective that reveals their underlying structure. Bénabou defined a monad as a morphism from the terminal bicategory <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>. Street capitalized on the structure of <math id="p3.m1" class="ltx_Math" alttext="2\textsf{Cat}" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mtext class="ltx_mathvariant_sans-serif">Cat</mtext></mrow></math> and considered the lax-functor category <math id="p3.m2" class="ltx_Math" alttext="[1,\kappa]_{lax}" display="inline"><msub><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi>κ</mi><mo stretchy="false">]</mo></mrow><mrow><mi>l</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub></math> as the 2-category of monads <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite>. This way of mapping any 2-category, <math id="p3.m3" class="ltx_Math" alttext="\kappa" display="inline"><mi>κ</mi></math>, to the 2-category of monads over <math id="p3.m4" class="ltx_Math" alttext="\kappa" display="inline"><mi>κ</mi></math> defines the functor <math id="p3.m5" class="ltx_Math" alttext="\textsf{Mnd}:2\textsf{Cat}\rightarrow 2\textsf{Cat}" display="inline"><mrow><mtext class="ltx_mathvariant_sans-serif">Mnd</mtext><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mtext class="ltx_mathvariant_sans-serif">Cat</mtext></mrow><mo stretchy="false">→</mo><mrow><mn>2</mn><mo>⁢</mo><mtext class="ltx_mathvariant_sans-serif">Cat</mtext></mrow></mrow></mrow></math>.
+Street’s formal treatment of monads allowed for the wider adoption of monads for a multitude of uses in both mathematics and computing.
+Orchard et al. made the key conceptual leap by generalizing Bénabou’s definition of a monad to graded monads, replacing the terminal bicategory with the delooping of a monoid <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite>. This generalization provides the natural jumping-off point for a formal treatment of graded monads: just as Street’s perspective provides a 2-categorical lingua franca for monads, we provide the same for graded monads.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">We follow Street and Bénabou, defining a 2-functor <math id="p4.m1" class="ltx_Math" alttext="\textsf{Gmd}:\textsf{MonCat}\times 2\textsf{Cat}\rightarrow 2\textsf{Cat}" display="inline"><mrow><mtext class="ltx_mathvariant_sans-serif">Gmd</mtext><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mrow><mtext class="ltx_mathvariant_sans-serif">MonCat</mtext><mo lspace="0.222em" rspace="0.222em">×</mo><mn>2</mn></mrow><mo>⁢</mo><mtext class="ltx_mathvariant_sans-serif">Cat</mtext></mrow><mo stretchy="false">→</mo><mrow><mn>2</mn><mo>⁢</mo><mtext class="ltx_mathvariant_sans-serif">Cat</mtext></mrow></mrow></mrow></math> that takes a monoidal category <math id="p4.m2" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>, and a 2-category <math id="p4.m3" class="ltx_Math" alttext="\kappa" display="inline"><mi>κ</mi></math>, to the lax-functor category <math id="p4.m4" class="ltx_Math" alttext="[BI^{op},\kappa]_{lax}" display="inline"><msub><mrow><mo stretchy="false">[</mo><mrow><mi>B</mi><mo>⁢</mo><msup><mi>I</mi><mrow><mi>o</mi><mo>⁢</mo><mi>p</mi></mrow></msup></mrow><mo>,</mo><mi>κ</mi><mo stretchy="false">]</mo></mrow><mrow><mi>l</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub></math>. We show <span class="ltx_text ltx_markedasmath ltx_font_sansserif">Gmd</span> is a graded monad on <math id="p4.m6" class="ltx_Math" alttext="2\textsf{Cat}" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mtext class="ltx_mathvariant_sans-serif">Cat</mtext></mrow></math>, which identifies distributive laws as graded monads in the category of graded monads themselves and gives us a notion of composition for graded monads, <math id="p4.m7" class="ltx_Math" alttext="\textsf{comp}_{I,J}(\kappa):\textsf{Gmd}(J,\textsf{Gmd}(I,\kappa))\rightarrow%
+\textsf{Gmd}(J\times I,\kappa)" display="inline"><mrow><mrow><msub><mtext class="ltx_mathvariant_sans-serif">comp</mtext><mrow><mi>I</mi><mo>,</mo><mi>J</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>κ</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:</mo><mrow><mrow><mtext class="ltx_mathvariant_sans-serif">Gmd</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>J</mi><mo>,</mo><mrow><mtext class="ltx_mathvariant_sans-serif">Gmd</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>κ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mtext class="ltx_mathvariant_sans-serif">Gmd</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>J</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>I</mi></mrow><mo>,</mo><mi>κ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>.
+We include a dual notion for graded comonads, <math id="p4.m8" class="ltx_Math" alttext="\textsf{Gcmd}(\kappa)=[BI^{op},\kappa]_{oplax}" display="inline"><mrow><mrow><mtext class="ltx_mathvariant_sans-serif">Gcmd</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>κ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mrow><mo stretchy="false">[</mo><mrow><mi>B</mi><mo>⁢</mo><msup><mi>I</mi><mrow><mi>o</mi><mo>⁢</mo><mi>p</mi></mrow></msup></mrow><mo>,</mo><mi>κ</mi><mo stretchy="false">]</mo></mrow><mrow><mi>o</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow></math> and equivalences for distributive laws for graded monads and graded comonads in the style of Power and Watanabe <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">5</span>]</cite>,
+which contrast with the graded distributive laws of Gaboardi et al. <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">With this machinery in place, we can close some additional open questions, namely, “what is the free graded monad?”
+We present a free-forgetful adjunction between the category of <math id="p5.m1" class="ltx_Math" alttext="I^{*}" display="inline"><msup><mi>I</mi><mo>∗</mo></msup></math>-graded monads over <math id="p5.m2" class="ltx_Math" alttext="\kappa" display="inline"><mi>κ</mi></math> and <math id="p5.m3" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>-indexed endofunctors over <math id="p5.m4" class="ltx_Math" alttext="\kappa" display="inline"><mi>κ</mi></math>, showing that the <em class="ltx_emph ltx_font_italic">free graded monad</em> is given by the the left Kan extension of the unit of the free monoid monad. We observe that the category of <math id="p5.m5" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>-graded monads, <math id="p5.m6" class="ltx_Math" alttext="\textsf{Gmd}(I,\kappa)" display="inline"><mrow><mtext class="ltx_mathvariant_sans-serif">Gmd</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>κ</mi><mo stretchy="false">)</mo></mrow></mrow></math> is still insufficient for understanding other relationships between graded monads: the fixed monoid <math id="p5.m7" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> means that this category does not capture reindexing and re-grading. To solve this we define the category of graded monads as the 2-Grothendieck construction of <math id="p5.m8" class="ltx_Math" alttext="\textsf{Gmd}(-,\kappa)" display="inline"><mrow><mtext class="ltx_mathvariant_sans-serif">Gmd</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">−</mo><mo>,</mo><mi>κ</mi><mo stretchy="false">)</mo></mrow></mrow></math> for a fixed 2-category <math id="p5.m9" class="ltx_Math" alttext="\kappa" display="inline"><mi>κ</mi></math>. This construction gives us the appropriate 2-category with graded monads of any index.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+J. Bénabou, <em class="ltx_emph ltx_font_italic">Introduction to bicategories</em>, in Reports of the Midwest Category Seminar, Lecture Notes in Math., vol. 47, Springer, Berlin-New York, 1967, pp. 1–77.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+R. Street, <em class="ltx_emph ltx_font_italic">The formal theory of monads</em>, J. Pure Appl. Algebra <span class="ltx_text ltx_font_bold">2</span>, no. 2 (1972), 149–168.
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+D. Orchard, P. Wadler, and H. Eades III, <em class="ltx_emph ltx_font_italic">Unifying graded and parameterised monads</em>, in MSFP, EPTCS, vol. 317, 2020, pp. 18–38.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+M. Gaboardi, S. Katsumata, D. A. Orchard, F. Breuvart, and T. Uustalu, <em class="ltx_emph ltx_font_italic">Combining effects and coeffects via grading</em>, in Proceedings of the 21st ACM SIGPLAN International Conference on Functional Programming, ICFP 2016, Nara, Japan, September 18–22, 2016, ACM, 2016, pp. 476–489.
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+J. Power and H. Watanabe, <em class="ltx_emph ltx_font_italic">Combining a monad and a comonad</em>, Theor. Comput. Sci. <span class="ltx_text ltx_font_bold">280</span>, no. 1–2 (2002), 137–162.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

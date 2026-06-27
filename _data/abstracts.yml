@@ -1,0 +1,492 @@
+- slug: quentin-aristote
+  title: Profunctorial algebras
+  author: Quentin Aristote
+  permalink: /ct/abstracts/quentin-aristote/
+  source_file: aristote.tex
+- slug: steve-awodey
+  title: Path Types in Algebraic Type Theory
+  author: Steve Awodey
+  permalink: /ct/abstracts/steve-awodey/
+  source_file: awodey.tex
+- slug: julie-bergner
+  title: Classifying diagrams of double categories with shared isomorphisms
+  author: Julie Bergner
+  permalink: /ct/abstracts/julie-bergner/
+  source_file: bergner.tex
+- slug: jason-brown
+  title: Completing 2-categories under lax colimits
+  author: Jason Brown
+  permalink: /ct/abstracts/jason-brown/
+  source_file: brown.tex
+- slug: sergei-burkin
+  title: How to relate and generalize nerve, bar-cobar, necklaces, templicial and
+    simplicial objects
+  author: Sergei Burkin
+  permalink: /ct/abstracts/sergei-burkin/
+  source_file: burkin.tex
+- slug: daniel-carranza
+  title: Homotopy 𝑛-types of graphs in discrete homotopy theory
+  author: Daniel Carranza
+  permalink: /ct/abstracts/daniel-carranza/
+  source_file: carranza.tex
+- slug: elena-caviglia
+  title: Monadic Approach to Actions of Internal Categories
+  author: Elena Caviglia
+  permalink: /ct/abstracts/elena-caviglia/
+  source_file: caviglia.tex
+- slug: eleftherios-chatzitheodoridis
+  title: Models for rational (∞,1)-categories
+  author: Eleftherios Chatzitheodoridis
+  permalink: /ct/abstracts/eleftherios-chatzitheodoridis/
+  source_file: chatzitheodoridis.tex
+- slug: eugenia-cheng
+  title: The Formal Theory of Iterated Distributive Laws
+  author: Eugenia Cheng
+  permalink: /ct/abstracts/eugenia-cheng/
+  source_file: cheng.tex
+- slug: michael-ching
+  title: Tangent ∞-Categories and Goodwillie Calculus
+  author: Michael Ching
+  permalink: /ct/abstracts/michael-ching/
+  source_file: ching.tex
+- slug: kian-cho
+  title: Local model structures on cubical sets
+  author: Kian Cho
+  permalink: /ct/abstracts/kian-cho/
+  source_file: cho.tex
+- slug: manuel-cortés-izurdiaga
+  title: Flatness in Finitely Accessible Additive Categories
+  author: Manuel Cortés-Izurdiaga
+  permalink: /ct/abstracts/manuel-cortés-izurdiaga/
+  source_file: cortes-izurdiaga.tex
+- slug: geoff-cruttwell
+  title: The past, present, and future of tangent categories
+  author: Geoff Cruttwell
+  permalink: /ct/abstracts/geoff-cruttwell/
+  source_file: cruttwell.tex
+- slug: agustina-czenky
+  title: On the classification of modular categories
+  author: Agustina Czenky
+  permalink: /ct/abstracts/agustina-czenky/
+  source_file: czenky.tex
+- slug: florian-de-leger
+  title: A combinatorial approach to Kontsevich’s Swiss cheese conjecture
+  author: Florian De Leger
+  permalink: /ct/abstracts/florian-de-leger/
+  source_file: de_leger.tex
+- slug: omar-dennaoui
+  title: Nerve Theorems for Cyclic Operads
+  author: Omar Dennaoui
+  permalink: /ct/abstracts/omar-dennaoui/
+  source_file: dennaoui.tex
+- slug: matthew-di-meglio
+  title: Hilbert ∗-categories Where limits in analysis and category theory meet
+  author: Matthew Di Meglio
+  permalink: /ct/abstracts/matthew-di-meglio/
+  source_file: di_meglio.tex
+- slug: arghan-dutta
+  title: The Morita (∞,2)-Category of a Monoidal Category as a 2-Complicial Set
+  author: Arghan Dutta
+  permalink: /ct/abstracts/arghan-dutta/
+  source_file: dutta.tex
+- slug: arnaud-duvieusart
+  title: Uniqueness of actions in algebraically coherent categories
+  author: Arnaud Duvieusart
+  permalink: /ct/abstracts/arnaud-duvieusart/
+  source_file: duvieusart.tex
+- slug: ea-e-t
+  title: Exponentiable Virtual Double Categories and Representability of Exponentials
+  author: Ea E T
+  permalink: /ct/abstracts/ea-e-t/
+  source_file: e_t.tex
+- slug: nadja-egner
+  title: 𝑁-fold groupoids and 𝑛-groupoids in regular Mal’tsev categories
+  author: Nadja Egner
+  permalink: /ct/abstracts/nadja-egner/
+  source_file: egner.tex
+- slug: aaron-david-fairbanks
+  title: Comonads as Spaces
+  author: Aaron David Fairbanks
+  permalink: /ct/abstracts/aaron-david-fairbanks/
+  source_file: fairbanks.tex
+- slug: roy-ferguson
+  title: Linearity for monoidal structures
+  author: Roy Ferguson
+  permalink: /ct/abstracts/roy-ferguson/
+  source_file: ferguson.tex
+- slug: tobias-fritz
+  title: What category theory can do for probability theory
+  author: Tobias Fritz
+  permalink: /ct/abstracts/tobias-fritz/
+  source_file: fritz.tex
+- slug: jon-funk
+  title: Topos polar decomposition
+  author: Jon Funk
+  permalink: /ct/abstracts/jon-funk/
+  source_file: funk.tex
+- slug: nicola-gambino
+  title: On the 2-category of symmetric 2-rigs
+  author: Nicola Gambino
+  permalink: /ct/abstracts/nicola-gambino/
+  source_file: gambino.tex
+- slug: sam-van-gool
+  title: Toposes with enough points as categories of étale spaces
+  author: Sam van Gool
+  permalink: /ct/abstracts/sam-van-gool/
+  source_file: van_gool.tex
+- slug: marino-gran
+  title: Hopf formulae for cocommutative Hopf algebras
+  author: Marino Gran
+  permalink: /ct/abstracts/marino-gran/
+  source_file: gran.tex
+- slug: david-green
+  title: Semisimple Hopf monoidal categories are group theoretical
+  author: David Green
+  permalink: /ct/abstracts/david-green/
+  source_file: green.tex
+- slug: amar-hadzihasanovic
+  title: Semi-strictification of (∞,𝑛)-categories
+  author: Amar Hadzihasanovic
+  permalink: /ct/abstracts/amar-hadzihasanovic/
+  source_file: hadzihasanovic.tex
+- slug: james-hefford
+  title: Nuclearity and Trace in Monoidal Bicategories and Extended Conformal Field
+    Theories
+  author: James Hefford
+  permalink: /ct/abstracts/james-hefford/
+  source_file: hefford.tex
+- slug: joseph-helfer
+  title: Models of set-theory from elementary 2-topoi
+  author: Joseph Helfer
+  permalink: /ct/abstracts/joseph-helfer/
+  source_file: helfer.tex
+- slug: isaiah-b-hilsenrath
+  title: Monoidal Differential Turing Categories
+  author: Isaiah B. Hilsenrath
+  permalink: /ct/abstracts/isaiah-b-hilsenrath/
+  source_file: hilsenrath.tex
+- slug: michael-hoefnagel
+  title: Coextensivity and arithmeticity in categorical algebra
+  author: Michael Hoefnagel
+  permalink: /ct/abstracts/michael-hoefnagel/
+  source_file: hoefnagel.tex
+- slug: joseph-hua
+  title: Exponentiable morphisms for a clan
+  author: Joseph Hua
+  permalink: /ct/abstracts/joseph-hua/
+  source_file: hua.tex
+- slug: yuki-imamura
+  title: A formal category theoretic approach to the homotopy theory of dg categories
+  author: Yuki Imamura
+  permalink: /ct/abstracts/yuki-imamura/
+  source_file: imamura.tex
+- slug: brenda-johnson
+  title: Distilling Monads
+  author: Brenda Johnson
+  permalink: /ct/abstracts/brenda-johnson/
+  source_file: johnson.tex
+- slug: yuto-kawase
+  title: On the decomposition of a strong epimorphism into regular epimorphisms
+  author: Yuto Kawase
+  permalink: /ct/abstracts/yuto-kawase/
+  source_file: kawase.tex
+- slug: minkyu-kim
+  title: Polynomial functors from Lawvere theories
+  author: Minkyu Kim
+  permalink: /ct/abstracts/minkyu-kim/
+  source_file: kim.tex
+- slug: khyathi-komalan
+  title: Double Categories for Operator Algebras and AQFT
+  author: Khyathi Komalan
+  permalink: /ct/abstracts/khyathi-komalan/
+  source_file: komalan.tex
+- slug: andre-kornell
+  title: Constructing the category of quantum graphs
+  author: Andre Kornell
+  permalink: /ct/abstracts/andre-kornell/
+  source_file: kornell.tex
+- slug: rose-kudzman-blais
+  title: Cartesian Linearly Distributive Categories
+  author: Rose Kudzman-Blais
+  permalink: /ct/abstracts/rose-kudzman-blais/
+  source_file: kudzman-blais.tex
+- slug: matthew-kukla
+  title: Orthogonal Factorization Systems for Double Categories
+  author: Matthew Kukla
+  permalink: /ct/abstracts/matthew-kukla/
+  source_file: kukla.tex
+- slug: steve-lack
+  title: A Giraud-Conduché condition for 𝑇-categories
+  author: Steve Lack
+  permalink: /ct/abstracts/steve-lack/
+  source_file: lack.tex
+- slug: marcello-lanfranchi
+  title: 'Local categories: a new framework for partiality'
+  author: Marcello Lanfranchi
+  permalink: /ct/abstracts/marcello-lanfranchi/
+  source_file: lanfranchi.tex
+- slug: georg-lehner
+  title: From Analysis to Stable Homotopy Theory via lax-idempotent Monads
+  author: Georg Lehner
+  permalink: /ct/abstracts/georg-lehner/
+  source_file: lehner.tex
+- slug: giuseppe-leoncini
+  title: Formal ∞-category theory of relative and simplicial categories, and more
+    general enriched categories.
+  author: Giuseppe Leoncini
+  permalink: /ct/abstracts/giuseppe-leoncini/
+  source_file: leoncini.tex
+- slug: ruiliang-li
+  title: Characterizing Tangent Display Maps via Linear Assignments
+  author: Ruiliang Li
+  permalink: /ct/abstracts/ruiliang-li/
+  source_file: li_ruiliang.tex
+- slug: yufeng-li
+  title: Pointed Univalence
+  author: Yufeng Li
+  permalink: /ct/abstracts/yufeng-li/
+  source_file: li_yufeng.tex
+- slug: chun-yu-lin
+  title: Triadic Equivalence of Regular Lawvere Theory
+  author: Chun-Yu Lin
+  permalink: /ct/abstracts/chun-yu-lin/
+  source_file: lin.tex
+- slug: gabriele-lobbia
+  title: Constructing Canonical Calculi
+  author: Gabriele Lobbia
+  permalink: /ct/abstracts/gabriele-lobbia/
+  source_file: lobbia.tex
+- slug: rory-lucyshyn-wright
+  title: Locally presentable categories over a base, 𝑆-sorted limit theories, and
+    cartesian first-order theories
+  author: Rory Lucyshyn-Wright
+  permalink: /ct/abstracts/rory-lucyshyn-wright/
+  source_file: lucyshyn-wright.tex
+- slug: owen-lynch
+  title: An Invitation to Geometric Type Theory
+  author: Owen Lynch
+  permalink: /ct/abstracts/owen-lynch/
+  source_file: lynch.tex
+- slug: rubén-maldonado
+  title: Double Orthogonal Factorization Systems II
+  author: Rubén Maldonado
+  permalink: /ct/abstracts/rubén-maldonado/
+  source_file: maldonado.tex
+- slug: diego-manco
+  title: Coherence for pseudo commutative 2-monads
+  author: Diego Manco
+  permalink: /ct/abstracts/diego-manco/
+  source_file: manco.tex
+- slug: arne-mertens
+  title: Enriched mapping spaces via necklaces
+  author: Arne Mertens
+  permalink: /ct/abstracts/arne-mertens/
+  source_file: mertens.tex
+- slug: luca-mesiti
+  title: Monoids, Monoidal Grothendieck Construction and Clifford Semigroups
+  author: Luca Mesiti
+  permalink: /ct/abstracts/luca-mesiti/
+  source_file: mesiti.tex
+- slug: owen-milner
+  title: Classifying certain group extensions in HoTT
+  author: Owen Milner
+  permalink: /ct/abstracts/owen-milner/
+  source_file: milner.tex
+- slug: joe-moeller
+  title: Lyapunov Stability of Coalgebras
+  author: Joe Moeller
+  permalink: /ct/abstracts/joe-moeller/
+  source_file: moeller.tex
+- slug: j-robert-morissette
+  title: Dual Equipments
+  author: J. Robert Morissette
+  permalink: /ct/abstracts/j-robert-morissette/
+  source_file: morissette.tex
+- slug: ieke-moerdijk
+  title: Duality for categories of presheaves
+  author: Ieke Moerdijk
+  permalink: /ct/abstracts/ieke-moerdijk/
+  source_file: moerdijk.tex
+- slug: susan-niefield
+  title: The Double Lives of the Category of Quantales
+  author: Susan Niefield
+  permalink: /ct/abstracts/susan-niefield/
+  source_file: niefield.tex
+- slug: nelson-niu
+  title: A Categorical Framework for Coherence Theorems
+  author: Nelson Niu
+  permalink: /ct/abstracts/nelson-niu/
+  source_file: niu.tex
+- slug: noah-d-ortiz
+  title: A Functorial Weak Factorisation System from Path Types
+  author: Noah D. Ortiz
+  permalink: /ct/abstracts/noah-d-ortiz/
+  source_file: ortiz.tex
+- slug: robert-paré
+  title: Lazy Categories
+  author: Robert Paré
+  permalink: /ct/abstracts/robert-paré/
+  source_file: pare.tex
+- slug: evan-patterson
+  title: Twisted double functors and their applications
+  author: Evan Patterson
+  permalink: /ct/abstracts/evan-patterson/
+  source_file: patterson.tex
+- slug: paolo-perrone
+  title: Presheaves on Markov Categories and Expectation Values
+  author: Paolo Perrone
+  permalink: /ct/abstracts/paolo-perrone/
+  source_file: perrone.tex
+- slug: maximilian-petrowitsch
+  title: Elementary ∞-Toposes from Type Theory
+  author: Maximilian Petrowitsch
+  permalink: /ct/abstracts/maximilian-petrowitsch/
+  source_file: petrowitsch.tex
+- slug: claudio-pisani
+  title: On the Distributive Law in Cartesian Multicategories
+  author: Claudio Pisani
+  permalink: /ct/abstracts/claudio-pisani/
+  source_file: pisani.tex
+- slug: stiéphen-pradal
+  title: Weak ∞-categories via fat Delta
+  author: Stiéphen Pradal
+  permalink: /ct/abstracts/stiéphen-pradal/
+  source_file: pradal.tex
+- slug: sridhar-ramesh
+  title: Categorical structures for Gödel incompleteness and Löb’s theorem
+  author: Sridhar Ramesh
+  permalink: /ct/abstracts/sridhar-ramesh/
+  source_file: ramesh.tex
+- slug: daniel-ramras
+  title: Homotopy Pullbacks and Homotopy Groups in CAT
+  author: Daniel Ramras
+  permalink: /ct/abstracts/daniel-ramras/
+  source_file: ramras.tex
+- slug: nima-rasekh
+  title: From Filter Quotient Model Categories to Type Theory
+  author: Nima Rasekh
+  permalink: /ct/abstracts/nima-rasekh/
+  source_file: rasekh.tex
+- slug: ülo-reimaa
+  title: Torsion theories as short exact sequences
+  author: Ülo Reimaa
+  permalink: /ct/abstracts/ülo-reimaa/
+  source_file: reimaa.tex
+- slug: ariel-e-rosenfield
+  title: Hyperstructures as models of suplattice-enriched algebraic theories
+  author: Ariel E. Rosenfield
+  permalink: /ct/abstracts/ariel-e-rosenfield/
+  source_file: rosenfield.tex
+- slug: martina-rovelli
+  title: A toolbox for weighted (∞,𝑛)-limits
+  author: Martina Rovelli
+  permalink: /ct/abstracts/martina-rovelli/
+  source_file: rovelli.tex
+- slug: gabriel-saadia
+  title: 'Soberness as idempotent-completeness: towards a formal model theory of virtual
+    ultracategories'
+  author: Gabriel Saadia
+  permalink: /ct/abstracts/gabriel-saadia/
+  source_file: saadia.tex
+- slug: léo-schelstraete
+  title: Linear higher rewriting and applications to diagrammatic algebras
+  author: Léo Schelstraete
+  permalink: /ct/abstracts/léo-schelstraete/
+  source_file: schelstraete.tex
+- slug: florian-schwarz
+  title: Associated bundles in restriction category world
+  author: Florian Schwarz
+  permalink: /ct/abstracts/florian-schwarz/
+  source_file: schwarz.tex
+- slug: josé-siqueira
+  title: Coalgebraic-modal extensions of doctrines
+  author: José Siqueira
+  permalink: /ct/abstracts/josé-siqueira/
+  source_file: siqueira.tex
+- slug: david-spivak
+  title: Categories by Kan extension
+  author: David Spivak
+  permalink: /ct/abstracts/david-spivak/
+  source_file: spivak.tex
+- slug: kimball-strong
+  title: Strictification of (∞,1)-Categories.
+  author: Kimball Strong
+  permalink: /ct/abstracts/kimball-strong/
+  source_file: strong.tex
+- slug: johnathon-taylor
+  title: Picard Infinity Groupoids with Underlying Globular Sets
+  author: Johnathon Taylor
+  permalink: /ct/abstracts/johnathon-taylor/
+  source_file: taylor_johnathon.tex
+- slug: paul-taylor
+  title: Transfinite iteration of functors as an extensional reflection
+  author: Paul Taylor
+  permalink: /ct/abstracts/paul-taylor/
+  source_file: taylor_paul.tex
+- slug: giacomo-tendas
+  title: Isocartesian theories, accessible 2-categories, and free constructions
+  author: Giacomo Tendas
+  permalink: /ct/abstracts/giacomo-tendas/
+  source_file: tendas.tex
+- slug: christopher-townsend
+  title: Why we should pay more attention to Blass’ theorem
+  author: Christopher Townsend
+  permalink: /ct/abstracts/christopher-townsend/
+  source_file: townsend.tex
+- slug: davide-trotta
+  title: Advances in the Unification of Localic and Realizability Toposes
+  author: Davide Trotta
+  permalink: /ct/abstracts/davide-trotta/
+  source_file: trotta.tex
+- slug: jean-baptiste-vienney
+  title: Relative differential categories, differential clones and Fermat theories
+  author: Jean-Baptiste Vienney
+  permalink: /ct/abstracts/jean-baptiste-vienney/
+  source_file: vienney.tex
+- slug: victoria-vollmer
+  title: On the Category of Graded Monads
+  author: Victoria Vollmer
+  permalink: /ct/abstracts/victoria-vollmer/
+  source_file: vollmer.tex
+- slug: geoff-vooys
+  title: Towards Tangent Structures for Orbifolds by Way of Tangent Categories
+  author: Geoff Vooys
+  permalink: /ct/abstracts/geoff-vooys/
+  source_file: vooys.tex
+- slug: chelsea-walton
+  title: Venturing to the Boundary with Braided Module Categories
+  author: Chelsea Walton
+  permalink: /ct/abstracts/chelsea-walton/
+  source_file: walton.tex
+- slug: jonathan-weinberger
+  title: The ∞-category of ∞-categories in simplicial type theory
+  author: Jonathan Weinberger
+  permalink: /ct/abstracts/jonathan-weinberger/
+  source_file: weinberger.tex
+- slug: joshua-wrigley
+  title: Reconstructing the canonical extension in the stable setting
+  author: Joshua Wrigley
+  permalink: /ct/abstracts/joshua-wrigley/
+  source_file: wrigley.tex
+- slug: joão-j-xarez
+  title: Monotone-light factorizations, very-well-behaved epireflections and categories
+    of models of sketches
+  author: João J. Xarez
+  permalink: /ct/abstracts/joão-j-xarez/
+  source_file: xarez.tex
+- slug: lingyuan-ye
+  title: Craig Interpolation for Subgeometric Logics
+  author: Lingyuan Ye
+  permalink: /ct/abstracts/lingyuan-ye/
+  source_file: ye.tex
+- slug: dali-zangurashvili
+  title: Effective codescent morphisms in varieties of universal algebras with the
+    amalgamation property
+  author: Dali Zangurashvili
+  permalink: /ct/abstracts/dali-zangurashvili/
+  source_file: zangurashvili.tex
+- slug: noam-zeilberger
+  title: The free bifibration on a functor
+  author: Noam Zeilberger
+  permalink: /ct/abstracts/noam-zeilberger/
+  source_file: zeilberger.tex

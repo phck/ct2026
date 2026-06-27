@@ -1,0 +1,186 @@
+---
+layout: abstract
+title: "An Invitation to Geometric Type Theory"
+author: "Owen Lynch"
+slug: owen-lynch
+permalink: /ct/abstracts/owen-lynch/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">An Invitation to Geometric Type Theory</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Owen Lynch
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Joint work with:<span class="ltx_text ltx_font_medium"> David Jaz Myers</span></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Geometric Type Theory is a conjectured type theory that would provide an internal language for the 2-category of topoi <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">6</span>]</cite>. In this talk, we give a direct construction of a category with familes (CwF, <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>) permitting interpretation of such a type theory. This is inspired by a close reading of the Elephant <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite>; Johnstone defines a geometric theory over a fixed topos <math id="p2.m1" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math> to be a 2-functor <math id="p2.m2" class="ltx_Math" alttext="\mathcal{T}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒯</mi></math> from <math id="p2.m3" class="ltx_Math" alttext="(\mathsf{BTop}/\mathcal{S})^{\mathrm{op}}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi>𝖡𝖳𝗈𝗉</mi><mo>/</mo><mi class="ltx_font_mathcaligraphic">𝒮</mi></mrow><mo stretchy="false">)</mo></mrow><mi>op</mi></msup></math> to <math id="p2.m4" class="ltx_Math" alttext="\mathsf{Cat}" display="inline"><mi>𝖢𝖺𝗍</mi></math> that is built by applying a sequence of PIE limits to the object classifier <math id="p2.m5" class="ltx_Math" alttext="T_{0}(\mathcal{E})=\mathcal{E}" display="inline"><mrow><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi></mrow></math>. From this, we define a CwF:</p>
+</div>
+<div id="p3" class="ltx_para">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r"><span class="ltx_text ltx_font_bold">CwF sort</span></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column"><span class="ltx_text ltx_font_bold">Interpretation</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_r">Context <math id="m1" class="ltx_Math" alttext="\Gamma" display="inline"><mi mathvariant="normal">Γ</mi></math>
+</td>
+<td class="ltx_td ltx_align_left">Geometric theory <math id="m2" class="ltx_Math" alttext="\Gamma\colon\mathsf{Top}^{\mathrm{op}}\to\mathsf{Cat}" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>𝖳𝗈𝗉</mi><mi>op</mi></msup><mo stretchy="false">→</mo><mi>𝖢𝖺𝗍</mi></mrow></mrow></math>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_r">Substitution <math id="m3" class="ltx_Math" alttext="\Delta\vdash\gamma\colon\Gamma" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⊢</mo><mi>γ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi mathvariant="normal">Γ</mi></mrow></math>
+</td>
+<td class="ltx_td ltx_align_left">2-natural transformation <math id="m4" class="ltx_Math" alttext="\gamma\colon\Delta\Rightarrow\Gamma" display="inline"><mrow><mi>γ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Δ</mi><mo stretchy="false">⇒</mo><mi mathvariant="normal">Γ</mi></mrow></mrow></math>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_r">Type <math id="m5" class="ltx_Math" alttext="\Gamma\vdash A\,\mathsf{type}" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mrow><mi>A</mi><mo lspace="0.170em">⁢</mo><mi>𝗍𝗒𝗉𝖾</mi></mrow></mrow></math>
+</td>
+<td class="ltx_td ltx_align_left">Geometric theory over <math id="m6" class="ltx_Math" alttext="\Gamma" display="inline"><mi mathvariant="normal">Γ</mi></math>, that is <math id="m7" class="ltx_Math" alttext="A\colon\int\Gamma\to\mathsf{Cat}" display="inline"><mrow><mi>A</mi><mo lspace="0.278em" rspace="0.111em">:</mo><mrow><mrow><mo>∫</mo><mi mathvariant="normal">Γ</mi></mrow><mo stretchy="false">→</mo><mi>𝖢𝖺𝗍</mi></mrow></mrow></math>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_r">Term <math id="m8" class="ltx_Math" alttext="\Gamma\vdash a\colon A" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>a</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>A</mi></mrow></math>
+</td>
+<td class="ltx_td ltx_align_left">Natural section <math id="m9" class="ltx_Math" alttext="a(\mathcal{E},M)\in A(\mathcal{E},M)" display="inline"><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> for <math id="m10" class="ltx_Math" alttext="(\mathcal{E},M)\in\int\Gamma" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow><mo rspace="0.111em">∈</mo><mrow><mo>∫</mo><mi mathvariant="normal">Γ</mi></mrow></mrow></math>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Note that <math id="p4.m1" class="ltx_Math" alttext="\int\Gamma" display="inline"><mrow><mo>∫</mo><mi mathvariant="normal">Γ</mi></mrow></math> is equivalent to topoi sliced over the classifying topos for <math id="p4.m2" class="ltx_Math" alttext="\Gamma" display="inline"><mi mathvariant="normal">Γ</mi></math>, by representability of geometric theories. This CwF then supports a rich variety of type formers.</p>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p">There is a type <math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\Gamma\vdash\mathsf{Sort}\,\mathsf{type}" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mrow><mi>𝖲𝗈𝗋𝗍</mi><mo lspace="0.170em">⁢</mo><mi>𝗍𝗒𝗉𝖾</mi></mrow></mrow></math> that is is given semantics by the object classifier <math id="Thmtheorem1.p1.m2" class="ltx_Math" alttext="\int\Gamma\to\mathsf{Cat}" display="inline"><mrow><mrow><mo>∫</mo><mi mathvariant="normal">Γ</mi></mrow><mo stretchy="false">→</mo><mi>𝖢𝖺𝗍</mi></mrow></math> defined by <math id="Thmtheorem1.p1.m3" class="ltx_Math" alttext="(\mathcal{E},M)\mapsto\mathcal{E}" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">↦</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi></mrow></math>. Given <math id="Thmtheorem1.p1.m4" class="ltx_Math" alttext="\Gamma\vdash A\colon\mathsf{Sort}" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>A</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>𝖲𝗈𝗋𝗍</mi></mrow></math>, we have another type <math id="Thmtheorem1.p1.m5" class="ltx_Math" alttext="\Gamma\vdash\mathsf{Elt}\,A\,\mathsf{type}" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mrow><mi>𝖤𝗅𝗍</mi><mo lspace="0.170em">⁢</mo><mi>A</mi><mo lspace="0.170em">⁢</mo><mi>𝗍𝗒𝗉𝖾</mi></mrow></mrow></math> defined by <math id="Thmtheorem1.p1.m6" class="ltx_Math" alttext="(\mathcal{E},M)\mapsto\mathcal{E}(1,A(\mathcal{E},M))" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">↦</mo><mrow><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, so <math id="Thmtheorem1.p1.m7" class="ltx_Math" alttext="\mathsf{Sort}" display="inline"><mi>𝖲𝗈𝗋𝗍</mi></math> acts as a “universe of small types”. The object classifier <math id="Thmtheorem1.p1.m8" class="ltx_Math" alttext="\mathsf{Sort}" display="inline"><mi>𝖲𝗈𝗋𝗍</mi></math> serves a dual role: it helps us build up theories, but additionally when we work internally to <math id="Thmtheorem1.p1.m9" class="ltx_Math" alttext="\mathsf{Sort}" display="inline"><mi>𝖲𝗈𝗋𝗍</mi></math> in a fixed context <math id="Thmtheorem1.p1.m10" class="ltx_Math" alttext="\Gamma" display="inline"><mi mathvariant="normal">Γ</mi></math> we get the positive fragment of the internal language for the classifying topos for <math id="Thmtheorem1.p1.m11" class="ltx_Math" alttext="\Gamma" display="inline"><mi mathvariant="normal">Γ</mi></math>.</p>
+</div>
+</div>
+<div id="Thmtheorem2" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem2.p1" class="ltx_para">
+<p class="ltx_p">There is a “<math id="Thmtheorem2.p1.m1" class="ltx_Math" alttext="\Pi" display="inline"><mi mathvariant="normal">Π</mi></math>-type with small codomain” <math id="Thmtheorem2.p1.m2" class="ltx_math_unparsed" alttext="(x\colon A)\to B" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mi>B</mi></mrow></math> defined for <math id="Thmtheorem2.p1.m3" class="ltx_Math" alttext="\Gamma\vdash A\colon\mathsf{Sort}" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>A</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>𝖲𝗈𝗋𝗍</mi></mrow></math> and <math id="Thmtheorem2.p1.m4" class="ltx_Math" alttext="\Gamma,x\colon\mathsf{Elt}\,A\vdash B\,\mathsf{type}" display="inline"><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>,</mo><mi>x</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>𝖤𝗅𝗍</mi><mo lspace="0.170em">⁢</mo><mi>A</mi></mrow><mo>⊢</mo><mrow><mi>B</mi><mo lspace="0.170em">⁢</mo><mi>𝗍𝗒𝗉𝖾</mi></mrow></mrow></math>. The interpretation of <math id="Thmtheorem2.p1.m5" class="ltx_math_unparsed" alttext="(x\colon A)\to B" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mi>B</mi></mrow></math> on <math id="Thmtheorem2.p1.m6" class="ltx_Math" alttext="(\mathcal{E},M)\in\int\Gamma" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow><mo rspace="0.111em">∈</mo><mrow><mo>∫</mo><mi mathvariant="normal">Γ</mi></mrow></mrow></math> is given by interpreting <math id="Thmtheorem2.p1.m7" class="ltx_Math" alttext="B[x]" display="inline"><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></math> in the slice topos <math id="Thmtheorem2.p1.m8" class="ltx_Math" alttext="\mathcal{E}/A(\mathcal{E},M)" display="inline"><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>/</mo><mi>A</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math>, where <math id="Thmtheorem2.p1.m9" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> is the global element of <math id="Thmtheorem2.p1.m10" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> in <math id="Thmtheorem2.p1.m11" class="ltx_Math" alttext="\mathcal{E}/A(\mathcal{E},M)" display="inline"><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>/</mo><mi>A</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> given by the identity.</p>
+</div>
+</div>
+<div id="p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">We also have <math id="p5.m1" class="ltx_Math" alttext="\Sigma" display="inline"><mi mathvariant="normal">Σ</mi></math>-types, both globally and within the <math id="p5.m2" class="ltx_Math" alttext="\mathsf{Sort}" display="inline"><mi>𝖲𝗈𝗋𝗍</mi></math> universe.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">In fact, this construction scales beyond just topoi/geometric theories. From Garner and Lack <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite>, we know that various fragments of geometric logic correspond to sub 2-monads of <math id="p6.m1" class="ltx_Math" alttext="\mathsf{Psh}\colon\mathsf{Lex}\to\mathsf{Lex}" display="inline"><mrow><mi>𝖯𝗌𝗁</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>𝖫𝖾𝗑</mi><mo stretchy="false">→</mo><mi>𝖫𝖾𝗑</mi></mrow></mrow></math> given by completion under various classes of weighted colimits. Type theoretically, this corresponds to allowing different kinds of (strictly positive) type formers. For instance, regular logic corresponds to adding propositional truncation, with the elimination principle as given in the HoTT book <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>. Especially interesting for us is the setting of arithmetic universes <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">5</span>]</cite>, which interprets quotient inductive inductive types.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+Peter Dybjer.
+
+</span>
+<span class="ltx_bibblock">Internal type theory.
+
+</span>
+<span class="ltx_bibblock">In Stefano Berardi and Mario Coppo, editors, <span class="ltx_text ltx_font_italic">Types for
+Proofs and Programs</span>, pages 120–134, Berlin, Heidelberg, 1996.
+Springer.
+
+</span>
+<span class="ltx_bibblock"><a href="https://doi.org/10.1007/3-540-61780-9_66" title="" class="ltx_ref ltx_href"><span class="ltx_ref ltx_nolink ltx_path ltx_font_typewriter">doi:10.1007/3-540-61780-9_66</span></a>.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+Richard Garner and Stephen Lack.
+
+</span>
+<span class="ltx_bibblock">Lex colimits.
+
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_font_italic">Journal of Pure and Applied Algebra</span>, 216(6):1372–1396, June
+2012.
+
+</span>
+<span class="ltx_bibblock"><a href="https://doi.org/10.1016/j.jpaa.2012.01.003" title="" class="ltx_ref ltx_href"><span class="ltx_ref ltx_nolink ltx_path ltx_font_typewriter">doi:10.1016/j.jpaa.2012.01.003</span></a>.
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+P. T. Johnstone.
+
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_font_italic">Sketches of an Elephant: A Topos Theory Compendium</span>.
+
+</span>
+<span class="ltx_bibblock">Number 43 in Oxford Logic Guides. Oxford University Press, Oxford ;
+New York, 2002.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+The Univalent Foundations Project.
+
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_font_italic">Homotopy Type Theory: Univalent Foundations of
+Mathematics</span>.
+
+</span>
+<span class="ltx_bibblock">Institute of Advanced Study, 2013.
+
+</span>
+<span class="ltx_bibblock">URL: <a href="https://homotopytypetheory.org/book/" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://homotopytypetheory.org/book/</a>.
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+Steven Vickers.
+
+</span>
+<span class="ltx_bibblock">Sketches for arithmetic universes.
+
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_font_italic">Journal of Logic and Analysis</span>, 11(0), June 2019.
+
+</span>
+<span class="ltx_bibblock"><a href="https://doi.org/10.4115/jla.2019.11.FT4" title="" class="ltx_ref ltx_href"><span class="ltx_ref ltx_nolink ltx_path ltx_font_typewriter">doi:10.4115/jla.2019.11.FT4</span></a>.
+
+</span>
+</li>
+<li id="bib.bib6" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock">
+Johannes Schipp von Branitz and Ulrik Buchholtz.
+
+</span>
+<span class="ltx_bibblock">Propositional Geometric Type Theory, April 2025.
+
+</span>
+<span class="ltx_bibblock">URL:
+<a href="https://hott-uf.github.io/2025/slides/Schipp_von_Branitz.pdf" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://hott-uf.github.io/2025/slides/Schipp_von_Branitz.pdf</a>.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

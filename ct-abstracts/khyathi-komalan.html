@@ -1,0 +1,89 @@
+---
+layout: abstract
+title: "Double Categories for Operator Algebras and AQFT"
+author: "Khyathi Komalan"
+slug: khyathi-komalan
+permalink: /ct/abstracts/khyathi-komalan/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Double Categories for Operator Algebras and AQFT</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Khyathi Komalan
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Algebraic quantum field theory (AQFT), introduced by Rudolf Haag and Daniel Kastler, provides a framework for assigning an algebra of observables to regions of spacetime <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>. Categorically, an AQFT may be described as a covariant functor from a category of spacetime regions — typically open, bounded regions of Minkowski spacetime with inclusions as morphisms — into a category of operator algebras <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite>,</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\mathcal{A}:\text{Regions}\longrightarrow\text{Corresponding Operator Algebras}," display="block"><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mtext>Regions</mtext><mo stretchy="false">⟶</mo><mtext>Corresponding Operator Algebras</mtext></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">satisfying certain properties known as the Haag-Kastler axioms.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Fixing a region, one restricts to the assignment <math id="p2.m1" class="ltx_Math" alttext="\mathcal{O}\mapsto\mathcal{A}(\mathcal{O})" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo stretchy="false">↦</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, i.e. an AQFT net. In this way, the 1-functorial formulation makes precise how geometric inclusions and operator-algebraic structure interact.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">However, thinking of an AQFT as a functor hides a second kind of movement. Namely, what happens when — rather than enlarging a region by an inclusion <math id="p3.m1" class="ltx_Math" alttext="U\subseteq V" display="inline"><mrow><mi>U</mi><mo>⊆</mo><mi>V</mi></mrow></math> — we want to move the same region to a new place, by identifying <math id="p3.m2" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> with a geometrically equivalent copy sitting inside <math id="p3.m3" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> via an embedding <math id="p3.m4" class="ltx_Math" alttext="h\colon U\hookrightarrow V" display="inline"><mrow><mi>h</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">↪</mo><mi>V</mi></mrow></mrow></math>? For this, we turn to double categories.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">To construct an AQFT as a double functor, we introduce a double category of regions in Minkowski spacetime, with inclusions as vertical maps and admissible embeddings as horizontal maps, and take as codomain Juan Orendain’s globularly generated double category of von Neumann algebras (a special class of operator algebras on Hilbert spaces), whose vertical maps are <math id="p4.m1" class="ltx_Math" alttext="*" display="inline"><mo>∗</mo></math>-homomorphisms and whose horizontal maps are bimodules <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite>. In recent work, we show that such a double functor can be defined, reformulate the Haag-Kastler axioms in this framework, and provide examples of the construction <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">In addition to this double-functorial formulation of AQFT, we discuss ongoing progress toward incorporating the von Neumann type classification into this framework. Type I algebras admit nonzero minimal projections, type II admit nonzero finite projections but no minimal ones, and type III admit no nonzero finite projections <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">5</span>]</cite>. Building on Penneys’ 2-categorical framework for tracial von Neumann algebras <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">6</span>]</cite>, we outline a tracial/semifinite refinement of the codomain designed for type I/type II phenomena. We also indicate how the type III case suggests a further refinement incorporating modular-theoretic structure, which we plan to develop in subsequent work.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+R. Haag and D. Kastler, <em class="ltx_emph ltx_font_italic">An algebraic approach to quantum field theory</em>, J. Math. Phys. 5 (1964), no. 7, 848–861.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+H. Halvorson and M. Müger, <em class="ltx_emph ltx_font_italic">Algebraic Quantum Field Theory</em>, arXiv:math-ph/0602036 [math-ph] (2006).
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+J. Orendain, <em class="ltx_emph ltx_font_italic">Free Globularly Generated Double Categories II: The Canonical Double Projection</em>, Cahiers Topol. Géom. Différ. Catég. LXII (2021), no. 3, 243–302.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+K. Komalan, <em class="ltx_emph ltx_font_italic">Double Categorical Approaches to AQFT I: Axiomatic Setup</em>, arXiv:2601.07807 [math.CT] (2026).
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+J. Sorce, <em class="ltx_emph ltx_font_italic">Notes on the type classification of von Neumann algebras</em>, Rev. Math. Phys. <span class="ltx_text ltx_font_bold">36</span> (2023), no. 2. doi: 10.1142/S0129055X24300024.
+
+</span>
+</li>
+<li id="bib.bib6" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock">
+D. Penneys, <em class="ltx_emph ltx_font_italic">The 2-category of tracial von Neumann algebras</em>, mini-course notes (2017).
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

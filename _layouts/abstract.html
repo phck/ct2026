@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/abstract.css' | relative_url }}">
+
+<div class="abstract-container">
+    {% include abstract_meta.html %}
+    {{ content }}
+    {% if page.conference == 'dv60' %}
+    <p style="margin-top: 2rem;"><a href="{{ '/dv60/#schedule' | relative_url }}">&larr; Back to schedule</a></p>
+    {% else %}
+    <p style="margin-top: 2rem;"><a href="{{ '/ct/program/' | relative_url }}">&larr; Back to program</a></p>
+    {% endif %}
+</div>

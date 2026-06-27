@@ -1,0 +1,14 @@
+---
+layout: page-ct
+title: "CT2026 Abstracts"
+permalink: /ct/abstracts/
+---
+
+<ul style="list-style: none; padding: 0;">
+{% for abstract in site.data.abstracts %}
+  <li style="margin-bottom: 0.4rem;">
+    {{ abstract.author }}
+    &bull; <a href="{{ abstract.permalink | relative_url }}">{{ abstract.title }}</a>
+  </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,59 @@
+---
+layout: abstract
+title: "Coalgebraic-modal extensions of doctrines"
+author: "José Siqueira"
+slug: josé-siqueira
+permalink: /ct/abstracts/josé-siqueira/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Coalgebraic-modal extensions of doctrines</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">José Siqueira
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Joint work with:<span class="ltx_text ltx_font_medium"> David Jaz Myers (work in progress)</span></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The modelling of phenomena is an iterative process; one’s understanding of something and the very scope of interest evolves over time. This poses a challenge to logicians: if you settle on a specific logic to describe an object, you may soon find it inappropriate.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">This is notably the case in the study of <em class="ltx_emph ltx_font_italic">systems</em>. On one hand, the language itself may need to be expanded if new features and behaviours are to be studied (e.g., add <em class="ltx_emph ltx_font_italic">modalities</em> to form new predicates), and on another hand you may wish to change the flavour of system under consideration (therefore changing the logical <em class="ltx_emph ltx_font_italic">contexts</em> and the underlying type theory). Often, both procedures are necessary. For example, one may wish to go from having Boolean predicates about machine states to having <em class="ltx_emph ltx_font_italic">temporal</em> predicates about <em class="ltx_emph ltx_font_italic">streams</em> of states.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">This talk will address the following main question: when is one procedure compatible with the other in such a way that our starting logic can be “upgraded" to a modal one on the new type of system? More formally, given a basic hyperdoctrine <math id="p4.m1" class="ltx_Math" alttext="P\colon\mathcal{C}^{\textbf{op}}\to\mathcal{D}" display="inline"><mrow><mi>P</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">𝒞</mi><mtext class="ltx_mathvariant_bold">op</mtext></msup><mo stretchy="false">→</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow></mrow></math>, a comonad <math id="p4.m2" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> on <math id="p4.m3" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math>, and a monad <math id="p4.m4" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> on <math id="p4.m5" class="ltx_Math" alttext="\mathcal{D}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒟</mi></math>, we are concerned with determining the lax monad morphisms <math id="p4.m6" class="ltx_Math" alttext="F^{\textbf{op}}\to L" display="inline"><mrow><msup><mi>F</mi><mtext class="ltx_mathvariant_bold">op</mtext></msup><mo stretchy="false">→</mo><mi>L</mi></mrow></math> with underlying <math id="p4.m7" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math>-morphism <math id="p4.m8" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> for which the induced map of Eilenberg-Moore categories is again a hyperdoctrine.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">This is best studied by working with double categories instead, as (regular) hyperdoctrines can be equivalently described as certain symmetric monoidal double pseudofunctors <math id="p5.m1" class="ltx_Math" alttext="\mathbb{S}{pan}(\mathcal{C})^{\textbf{op}}\to\mathbb{Q}{t}(\mathcal{D})" display="inline"><mrow><mrow><mi>𝕊</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo stretchy="false">)</mo></mrow><mtext class="ltx_mathvariant_bold">op</mtext></msup></mrow><mo stretchy="false">→</mo><mrow><mi>ℚ</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>, and the flavours of systems themselves can be expressed usefully in double-categorical language <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite>. In this light, we will introduce a 2-category <math id="p5.m2" class="ltx_Math" alttext="\mathcal{D}{oct}" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>t</mi></mrow></math> of double pseudofunctors between cartesian double categories and consider its Eilenberg-Moore objects. We will discuss when the logical extension scenarios we are interested in correspond to monoidal pseudomonads in <math id="p5.m3" class="ltx_Math" alttext="\mathcal{D}{oct}" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>t</mi></mrow></math>, so that their Eilenberg-Moore objects provide the desired coalgebraic-modal extensions of the starting logic. If time permits, I will also comment on how this approach relates to traditional coalgebraic modal logic <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite>.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+J. Siqueira, <em class="ltx_emph ltx_font_italic">Double-functorial representation of regular monoidal structures</em>, arXiv:2508.06637, 2025.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+Sophie Libkind, David Jaz Myers, Towards a double operadic theory of systems, arXiv:2505.18329, 2025
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+Clemens Kupke, Dirk Pattinson, Coalgebraic semantics of modal logics: An overview, Theoretical Computer Science, Volume 412, Issue 38, pp. 5070–5094, 2011.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

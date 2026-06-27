@@ -1,0 +1,540 @@
+---
+layout: abstract
+title: "Exponentiable morphisms for a clan"
+author: "Joseph Hua"
+slug: joseph-hua
+permalink: /ct/abstracts/joseph-hua/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Exponentiable morphisms for a clan</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Joseph Hua
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Joint work with:<span class="ltx_text ltx_font_medium"> Reid Barton</span></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Many categories, such as <math id="p2.m1" class="ltx_Math" alttext="\mathrm{Top}" display="inline"><mi>Top</mi></math> and <math id="p2.m2" class="ltx_Math" alttext="\mathrm{Cat}" display="inline"><mi>Cat</mi></math>,
+are not locally Cartesian closed,
+but still have certain exponentiable morphisms
+<cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>, <span class="ltx_ref ltx_ref_self">2</span>]</cite>.
+We propose a more fine-grained condition of being exponentiable
+relative to a <em class="ltx_emph ltx_font_italic">clan</em> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">5</span>]</cite>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">A <em class="ltx_emph ltx_font_italic">clan</em> <math id="p3.m1" class="ltx_Math" alttext="(\mathcal{C},\mathcal{R})" display="inline"><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo stretchy="false">)</mo></mrow></math> consists of a
+category <math id="p3.m2" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math> with a class of maps <math id="p3.m3" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>
+whose members are called <em class="ltx_emph ltx_font_italic"><math id="p3.m4" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>-maps</em>,
+such that pullbacks of <math id="p3.m5" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>-maps along all morphisms exist and are <math id="p3.m6" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>-maps,
+all isomorphisms are in <math id="p3.m7" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>,
+and <math id="p3.m8" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math> is closed under composition.
+Modifying the original definition in <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">5</span>]</cite>,
+we do not require that <math id="p3.m9" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math> has a terminal object,
+nor that maps to the terminal object are <math id="p3.m10" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>-maps.
+Following <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">5</span>]</cite>,
+we use <math id="p3.m11" class="ltx_Math" alttext="\mathcal{R}(X)" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></math> to denote the full subcategory of the slice <math id="p3.m12" class="ltx_Math" alttext="\mathcal{C}/X" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>/</mo><mi>X</mi></mrow></math>
+consisting of objects whose underlying map is in <math id="p3.m13" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Fix a clan <math id="p4.m1" class="ltx_Math" alttext="(\mathcal{C},\mathcal{R})" display="inline"><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo stretchy="false">)</mo></mrow></math> and <math id="p4.m2" class="ltx_Math" alttext="f:Y\to X" display="inline"><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>Y</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></mrow></math> a morphism in <math id="p4.m3" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math> with all pullbacks,
+and such that for any pullback <math id="p4.m4" class="ltx_Math" alttext="f^{\prime}:Y^{\prime}\to X^{\prime}" display="inline"><mrow><msup><mi>f</mi><mo>′</mo></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>Y</mi><mo>′</mo></msup><mo stretchy="false">→</mo><msup><mi>X</mi><mo>′</mo></msup></mrow></mrow></math> of <math id="p4.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>,
+the restricted pullback functor
+<math id="p4.m6" class="ltx_Math" alttext="(f^{\prime})^{*}:\mathcal{R}(X^{\prime})\to\mathcal{R}(Y^{\prime})" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo>∗</mo></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>Y</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>
+has a right adjoint <math id="p4.m7" class="ltx_Math" alttext="f^{\prime}_{*}:\mathcal{R}(Y^{\prime})\to\mathcal{R}(X^{\prime})" display="inline"><mrow><msubsup><mi>f</mi><mo>∗</mo><mo>′</mo></msubsup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>Y</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>.
+We say the <em class="ltx_emph ltx_font_italic">Beck–Chevalley condition holds at <math id="p4.m8" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math></em>
+if every pullback of <math id="p4.m9" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> induces a canonical isomorphism:</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\leavevmode\hbox to61.08pt{\vbox to49.52pt{\pgfpicture\makeatletter\hbox{%
+\hskip 30.62633pt\lower-24.80814pt\hbox to0.0pt{\pgfsys@beginscope%
+\pgfsys@invoke{ }\definecolor{pgfstrokecolor}{rgb}{0,0,0}%
+\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }\pgfsys@color@rgb@fill{0}{0}%
+{0}\pgfsys@invoke{ }\pgfsys@setlinewidth{0.4pt}\pgfsys@invoke{ }\nullfont\hbox
+to%
+0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }{}{}{}{{}}\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{\offinterlineskip{}{}{{{}}{{}}{{}}{{}}}{{{%
+}}}{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-30.45049pt}{-24.7083pt}\pgfsys@invoke{ }\hbox{\vbox{\halign{%
+\pgf@matrix@init@row\pgf@matrix@step@column{\pgf@matrix@startcell#%
+\pgf@matrix@endcell}&amp;#\pgf@matrix@padding&amp;&amp;\pgf@matrix@step@column{%
+\pgf@matrix@startcell#\pgf@matrix@endcell}&amp;#\pgf@matrix@padding\cr\hfil\hskip 9%
+.08943pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}}\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-4.78389pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{rgb%
+}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${Y^{\prime}}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}}}&amp;\hskip 9.08943pt\hfil&amp;%
+\hfil\hskip 32.3194pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}}\hbox{\hbox%
+{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-4.01389pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{rgb%
+}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${Y}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}&amp;\hskip 8.31943pt\hfil\cr%
+\vskip 18.00005pt\cr\hfil\hskip 9.61024pt\hbox{{\pgfsys@beginscope%
+\pgfsys@invoke{ }{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-5.3047pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{rgb}%
+{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${X^{\prime}}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}&amp;\hskip 9.61024pt\hfil&amp;%
+\hfil\hskip 32.84023pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}}\hbox{%
+\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-4.53471pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{rgb%
+}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${X}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}&amp;\hskip 8.84026pt\hfil\cr}%
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}{{{{}}}{{}}{{}}{{}}{{}}%
+}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope%
+\pgfsys@invoke{ }\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{{
+{\pgfsys@beginscope
+\pgfsys@setdash{}{0.0pt}\pgfsys@roundcap\pgfsys@roundjoin{}
+{}{}{}
+{}{}{}
+\pgfsys@moveto{-2.07988pt}{2.39986pt}\pgfsys@curveto{-1.69989pt}{0.95992pt}{-0%
+.85313pt}{0.27998pt}{0.0pt}{0.0pt}\pgfsys@curveto{-0.85313pt}{-0.27998pt}{-1.6%
+9989pt}{-0.95992pt}{-2.07988pt}{-2.39986pt}\pgfsys@stroke\pgfsys@endscope}}
+}{}{}{{}}{}{}{{}}\pgfsys@moveto{-11.55081pt}{11.50003pt}\pgfsys@lineto{12.6908%
+4pt}{11.50003pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}%
+{}{{}}{{{}}{{{}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0%
+.0}{0.0}{1.0}{12.89082pt}{11.50003pt}\pgfsys@invoke{ }\pgfsys@invoke{     %
+\lxSVG@closescope  }\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}%
+\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-1.42062pt}{13.8528pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}%
+{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{s^{\prime}%
+}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope%
+\pgfsys@invoke{ }\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{}{}{}{{}}{%
+}{}{{}}\pgfsys@moveto{-20.84024pt}{5.14032pt}\pgfsys@lineto{-20.84024pt}{-12.0%
+5977pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}{}{{}}{{{%
+}}{{{}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{0.0}{-1.0}{1.0}%
+{0.0}{-20.84024pt}{-12.25975pt}\pgfsys@invoke{ }\pgfsys@invoke{     %
+\lxSVG@closescope  }\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}%
+\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}}}{{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-28.47356pt}{-5.96526pt}\pgfsys@invoke{ }\hbox{{\definecolor{%
+pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{f^{\prime}%
+}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}\pgfsys@beginscope\pgfsys@invoke{ }%
+\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-13.40973pt}{-0.21553pt}\pgfsys@invoke{ }\hbox{{\definecolor{%
+pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${\scalebox{1.5}{$%
+\lrcorner$}}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope%
+\pgfsys@invoke{ }\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{}{}{}{{}}{%
+}{}{{}}\pgfsys@moveto{21.61023pt}{5.14032pt}\pgfsys@lineto{21.61023pt}{-13.615%
+31pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}{}{{}}{{{}}%
+{{{}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{0.0}{-1.0}{1.0}{0%
+.0}{21.61023pt}{-13.81529pt}\pgfsys@invoke{ }\pgfsys@invoke{     %
+\lxSVG@closescope  }\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}%
+\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{23.963pt}{-6.18747pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{%
+rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{f}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope%
+\pgfsys@invoke{ }\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{}{}{}{{}}{%
+}{}{{}}\pgfsys@moveto{-11.03pt}{-22.2083pt}\pgfsys@lineto{12.17001pt}{-22.2083%
+pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}{}{{}}{{{}}{{%
+{}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1.0}%
+{12.37pt}{-22.2083pt}\pgfsys@invoke{ }\pgfsys@invoke{     \lxSVG@closescope  }%
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-0.87064pt}{-19.85553pt}\pgfsys@invoke{ }\hbox{{\definecolor{%
+pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{s}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{}{}\hss}%
+\pgfsys@discardpath\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope\hss}}%
+\lxSVG@closescope\endpgfpicture}}\quad\implies\quad\leavevmode\hbox to91.18pt{%
+\vbox to54.52pt{\pgfpicture\makeatletter\hbox{\hskip 45.5894pt\lower-27.30814%
+pt\hbox to0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }\definecolor{pgfstrokecolor%
+}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\pgfsys@setlinewidth{0.4pt}%
+\pgfsys@invoke{ }\nullfont\hbox to0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }{}{%
+}{}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{\offinterlineskip{}{}{%
+{{}}{{}}{{}}{{}}}{{{}}}{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-45.5894pt}{-27.2083pt}\pgfsys@invoke{ }\hbox{\vbox{\halign{%
+\pgf@matrix@init@row\pgf@matrix@step@column{\pgf@matrix@startcell#%
+\pgf@matrix@endcell}&amp;#\pgf@matrix@padding&amp;&amp;\pgf@matrix@step@column{%
+\pgf@matrix@startcell#\pgf@matrix@endcell}&amp;#\pgf@matrix@padding\cr\hfil\hskip 1%
+6.65889pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}}\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-12.35335pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{%
+rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${\mathcal{R}(Y^{\prime}%
+)}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}}}&amp;\hskip 16.65889pt\hfil&amp;%
+\hfil\hskip 39.88885pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}}\hbox{%
+\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-11.58334pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{%
+rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${\mathcal{R}(Y)}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}&amp;\hskip 15.88889pt\hfil\cr%
+\vskip 18.00005pt\cr\hfil\hskip 17.1797pt\hbox{{\pgfsys@beginscope%
+\pgfsys@invoke{ }{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-12.87416pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{%
+rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${\mathcal{R}(X^{\prime}%
+)}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}&amp;\hskip 17.1797pt\hfil&amp;%
+\hfil\hskip 40.40968pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}}\hbox{%
+\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-12.10417pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{%
+rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${\mathcal{R}(X)}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}&amp;\hskip 16.40971pt\hfil\cr%
+}}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}{{{{}}}{{}}{{}}{{}}{{}%
+}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope%
+\pgfsys@invoke{ }\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{}{}{}{{}}{%
+}{}{{}}\pgfsys@moveto{-28.4097pt}{2.64032pt}\pgfsys@lineto{-28.4097pt}{-14.559%
+77pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}{}{{}}{{{}}%
+{{{}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{0.0}{-1.0}{1.0}{0%
+.0}{-28.4097pt}{-14.75975pt}\pgfsys@invoke{ }\pgfsys@invoke{     %
+\lxSVG@closescope  }\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}%
+\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}}}{{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-36.04301pt}{-8.46526pt}\pgfsys@invoke{ }\hbox{{\definecolor{%
+pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{f^{\prime}%
+_{*}}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}\pgfsys@beginscope\pgfsys@invoke{ }%
+\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-3.36095pt}{-9.10413pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor%
+}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${\cong}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope%
+\pgfsys@invoke{ }\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{}{}{}{{}}{%
+}{}{{}}\pgfsys@moveto{13.0908pt}{11.50003pt}\pgfsys@lineto{-11.15085pt}{11.500%
+03pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}{}{{}}{{{}}%
+{{{}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{-1.0}{0.0}{0.0}{-%
+1.0}{-11.35083pt}{11.50003pt}\pgfsys@invoke{ }\pgfsys@invoke{     %
+\lxSVG@closescope  }\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}%
+\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-5.14284pt}{15.6028pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}%
+{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{(s^{\prime%
+})^{*}}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope%
+\pgfsys@invoke{ }\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{}{}{}{{}}{%
+}{}{{}}\pgfsys@moveto{29.17969pt}{2.64032pt}\pgfsys@lineto{29.17969pt}{-15.448%
+62pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}{}{{}}{{{}}%
+{{{}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{0.0}{-1.0}{1.0}{0%
+.0}{29.17969pt}{-15.6486pt}\pgfsys@invoke{ }\pgfsys@invoke{     %
+\lxSVG@closescope  }\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}%
+\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{31.53246pt}{-8.35413pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor%
+}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{f_{*}}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope%
+\pgfsys@invoke{ }\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{}{}{}{{}}{%
+}{}{{}}\pgfsys@moveto{12.56998pt}{-24.7083pt}\pgfsys@lineto{-10.63004pt}{-24.7%
+083pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}{}{{}}{{{}%
+}{{{}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{-1.0}{0.0}{0.0}{%
+-1.0}{-10.83002pt}{-24.7083pt}\pgfsys@invoke{ }\pgfsys@invoke{     %
+\lxSVG@closescope  }\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}%
+\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-1.87064pt}{-22.35553pt}\pgfsys@invoke{ }\hbox{{\definecolor{%
+pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{s^{*}}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{}{}\hss}%
+\pgfsys@discardpath\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope\hss}}%
+\lxSVG@closescope\endpgfpicture}}" display="block"><mrow><mtext><svg class="ltx_picture" height="68.52" overflow="visible" version="1.1" width="84.51"><g fill="#000000" stroke="#000000" transform="translate(0,68.52) matrix(1 0 0 -1 0 0) translate(42.38,0) translate(0,34.33)"><g stroke-width="0.4pt" transform="matrix(1.0 0.0 0.0 1.0 -42.13 -34.19)"><g class="ltx_tikzmatrix" transform="matrix(1 0 0 -1 0 57.51)"><g class="ltx_tikzmatrix_row" transform="matrix(1 0 0 1 0 16.67)"><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 0.72 0) translate(12.58,0) matrix(1.0 0.0 0.0 1.0 -6.62 0)"><foreignObject height="11.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="13.24"><math class="ltx_Math" alttext="{Y^{\prime}}" display="inline"><msup><mi>Y</mi><mo>′</mo></msup></math></foreignObject></g><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 27.32 0) translate(44.72,0) matrix(1.0 0.0 0.0 1.0 -5.55 0)"><foreignObject height="9.46" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="11.11"><math class="ltx_Math" alttext="{Y}" display="inline"><mi>Y</mi></math></foreignObject></g></g><g class="ltx_tikzmatrix_row" transform="matrix(1 0 0 1 0 63.31)"><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 0 0) translate(13.3,0) matrix(1.0 0.0 0.0 1.0 -7.34 0)"><foreignObject height="11.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="14.68"><math class="ltx_Math" alttext="{X^{\prime}}" display="inline"><msup><mi>X</mi><mo>′</mo></msup></math></foreignObject></g><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 26.6 0) translate(45.44,0) matrix(1.0 0.0 0.0 1.0 -6.27 0)"><foreignObject height="9.46" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="12.55"><math class="ltx_Math" alttext="{X}" display="inline"><mi>X</mi></math></foreignObject></g></g></g></g><g stroke-width="0.39998pt"><path d="M -15.98 15.91 L 17.56 15.91" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.0 0.0 0.0 1.0 17.84 15.91)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -1.97 19.17)"><foreignObject height="5.71" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.06"><math class="ltx_Math" alttext="\scriptstyle{s^{\prime}}" display="inline"><msup><mi mathsize="70%">s</mi><mo mathsize="71%">′</mo></msup></math></foreignObject></g></g><g stroke-width="0.39998pt"><path d="M -28.84 7.11 L -28.84 -16.69" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.0 -1.0 1.0 0.0 -28.84 -16.96)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -39.4 -8.25)"><foreignObject height="10.15" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.31"><math class="ltx_Math" alttext="\scriptstyle{f^{\prime}}" display="inline"><msup><mi mathsize="70%">f</mi><mo mathsize="71%">′</mo></msup></math></foreignObject></g></g><g fill="#000000" stroke="#000000" stroke-width="0.39998pt" transform="matrix(1.0 0.0 0.0 1.0 -18.56 -0.3)"><foreignObject height="7.84" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="20.76">
+<div class="ltx_inline-block ltx_markedasmath ltx_transformed_outer" style="width:7.5pt;height:5.7pt;vertical-align:-0.0pt;"><span class="ltx_transformed_inner" style="transform:translate(1.3pt,-0.9pt) scale(1.5,1.5) ;">
+<p class="ltx_p"><math class="ltx_Math" alttext="\lrcorner" display="inline"><mi mathvariant="normal">⌟</mi></math></p>
+</span></div></foreignObject></g><g stroke-width="0.39998pt"><path d="M 29.9 7.11 L 29.9 -18.84" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.0 -1.0 1.0 0.0 29.9 -19.12)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 33.16 -8.56)"><foreignObject height="8.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="5.78"><math class="ltx_Math" alttext="\scriptstyle{f}" display="inline"><mi mathsize="70%">f</mi></math></foreignObject></g></g><g stroke-width="0.39998pt"><path d="M -15.26 -30.73 L 16.84 -30.73" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.0 0.0 0.0 1.0 17.12 -30.73)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -1.2 -27.47)"><foreignObject height="4.17" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="4.54"><math class="ltx_Math" alttext="\scriptstyle{s}" display="inline"><mi mathsize="70%">s</mi></math></foreignObject></g></g></g></svg></mtext><mspace width="1em"></mspace><mo stretchy="false">⟹</mo><mspace width="1em"></mspace><mtext><svg class="ltx_picture" height="75.43" overflow="visible" version="1.1" width="126.16"><g fill="#000000" stroke="#000000" transform="translate(0,75.43) matrix(1 0 0 -1 0 0) translate(63.08,0) translate(0,37.79)"><g stroke-width="0.4pt" transform="matrix(1.0 0.0 0.0 1.0 -63.08 -37.65)"><g class="ltx_tikzmatrix" transform="matrix(1 0 0 -1 0 62.705)"><g class="ltx_tikzmatrix_row" transform="matrix(1 0 0 1 0 16.67)"><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 0.72 0) translate(23.05,0) matrix(1.0 0.0 0.0 1.0 -17.09 0)"><foreignObject height="15.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="34.19"><math class="ltx_Math" alttext="{\mathcal{R}(Y^{\prime})}" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>Y</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></math></foreignObject></g><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 48.26 0) translate(55.19,0) matrix(1.0 0.0 0.0 1.0 -16.03 0)"><foreignObject height="13.84" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="32.06"><math class="ltx_Math" alttext="{\mathcal{R}(Y)}" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math></foreignObject></g></g><g class="ltx_tikzmatrix_row" transform="matrix(1 0 0 1 0 66.77)"><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 0 0) translate(23.77,0) matrix(1.0 0.0 0.0 1.0 -17.81 0)"><foreignObject height="15.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="35.63"><math class="ltx_Math" alttext="{\mathcal{R}(X^{\prime})}" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></math></foreignObject></g><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 47.54 0) translate(55.91,0) matrix(1.0 0.0 0.0 1.0 -16.75 0)"><foreignObject height="13.84" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="33.5"><math class="ltx_Math" alttext="{\mathcal{R}(X)}" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></math></foreignObject></g></g></g></g><g stroke-width="0.39998pt"><path d="M -39.31 3.65 L -39.31 -20.15" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.0 -1.0 1.0 0.0 -39.31 -20.42)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -49.87 -11.71)"><foreignObject height="10.15" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.31"><math class="ltx_Math" alttext="\scriptstyle{f^{\prime}_{*}}" display="inline"><msubsup><mi mathsize="70%">f</mi><mo mathsize="71%">∗</mo><mo mathsize="71%">′</mo></msubsup></math></foreignObject></g></g><g fill="#000000" stroke="#000000" stroke-width="0.39998pt" transform="matrix(1.0 0.0 0.0 1.0 -4.65 -12.6)"><foreignObject height="12.45" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="10.38"><math class="ltx_Math" alttext="{\cong}" display="inline"><mo>≅</mo></math></foreignObject></g><g stroke-width="0.39998pt"><path d="M 18.11 15.91 L -15.43 15.91" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1.0 0.0 0.0 -1.0 -15.71 15.91)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -7.12 21.59)"><foreignObject height="10.97" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="16.36"><math class="ltx_Math" alttext="\scriptstyle{(s^{\prime})^{*}}" display="inline"><msup><mrow><mo maxsize="70%" minsize="70%">(</mo><msup><mi mathsize="70%">s</mi><mo mathsize="71%">′</mo></msup><mo maxsize="70%" minsize="70%">)</mo></mrow><mo mathsize="71%">∗</mo></msup></math></foreignObject></g></g><g stroke-width="0.39998pt"><path d="M 40.38 3.65 L 40.38 -21.38" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.0 -1.0 1.0 0.0 40.38 -21.65)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 43.63 -11.56)"><foreignObject height="8.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="8.55"><math class="ltx_Math" alttext="\scriptstyle{f_{*}}" display="inline"><msub><mi mathsize="70%">f</mi><mo mathsize="71%">∗</mo></msub></math></foreignObject></g></g><g stroke-width="0.39998pt"><path d="M 17.39 -34.19 L -14.71 -34.19" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1.0 0.0 0.0 -1.0 -14.99 -34.19)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -2.59 -30.93)"><foreignObject height="5.46" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.31"><math class="ltx_Math" alttext="\scriptstyle{s^{*}}" display="inline"><msup><mi mathsize="70%">s</mi><mo mathsize="71%">∗</mo></msup></math></foreignObject></g></g></g></svg></mtext></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">We say the <em class="ltx_emph ltx_font_italic">partial right adjoint condition</em>
+holds at <math id="p4.m10" class="ltx_Math" alttext="f:Y\to X" display="inline"><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>Y</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></mrow></math> when
+there is a bijection of hom-sets</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\operatorname{\mathrm{Hom}}_{\mathcal{C}/Y}(f^{*}X^{\prime},A)\cong%
+\operatorname{\mathrm{Hom}}_{\mathcal{C}/X}(X^{\prime},f_{*}A)" display="block"><mrow><mrow><msub><mi>Hom</mi><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>/</mo><mi>Y</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>f</mi><mo>∗</mo></msup><mo>⁢</mo><msup><mi>X</mi><mo>′</mo></msup></mrow><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≅</mo><mrow><msub><mi>Hom</mi><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>/</mo><mi>X</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo>,</mo><mrow><msub><mi>f</mi><mo>∗</mo></msub><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">natural in <math id="p4.m11" class="ltx_Math" alttext="X^{\prime}\in(\mathcal{C}/X)^{\mathsf{op}}" display="inline"><mrow><msup><mi>X</mi><mo>′</mo></msup><mo>∈</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>/</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mi>𝗈𝗉</mi></msup></mrow></math> and <math id="p4.m12" class="ltx_Math" alttext="A\in\mathcal{R}(Y)" display="inline"><mrow><mi>A</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.
+Note that this is stronger than <math id="p4.m13" class="ltx_Math" alttext="f_{*}" display="inline"><msub><mi>f</mi><mo>∗</mo></msub></math>
+merely being right adjoint to the restricted functor <math id="p4.m14" class="ltx_Math" alttext="f^{*}:\mathcal{R}(X)\to\mathcal{R}(Y)" display="inline"><mrow><msup><mi>f</mi><mo>∗</mo></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Theorem 1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The following are equivalent.
+(<math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math>) The Beck–Chevalley condition holds at all pullbacks of <math id="Thmtheorem1.p1.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.
+(<math id="Thmtheorem1.p1.m3" class="ltx_Math" alttext="ii" display="inline"><mrow><mi>i</mi><mo>⁢</mo><mi>i</mi></mrow></math>) The partial right adjoint condition holds at all pullbacks of <math id="Thmtheorem1.p1.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.
+(<math id="Thmtheorem1.p1.m5" class="ltx_Math" alttext="iii" display="inline"><mrow><mi>i</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>i</mi></mrow></math>) The partial right adjoint condition holds at <math id="Thmtheorem1.p1.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>
+and the pushforward functor (in presheaves)
+<math id="Thmtheorem1.p1.m7" class="ltx_Math" alttext="\Pi_{f}:\widehat{\mathcal{C}}/Y\to\widehat{\mathcal{C}}/X" display="inline"><mrow><msub><mi mathvariant="normal">Π</mi><mi>f</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mover accent="true"><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>^</mo></mover><mo>/</mo><mi>Y</mi></mrow><mo stretchy="false">→</mo><mrow><mover accent="true"><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>^</mo></mover><mo>/</mo><mi>X</mi></mrow></mrow></mrow></math>
+preserves (Yoneda images of) <math id="Thmtheorem1.p1.m8" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>-maps.</span></p>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">The map <math id="p5.m1" class="ltx_Math" alttext="f:Y\to X" display="inline"><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>Y</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></mrow></math> is called <em class="ltx_emph ltx_font_italic"><math id="p5.m2" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>-exponentiable</em>
+if it satisfies the equivalent conditions in Theorem <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">1</span></span>.
+Note that <math id="p5.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> itself need not belong to <math id="p5.m4" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>.
+When <math id="p5.m5" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math> has finite limits,
+this notion is a special case of properness with respect to
+a fibration over <math id="p5.m6" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">6</span>]</cite>,
+namely the fibration corresponding to the indexed category <math id="p5.m7" class="ltx_Math" alttext="\mathcal{R}(-)" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">−</mo><mo stretchy="false">)</mo></mrow></mrow></math>.
+A prototypical example is <math id="p5.m8" class="ltx_Math" alttext="\mathcal{C}=\mathrm{Top}" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>=</mo><mi>Top</mi></mrow></math> and <math id="p5.m9" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math> the class of local homeomorphisms,
+so that <math id="p5.m10" class="ltx_Math" alttext="\mathcal{R}(X)\simeq\mathrm{Sh}(X)" display="inline"><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mi>Sh</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.
+Then the proper base change theorem <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite>
+says that proper maps are <math id="p5.m11" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>-exponentiable.
+An example of similar flavor: in <math id="p5.m12" class="ltx_Math" alttext="\mathcal{C}=\mathrm{Cat}" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>=</mo><mi>Cat</mi></mrow></math>,
+discrete fibrations are exponentiable with respect to
+the clan structure of discrete opfibrations (and vice versa).
+A different flavor of example is given by
+the category of simplicial sets with <math id="p5.m13" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math> the class of Kan fibrations:
+the <math id="p5.m14" class="ltx_Math" alttext="\mathcal{R}" display="inline"><mi class="ltx_font_mathcaligraphic">ℛ</mi></math>-exponentiable maps are exactly the <em class="ltx_emph ltx_font_italic">sharp maps</em> of Rezk <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+Niefield, S. Cartesianness: topological spaces, uniform spaces, and affine schemes. <span class="ltx_text ltx_font_italic">Journal Of Pure And Applied Algebra</span>. <span class="ltx_text ltx_font_bold">23</span>, 147-167 (1982).
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+Giraud, J. Méthode de la descente. (Société mathématique de France, 1964).
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+Stacks project authors, T. The Stacks project. (2025), <a href="https://stacks.math.columbia.edu" title="" class="ltx_ref ltx_href">stacks.math.columbia.edu</a>.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+Rezk, C. Fibrations and homotopy colimits of simplicial sheaves. <span class="ltx_text ltx_font_italic">ArXiv Preprint Math/9811038</span>. (1998)
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+Joyal, A. Notes on Clans and Tribes. (2017), <a href="https://arxiv.org/abs/1710.10238" title="" class="ltx_ref ltx_href">arXiv:1710.10238</a>
+
+</span>
+</li>
+<li id="bib.bib6" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock">
+Anel, M. &amp; Weinberger, J. Smooth and proper maps with respect to a fibration.
+<span class="ltx_text ltx_font_italic">MSCS special issue “Advances in Homotopy Type Theory”</span>. (2025)
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

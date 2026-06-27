@@ -1,0 +1,26 @@
+---
+layout: default
+title: "DV60 Abstracts"
+permalink: /dv60/abstracts/
+conference: dv60
+---
+
+<header class="header">
+    <div class="logo-container">
+        <img src="{{ '/assets/dv60-logo.svg' | relative_url }}" alt="DV60 Logo" class="logo-dv60">
+    </div>
+    <h1 class="main-title">{{ page.title }}</h1>
+</header>
+
+<main class="main-content">
+    <div class="section">
+        <ul style="list-style: none; padding: 0;">
+        {% for abstract in site.data["dv60-abstracts"] %}
+          <li style="margin-bottom: 0.4rem;">
+            {{ abstract.author }}
+            &bull; <a href="{{ abstract.permalink | relative_url }}">{{ abstract.title }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+    </div>
+</main>

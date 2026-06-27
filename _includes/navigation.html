@@ -13,3 +13,11 @@
             </ul>
         </details>
     </nav>
+    <noscript>
+        <nav class="nav-fallback" aria-label="Site navigation">
+            {%- assign nav_pages = site.pages | where: "nav_show", true | sort: "nav_order" -%}
+            {%- for nav_page in nav_pages -%}
+            <a href="{{ nav_page.url | relative_url }}">{{ nav_page.nav_title }}</a>
+            {%- endfor -%}
+        </nav>
+    </noscript>

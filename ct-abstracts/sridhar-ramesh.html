@@ -1,0 +1,69 @@
+---
+layout: abstract
+title: "Categorical structures for Gödel incompleteness and Löb’s theorem"
+author: "Sridhar Ramesh"
+slug: sridhar-ramesh
+permalink: /ct/abstracts/sridhar-ramesh/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Categorical structures for Gödel incompleteness and Löb’s theorem</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Sridhar Ramesh
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">In provability logic, a key principle is Löb’s theorem, stating that if the provability of <math id="p1.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> provably entails <math id="p1.m2" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>, then <math id="p1.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> itself is provable (in modal logic notation, <math id="p1.m4" class="ltx_Math" alttext="\Box P\vdash P" display="inline"><mrow><mrow><mi mathvariant="normal">□</mi><mo>⁢</mo><mi>P</mi></mrow><mo>⊢</mo><mi>P</mi></mrow></math> has as a consequence <math id="p1.m5" class="ltx_Math" alttext="\vdash P" display="inline"><mrow><mi></mi><mo>⊢</mo><mi>P</mi></mrow></math>). This was first discovered in the follow-up work on Gödel’s incompleteness theorems, with Gödel’s results viewable as a special case of Löb’s theorem. This same formal pattern of Löb’s theorem was later observed to also arise in several other seemingly unrelated contexts. For example, the formal pattern of Löb’s theorem is also of note in modal logic as corresponding to well-founded transitive Kripke frames. And the formal pattern of Löb’s theorem also describes certain fixed point constructions studied under the name of “guarded recursion” in programming language theory.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">In the author’s dissertation <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>, currently being prepared for publication, it is observed that a particularly simple class of category-theoretic structures serve as an abstract environment for deriving Löb’s theorem and its associated fixed point constructions, allowing for a vastly generalized and unified understanding of the scope of applicability of these, including all of the above contexts. These are the structures we call “introspective theories”.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Specifically, we define an “introspective theory” to be a category with finite limits <math id="p3.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> with an internal category with finite limits <math id="p3.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>, along with a natural transformation from the self-indexing of <math id="p3.m3" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> to <math id="p3.m4" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> (construed as contravariant functors from <math id="p3.m5" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> to the category of categories with finite limits).</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Remarkably, this simple structure is in itself enough to derive Löb’s theorem, as well as guarded recursion at both the term and type level. We also demonstrate how this abstraction offers a clean unification of the interpretation of the Gödel-Löb incompleteness theorems in traditional logic or via arithmetic universes a la Joyal (as in <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite>), along with the interpretation by Birkedal et al of guarded recursion in presheaves over well-founded orders (as in <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>), along with the distinct classical interpretation of the GL modal logic in well-founded transitive Kripke frames.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">This significantly extends the connection between Gödel’s incompleteness theorem and category theory observed by Lawvere in <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite>, by now giving a category-theoretic account of the the Gödel coding process itself. As this account is not tied to the specific context of natural number arithmetic, it also allows us to furthermore observe uncountable and uncomputable structures in which the Gödel incompleteness phenomena still arise.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">We also explore free instances of our structure, which turn out to admit a tractable explicit description. The free introspective theory is called in the author’s dissertation “the theory of geminal categories”, and there are a number of further illuminating relationships discovered between introspective theories and geminal categories.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+L. Birkedal and R. E. Mogelberg and J. Schwinghammer and K. Stovring, <em class="ltx_emph ltx_font_italic">First steps in synthetic guarded domain theory: Step-indexing in the topos of trees</em>, 2011 IEEE 26th Annual Symposium on Logic in Computer Science, 55–64.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+J. van Dijk and A. G. Oldenziel, <em class="ltx_emph ltx_font_italic">Gödel incompleteness through arithmetic universes after A. Joyal</em>, preprint <a href="https://arxiv.org/abs/2004.10482" title="" class="ltx_ref ltx_href">arXiv:2004.10482</a>, 2020.
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+F. W. Lawvere, <em class="ltx_emph ltx_font_italic">Diagonal arguments and cartesian closed categories</em>, Category theory, Homology Theory and their Applications II (1969), 134–145.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+S. Ramesh, <em class="ltx_emph ltx_font_italic">Introspective theories and geminal categories</em>, doctoral dissertation from the University of California, Berkeley, 2023.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

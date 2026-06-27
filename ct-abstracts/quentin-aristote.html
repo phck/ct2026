@@ -1,0 +1,145 @@
+---
+layout: abstract
+title: "Profunctorial algebras"
+author: "Quentin Aristote"
+slug: quentin-aristote
+permalink: /ct/abstracts/quentin-aristote/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Profunctorial algebras</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Quentin Aristote
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Joint work with:<span class="ltx_text ltx_font_medium"> Umberto Tarantino</span></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The aim of this talk is to present a <math id="p2.m1" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math>-dimensional version of
+Barr’s landmark <em class="ltx_emph ltx_font_italic">Relational algebras</em> paper <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>. In this paper,
+Barr first noticed that, viewing relations <math id="p2.m2" class="ltx_Math" alttext="R\subseteq X\times Y" display="inline"><mrow><mi>R</mi><mo>⊆</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></mrow></math> as spans of
+their projections <math id="p2.m3" class="ltx_Math" alttext="X\leftarrow R\rightarrow Y" display="inline"><mrow><mi>X</mi><mo stretchy="false">←</mo><mi>R</mi><mo stretchy="false">→</mo><mi>Y</mi></mrow></math>, there is a natural way to
+extend the action of a functor <math id="p2.m4" class="ltx_Math" alttext="F\colon\mathbf{Set}\to\mathbf{Set}" display="inline"><mrow><mi>F</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>𝐒𝐞𝐭</mi><mo stretchy="false">→</mo><mi>𝐒𝐞𝐭</mi></mrow></mrow></math> to <math id="p2.m5" class="ltx_Math" alttext="\mathbf{Rel}" display="inline"><mi>𝐑𝐞𝐥</mi></math> — namely, by
+having <math id="p2.m6" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> act on the two projections. Such an extension preserves the natural
+order of relations; it also preserves their composition precisely when <math id="p2.m7" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math>
+preserves <em class="ltx_emph ltx_font_italic">weak pullbacks</em>, in which case <math id="p2.m8" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> extends to a 2-functor <math id="p2.m9" class="ltx_Math" alttext="\underline{F}\colon\mathbf{Rel}\to\mathbf{Rel}" display="inline"><mrow><munder accentunder="true"><mi>F</mi><mo>¯</mo></munder><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>𝐑𝐞𝐥</mi><mo stretchy="false">→</mo><mi>𝐑𝐞𝐥</mi></mrow></mrow></math>. Similarly, a monad structure on <math id="p2.m10" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> extends to that of a
+lax monad, and it can be characterized when this extension is strict. Barr’s
+leading application of this result was to characterize the category
+<math id="p2.m11" class="ltx_Math" alttext="\mathbf{Top}" display="inline"><mi>𝐓𝐨𝐩</mi></math> of topological spaces as the <em class="ltx_emph ltx_font_italic">relational algebras</em> for the
+ultrafilter monad <math id="p2.m12" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>, that is, the <em class="ltx_emph ltx_font_italic">lax algebras</em> of its extension
+<math id="p2.m13" class="ltx_Math" alttext="\underline{\beta}\colon\mathbf{Rel}\to\mathbf{Rel}" display="inline"><mrow><munder accentunder="true"><mi>β</mi><mo>¯</mo></munder><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>𝐑𝐞𝐥</mi><mo stretchy="false">→</mo><mi>𝐑𝐞𝐥</mi></mrow></mrow></math>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">We extend both results to the setting of <em class="ltx_emph ltx_font_italic">bicategories</em>. Building on
+<cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>, <span class="ltx_ref ltx_ref_self">4</span>, <span class="ltx_ref ltx_ref_self">5</span>]</cite>, relations in a bicategory <math id="p3.m1" class="ltx_Math" alttext="\mathsf{K}" display="inline"><mi>𝖪</mi></math>
+can be identified with <em class="ltx_emph ltx_font_italic">two-sided discrete fibrations</em>, which determine a
+bicategory <math id="p3.m2" class="ltx_Math" alttext="\mathbf{TSDFib}(\mathsf{K})" display="inline"><mrow><mi>𝐓𝐒𝐃𝐅𝐢𝐛</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝖪</mi><mo stretchy="false">)</mo></mrow></mrow></math> if <math id="p3.m3" class="ltx_Math" alttext="\mathsf{K}" display="inline"><mi>𝖪</mi></math> satisfies some conditions akin to <math id="p3.m4" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math>-dimensional
+<em class="ltx_emph ltx_font_italic">regularity</em>.
+Our first main result, formulated in terms of exactness <em class="ltx_emph ltx_font_italic">à la</em> Guitart <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">6</span>]</cite>, reads as follows.</p>
+</div>
+<div id="p4" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Theorem. </span>A pseudomonad <math id="p4.m1" class="ltx_Math" alttext="\langle\mathsf{T},\eta,\mu\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><mi>𝖳</mi><mo>,</mo><mi>η</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">⟩</mo></mrow></math> on a regular bicategory <math id="p4.m2" class="ltx_Math" alttext="\mathsf{K}" display="inline"><mi>𝖪</mi></math> extends to a pseudomonad <math id="p4.m3" class="ltx_Math" alttext="\langle\underline{\mathsf{T}},\underline{\eta},\underline{\mu}\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><munder accentunder="true"><mi>𝖳</mi><mo>¯</mo></munder><mo>,</mo><munder accentunder="true"><mi>η</mi><mo>¯</mo></munder><mo>,</mo><munder accentunder="true"><mi>μ</mi><mo>¯</mo></munder><mo stretchy="false">⟩</mo></mrow></math> on <math id="p4.m4" class="ltx_Math" alttext="\mathbf{TSDFib}(\mathsf{K})" display="inline"><mrow><mi>𝐓𝐒𝐃𝐅𝐢𝐛</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝖪</mi><mo stretchy="false">)</mo></mrow></mrow></math> if and only if:</p>
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="\mathsf{T}\colon\mathsf{K}\to\mathsf{K}" display="inline"><mrow><mi>𝖳</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>𝖪</mi><mo stretchy="false">→</mo><mi>𝖪</mi></mrow></mrow></math> preserves exact squares, and</p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">the naturality squares of its unit <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="\eta\colon\operatorname{id}\Rightarrow\mathsf{T}" display="inline"><mrow><mi>η</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>id</mi><mo stretchy="false">⇒</mo><mi>𝖳</mi></mrow></mrow></math> and multiplication <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="\mu\colon\mathsf{T}^{2}\Rightarrow\mathsf{T}" display="inline"><mrow><mi>μ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>𝖳</mi><mn>2</mn></msup><mo stretchy="false">⇒</mo><mi>𝖳</mi></mrow></mrow></math> are exact.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">We then focus on the case of <math id="p5.m1" class="ltx_Math" alttext="\mathbf{CAT}" display="inline"><mi>𝐂𝐀𝐓</mi></math>, the 2-category of
+(locally small) categories, so that <math id="p5.m2" class="ltx_Math" alttext="\mathbf{TSDFib}(\mathsf{K})" display="inline"><mrow><mi>𝐓𝐒𝐃𝐅𝐢𝐛</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝖪</mi><mo stretchy="false">)</mo></mrow></mrow></math> can be
+identified with <math id="p5.m3" class="ltx_Math" alttext="\mathbf{PROF}" display="inline"><mi>𝐏𝐑𝐎𝐅</mi></math>, the bicategory of categories and <em class="ltx_emph ltx_font_italic">small
+profunctors</em>. In his talk at CT24, Rosolini introduced the
+<em class="ltx_emph ltx_font_italic">ultracompletion</em> pseudomonad on <math id="p5.m4" class="ltx_Math" alttext="\mathbf{CAT}" display="inline"><mi>𝐂𝐀𝐓</mi></math> to study Makkai’s
+<em class="ltx_emph ltx_font_italic">ultracategories</em> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">7</span>]</cite> as its pseudoalgebras. In this talk, we
+will make a <em class="ltx_emph ltx_font_italic">profunctorial</em> version of ultracategories emerge as algebras
+for the extension of the ultracompletion pseudomonad to <math id="p5.m5" class="ltx_Math" alttext="\mathbf{PROF}" display="inline"><mi>𝐏𝐑𝐎𝐅</mi></math>: the
+resulting notion will recover <em class="ltx_emph ltx_font_italic">ultraconvergence spaces</em>, the
+categorification of topological spaces recently introduced in
+<cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">8</span>, <span class="ltx_ref ltx_ref_self">9</span>]</cite> to extend Makkai’s <em class="ltx_emph ltx_font_italic">Stone duality for first order
+logic</em> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">7</span>]</cite> to geometric logic.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+M. Barr, <em class="ltx_emph ltx_font_italic">Relational algebras</em>, Reports of the Midwest Category Seminar IV. Ed. by S. Mac Lane et al.,
+Springer (1970), 39–55.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+Q. Aristote and U. Tarantino, <em class="ltx_emph ltx_font_italic">Profunctorial algebras</em>, in preparation, 2026.
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+A. Carboni, S. Johnson, R. Street, and D. Verity, <em class="ltx_emph ltx_font_italic">Modulated
+bicategories</em>, Journal of Pure and Applied Algebra, vol. 94, no. 3, pp. 229–282, 1994.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+R. Street, <em class="ltx_emph ltx_font_italic">Fibrations in bicategories</em>, Cahiers de topologie et géométrie différentielle, vol. 21, no. 2, pp. 111–160, 1980.
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+F. Loregian and E. Riehl, <em class="ltx_emph ltx_font_italic">Categorical notions of fibration</em>, Expositiones Mathematicae, vol. 38, no. 4, pp. 496–514, 2020.
+
+</span>
+</li>
+<li id="bib.bib6" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock">
+R. Guitart, <em class="ltx_emph ltx_font_italic">Relations et carrés exacts</em>, Annales des sciences mathématiques du Québec, vol. 4, no. 2, pp. 103–125, 1980.
+
+</span>
+</li>
+<li id="bib.bib7" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[7]</span>
+<span class="ltx_bibblock">
+M. Makkai, <em class="ltx_emph ltx_font_italic">Stone duality for first order logic</em>, Advances in Mathematics <span class="ltx_text ltx_font_bold">65</span>.2 (1987), 97–170.
+
+</span>
+</li>
+<li id="bib.bib8" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[8]</span>
+<span class="ltx_bibblock">
+G. Saadia, <em class="ltx_emph ltx_font_italic">Extending conceptual completeness via virtual ultracategories</em>, preprint <a href="https://arxiv.org/abs/2506.23935" title="" class="ltx_ref ltx_href">arXiv:2506.23935</a>, 2025.
+
+</span>
+</li>
+<li id="bib.bib9" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[9]</span>
+<span class="ltx_bibblock">
+S. van Gool, J. Marquès and U. Tarantino, <em class="ltx_emph ltx_font_italic">Toposes with enough points as categories of étale spaces</em>, preprint <a href="https://arxiv.org/abs/2508.09604" title="" class="ltx_ref ltx_href">arXiv:2508.09604</a>, 2025.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

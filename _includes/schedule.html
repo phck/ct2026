@@ -1,0 +1,89 @@
+{%- comment -%}
+  CT programme. Renders the week-grid + per-day views from _data/schedule.yml,
+  joined to _data/abstracts.yml at runtime. Drop {% include schedule.html %}
+  into a page, and load the styles + renderer from that page's front matter:
+    extra_css: ["/assets/css/schedule.css?v=1"]
+    extra_js:  ["/assets/js/schedule.js?v=1"]
+  This include emits only the markup, the no-JS fallback, and the Liquid data
+  injection (window.CT_*) that the renderer reads. Colour tokens live in
+  schedule.css (its :root block); fonts come from the site (main.css: Source
+  Sans Pro body / JetBrains Mono display).
+{%- endcomment -%}
+
+<div class="ctprog">
+  <section id="ct-week" class="view">
+    <div class="weekhead"><h2>Week at a glance</h2></div>
+    <div class="tznote">All times in Baltimore (EDT, UTC&minus;4)</div>
+    <div class="grid-scroll" id="ct-grid"></div>
+    <div class="legend">
+      <span><i style="background:var(--invited)"></i>Invited (55 min)</span>
+      <span><i style="background:var(--contributed)"></i>Contributed (25 min)</span>
+      <span><i style="background:var(--parallel)"></i>Parallel (25 min)</span>
+      <span><i style="background:var(--lightning)"></i>Lightning (7 min)</span>
+      <span><i style="background:var(--social)"></i>Social / excursion</span>
+      <span><i style="background:var(--break)"></i>Break</span>
+    </div>
+  </section>
+  <section id="ct-day" class="view"></section>
+  <div class="selector"><div class="bar" id="ct-selector"></div></div>
+</div>
+
+<noscript>
+  <style>
+    /* No-JS: the client-rendered .ctprog is empty, so hide it and show the
+       plain linear fallback below. Applies only when scripting is disabled. */
+    .ctprog { display: none; }
+    .sched-fb h2 { margin: 1.6rem 0 .25rem; }
+    .sched-fb h3 { margin: 1.1rem 0 .2rem; font-size: 1.1rem; }
+    .sched-fb h4 { margin: .7rem 0 .1rem; font-size: 1rem; font-weight: 600; }
+    .sched-fb ul { list-style: none; padding-left: 0; margin: .2rem 0 .6rem; }
+    .sched-fb li { margin: .2rem 0; }
+    .sched-fb .t { display: inline-block; min-width: 4em; color: #555; font-variant-numeric: tabular-nums; }
+    .sched-fb .z { color: #207a4c; }
+    .sched-fb .note { font-style: italic; color: #555; margin: .2rem 0; }
+  </style>
+  <div class="sched-fb">
+    {%- assign fb_rooms = site.data.schedule.rooms -%}
+    {%- assign fb_proom = site.data.schedule.plenary_room -%}
+    <p class="note">All times in Baltimore (EDT, UTC&minus;4).</p>
+    {%- for day in site.data.schedule.days -%}
+      <h2>{{ day.full }}{% if day.date %} &mdash; {{ day.date | date: "%B %-d" }}{% endif %}</h2>
+      {%- if day.note %}<p class="note">{{ day.note }}</p>{% endif -%}
+
+      {%- if day.invited or day.contributed %}
+        <h3>Plenary &mdash; {{ fb_proom }}</h3>
+        <ul>
+          {%- if day.invited %}{% include sched_fallback_talk.html talk=day.invited %}{% endif -%}
+          {%- for t in day.contributed %}{% include sched_fallback_talk.html talk=t %}{% endfor -%}
+        </ul>
+      {%- endif -%}
+
+      {%- if day.parallel %}
+        <h3>Parallel sessions &mdash; from {{ day.parallel.time }}</h3>
+        {%- for room in day.parallel.rooms %}
+          <h4>{{ fb_rooms[forloop.index0] }}</h4>
+          <ul>{% for t in room %}{% include sched_fallback_talk.html talk=t %}{% endfor %}</ul>
+        {%- endfor -%}
+        {%- if day.parallel.note %}<p class="note">{{ day.parallel.note }}</p>{% endif -%}
+      {%- endif -%}
+
+      {%- if day.lightning %}
+        <h3>Lightning talks &mdash; from {{ day.lightning.time }}</h3>
+        {%- for room in day.lightning.rooms %}
+          <h4>{{ fb_rooms[forloop.index0] }}</h4>
+          <ul>{% for t in room %}{% include sched_fallback_talk.html talk=t %}{% endfor %}</ul>
+        {%- endfor -%}
+      {%- endif -%}
+
+      {%- for s in day.socials %}
+        <p>{{ s.time }}{% if s.until %}&ndash;{{ s.until }}{% endif %} &mdash; {{ s.title }}{% if s.venue %} ({{ s.venue }}){% endif %}</p>
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+</noscript>
+
+<script>
+  window.CT_SCHEDULE = {{ site.data.schedule | jsonify }};
+  window.CT_ABSTRACTS = {{ site.data.abstracts | jsonify }};
+  window.CT_BASEURL = {{ site.baseurl | jsonify }};
+</script>

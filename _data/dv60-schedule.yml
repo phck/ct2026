@@ -1,0 +1,54 @@
+# DV60 programme — single track, every talk in Krieger 205.
+# July 20–22 (Mon–Wed) 2026, immediately following CT2026.
+#
+# Structure mirrors schedule.yml (CT). Per day:
+#   talks:   start `time` only
+#            `slug` joins to _data/dv60-abstracts.yml for title + link;
+#            `name` is used instead for speakers without an abstract page yet
+#            When their abstracts land, swap `name:` for the matching `slug:`.
+#            `mode: zoom` marks a remote speaker.
+#   socials: events with `{ time, until, title }` — rendered as chips/cards
+#            (like CT's dinner/reception/excursion).
+#   breaks:  coffee/lunch `{ time, title }` — rendered as subtle divider rows,
+#            NOT chips (matching CT's day view), and omitted from the no-JS
+#            fallback (also matching CT).
+# The renderer merges talks + breaks + socials and sorts by `time` to lay out
+# each day chronologically.
+
+room: "Krieger 205"
+talk_minutes: 55   
+
+days:
+  - full: Monday
+    date: "2026-07-20"
+    talks:
+      - { slug: nick-gurski, time: "09:30" }
+      - { slug: john-bourke, time: "11:00" }
+      - { slug: steve-lack,  time: "14:30" }
+      - { name: "Paula Verdugo", time: "16:00" }
+    breaks:
+      - { time: "10:30", title: "Coffee break" }
+      - { time: "12:00", title: "Lunch break" }
+      - { time: "15:30", title: "Coffee break" }
+
+  - full: Tuesday
+    date: "2026-07-21"
+    talks:
+      - { slug: yuki-maehara,     time: "09:30" }
+      - { slug: valeria-de-paiva, time: "11:00", mode: zoom }
+      - { slug: félix-loubaton,   time: "14:30" }
+      - { slug: martina-rovelli,  time: "16:00" }
+    breaks:
+      - { time: "10:30", title: "Coffee break" }
+      - { time: "12:00", title: "Lunch break" }
+      - { time: "15:30", title: "Coffee break" }
+    socials:
+      - { time: "19:00", until: "22:00", title: "Conference dinner", venue: "Glass Pavilion at Levering Hall" }
+
+  - full: Wednesday
+    date: "2026-07-22"
+    talks:
+      - { name: "Mike Hopkins",   time: "09:30" }
+      - { name: "Dominic Verity", time: "11:00" }
+    breaks:
+      - { time: "10:30", title: "Coffee break" }

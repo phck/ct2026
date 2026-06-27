@@ -1,0 +1,431 @@
+---
+layout: abstract
+title: "On the Distributive Law in Cartesian Multicategories"
+author: "Claudio Pisani"
+slug: claudio-pisani
+permalink: /ct/abstracts/claudio-pisani/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">On the Distributive Law in Cartesian Multicategories</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Claudio Pisani
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Cartesian operads can be seen as a way to encode algebraic theories;
+though they are essentially equivalent to Lawvere theories, the perspective is different.
+Cartesian multicategories (or cartesian colored operads) correspond to the many sorted theories.
+In this talk we present cartesian multicategories as algebras for a natural monad <math id="p1.m1" class="ltx_Math" alttext="{\rm\bf cart}" display="inline"><mi>𝐜𝐚𝐫𝐭</mi></math> on symmetric multicategories,
+and show how this notion is in several respects conceptually advantageous.
+This analysis is carried out in the framework of <em class="ltx_emph ltx_font_italic">unbiased</em> symmetric multicategories <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite> where,
+as is natural in the symmetric context, sequences are replaced by families.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">In fact, unbiased symmetric multicategories are simply sum-preserving double functors <math id="p2.m1" class="ltx_Math" alttext="\mathbb{M}\to\mathbb{P}\rm{b}\," display="inline"><mrow><mi>𝕄</mi><mo stretchy="false">→</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mi mathvariant="normal">b</mi></mrow></mrow></math>
+(to the double category of pullback squares in finite sets) which are discrete fibrations in the tight direction.
+The loose arrows of <math id="p2.m2" class="ltx_Math" alttext="\mathbb{M}" display="inline"><mi>𝕄</mi></math> should be thought of as families of arrows in the multicategory, indexed by the underlying functions in <math id="p2.m3" class="ltx_Math" alttext="\mathbb{P}\rm{b}\," display="inline"><mrow><mi>ℙ</mi><mo>⁢</mo><mi mathvariant="normal">b</mi></mrow></math>,
+while tight arrows and cells give reindexing. The classical axioms are in this way naturally embodied by the double categorical structure.
+This approach, which removes the awkwardness arising from an unnatural skeletal indexing,
+turns out to be rather effective and opens up new perspectives.
+In particular, it allows for a base sensitive study of multicategories and renders transparent the links with Joyal’s species.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">For instance, <em class="ltx_emph ltx_font_italic">plain</em> multicategories are sum-preserving double discrete fibrations <math id="p3.m1" class="ltx_Math" alttext="\mathbb{M}\to\mathbb{T}\rm{ot}\," display="inline"><mrow><mi>𝕄</mi><mo stretchy="false">→</mo><mrow><mi>𝕋</mi><mo>⁢</mo><mi>ot</mi></mrow></mrow></math>,
+where <math id="p3.m2" class="ltx_Math" alttext="\mathbb{T}\rm{ot}\," display="inline"><mrow><mi>𝕋</mi><mo>⁢</mo><mi>ot</mi></mrow></math> is (the double categorical form of) the multiplicative species of total orders.
+Furthermore, unbiased symmetric monoidal categories arise when <math id="p3.m3" class="ltx_Math" alttext="\mathbb{M}\to\mathbb{P}\rm{b}\," display="inline"><mrow><mi>𝕄</mi><mo stretchy="false">→</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mi mathvariant="normal">b</mi></mrow></mrow></math> is, in the loose direction, an opfibration,
+while the algebras for a symmetric multicategory <math id="p3.m4" class="ltx_Math" alttext="\mathbb{M}\to\mathbb{P}\rm{b}\," display="inline"><mrow><mi>𝕄</mi><mo stretchy="false">→</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mi mathvariant="normal">b</mi></mrow></mrow></math> are morphisms <math id="p3.m5" class="ltx_Math" alttext="\mathbb{A}\to\mathbb{M}" display="inline"><mrow><mi>𝔸</mi><mo stretchy="false">→</mo><mi>𝕄</mi></mrow></math> which are <em class="ltx_emph ltx_font_italic">discrete</em> opfibrations,
+and so are themselves symmetric multicategories.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Symmetric operads can be seen as <em class="ltx_emph ltx_font_italic">multiplicative</em> species of structures
+and cartesian operads are obtained by endowing them also with a <em class="ltx_emph ltx_font_italic">sum</em>, such that multiplication-composition
+<em class="ltx_emph ltx_font_italic">distributes</em> over sums.
+In fact, we define cartesian multicategories as the algebras for the monad which takes
+a symmetric multicategory <math id="p4.m1" class="ltx_Math" alttext="\mathbb{M}" display="inline"><mi>𝕄</mi></math> to the multicategory <math id="p4.m2" class="ltx_Math" alttext="{\rm\bf cart}\,\mathbb{M}" display="inline"><mrow><mi>𝐜𝐚𝐫𝐭</mi><mo lspace="0.170em">⁢</mo><mi>𝕄</mi></mrow></math> whose loose arrows are spans
+(actually, "enhanced" spans <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>) formed by a tight arrow <math id="p4.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and a loose arrow <math id="p4.m4" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math> in <math id="p4.m5" class="ltx_Math" alttext="\mathbb{M}" display="inline"><mi>𝕄</mi></math>;
+these are composed in the usual way for spans, except that we use <math id="p4.m6" class="ltx_Math" alttext="\mathbb{M}" display="inline"><mi>𝕄</mi></math>-cells in place of pullbacks.
+Thus, a cartesian structure <math id="p4.m7" class="ltx_Math" alttext="\sum:{\rm\bf cart}\,\mathbb{M}\to\mathbb{M}" display="inline"><mrow><mo rspace="0.278em">∑</mo><mo rspace="0.278em">:</mo><mrow><mrow><mi>𝐜𝐚𝐫𝐭</mi><mo lspace="0.170em">⁢</mo><mi>𝕄</mi></mrow><mo stretchy="false">→</mo><mi>𝕄</mi></mrow></mrow></math> provides a way to evaluate spans,
+giving the "sum" <math id="p4.m8" class="ltx_Math" alttext="\sum_{f}\alpha" display="inline"><mrow><msub><mo>∑</mo><mi>f</mi></msub><mi>α</mi></mrow></math> of <math id="p4.m9" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math> along <math id="p4.m10" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.
+The functoriality of <math id="p4.m11" class="ltx_Math" alttext="\sum" display="inline"><mo>∑</mo></math> on loose arrows says that the sum of a composition of spans
+is the same as the composition of their sums:
+<span class="ltx_text ltx_markedasmath"><math id="p4.m12.m1" class="ltx_Math" alttext="\scriptstyle\sum_{g}\beta\scriptstyle\sum_{f}\alpha\,=\,{\scriptstyle\sum_{fh}%
+}\beta\gamma" display="inline"><mrow><mrow><msub><mo maxsize="101%" minsize="101%" stretchy="true">∑</mo><mi mathsize="102%">g</mi></msub><mrow><mi mathsize="101%">β</mi><mo>⁢</mo><mrow><msub><mo maxsize="101%" minsize="101%" stretchy="true">∑</mo><mi mathsize="102%">f</mi></msub><mi mathsize="101%">α</mi></mrow></mrow></mrow><mo lspace="0.448em" mathsize="101%">=</mo><mrow><msub><mo maxsize="101%" minsize="101%" stretchy="true">∑</mo><mrow><mi mathsize="102%">f</mi><mo>⁢</mo><mi mathsize="102%">h</mi></mrow></msub><mrow><mi mathsize="101%">β</mi><mo>⁢</mo><mi mathsize="101%">γ</mi></mrow></mrow></mrow></math></span>,
+<svg role="img" aria-label="Commutative diagram showing span composition: top node W with arrows h and γ (marked) leading down to nodes U and V respectively; middle row nodes U, @, V with arrows f and α (marked) from U, g and β (marked) from V; and bottom row nodes X, Y, Z with arrows ∑_fα (marked) from X to Y and ∑_gβ (marked) from Y to Z" version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='133.971029pt' height='81.083447pt' viewBox='0 -37.145416 133.971029 81.083447' style='display:inline-block;vertical-align:middle'>
+<style type='text/css'>
+@font-face{font-family:cmex7;src:url(data:application/x-font-woff2;base64,d09GMgABAAAAAAIQAAoAAAAAA6QAAAHHAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAANAqBBIEICwYAATYCJAMIBCAFgjIHIBvvAmA+DPBkmL/KEAlRbMaqQdU2nPtqk79AW71IPPz/Wrtv5g+iHsUqodE0k6jmoRA9FFrgbMLqlgi+MLcdMf0PWSV5Moti3rRBIxQihEaj0yT/2aF7oY6+Xj9IVfrqCw2jN03xxautTzJ97+XGCL/ljh8wCui2MAB4S5IoCKgWaGrFcRJoGjQPLNF0bv8IEBgjodNA0RmckOfHcVWQPWSlP1zCxq6YCzqyAtkEtK2deQMo5ZksFzULfCMfBAD/QIYcbYgCbUiGgCQJyjP/cMhgAkAGEgJjwBIACRBjVtn/986n97XaQtNd6Y1GHbkh32QZv7fVG7u3rnaNg797vG/T/r1cVVBXpDyfm9uJ56tcEVz2oUjxo17/NB/iv4/ahvDaPgAgEHQ/lviuyhMAAL5PZwBVMhC0pJFKViTSTpkum5p+giAzBgEhQ41zUiMXSAqNKNRqQ4XC4LhGFz2iSNXCAB+Q1NhEoUMVFWocpxrT9oct/6UVK73a0nl59WaDaaB4ilxRnbcm80YPtRocEDDQMzQzVTOGihqost9X0VOz5JQTMdGq96HMDExKEdNfZkpbUfUPylZQVXMtE3MNPSgrAwciQEsB) format('woff2');}
+@font-face{font-family:cmmi10;src:url(data:application/x-font-woff2;base64,d09GMgABAAAAAASkAAoAAAAACAQAAARbAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAANAqJRIcVCxAAATYCJAMcBCAFgjgHIBsWBmCO0xWxTZLcTfXz75V/7k08WiQZKF0xU3FQYUXNtn1iSvr3geCh9/Z3G6SWBRxI1IviJOBRgmEgiaQJ39Xa6u+LJQWyWKU3tyqWTSPtK0OiUwLz6S9h0iRRGUojNEKNmNpljXkw9LXedW0kBA83ABH30TtAAXzhe/8J8PaeQd80FxhVOAAjDUwI/BSU7R2VQEuXU+F/gIBI+f9T4hgtAAicCIhIkoEEFM8hZtJT1XvdRQYk9Bmw6CigD0QmgQrV940xc4pmRHRmPX2a9vx5xmpnZqZzDfLzY7f6V4jpmeIycUiNuL7TlLXWZHr2TPPiRWaucc3usaq0AvdMB0VVla6e7axaGbHVUuDfzvtlVqw6hp9C/rrCuJqr9zoIXdh+s7dKPTp7+IK01Qq7w2G6pas7xfzKjEFmpRXm4ezKNWj1aT5oBMoa/ujDyswV1tXbtyfiW/RuRu1MStuXnr5qm8abBRWVkSYtl/wrNDv2oE49TV0pYITIL5dWnHgxzZiZs3x32MwqVc7thM5ZVYW0laCGj9mxcigt4rU9zsxQS87qNNu3HzVl51pXmOWI5Sj6envs6t2ozjbN6y8yrSs0yyCtqxHarUZrJ//a0zRViJ4xZpL/t3DdDuHVRTm1tsqNb5USKdCyoPzglyI3xx3dnUEHWosv264nLcaLcZOH0X+muK9OLHmrRTAizwzvmEXwXpe1qqCTh9MbP4rXHXdX4yo8FCzqjiuHb8LwzKa5rUpwbFJn8LToYfu1pAY8gC+aP9s4E9ln2L0oT5N46FG87pm7DKdindZk9F/8BybeMxbNKpR04WQct/yhbI1vFiH8tD9TanA/bkpm9M+bmrvMETS+TC3UzxtRYtc9d9fgPuz30PrnFz35ieF/Cx9eNlDNwqF43bWkarwQH+L0x5iPA+CHrdsO/RsR/LXM6a67m3Fhqh7oU/zjb31L6/yv6UJTF55ad991sJi3H0tqxkPY72Z1x9knj5iFlb/kllXW7/5NG/wVW+xidMfdLf6YYU/xHGfGnRefd9kXHYzz2lds6BkPeZz9+SgFJdO/oenz4uOO+RjHw+TL2uNJw/guxvD84TsfV8n+m0p/kneDK3X9NkZ/3fOH3OH+NuDj/dpdkDzoriWVn6KXm4+xYTez4IPNkwYPDDbW2qpaR9OXuPk/TlkecG4TP3Ly4I722mJLDn14iAinJow7AZQOHoq53gC+A41byYtCw+RfWYIEdf3/J134HJRY2C14f9D2gi29pAtQQTPRAYAf8EU6TKRNTqhJYIsUCDPGJ9KtjCJoDqJl3gAMBgI1SDRDx07REO00mnycZxKBgBoHiMPUjp2klWenSKrsNK2BJk/x2tNo4GdzA6X19dUu5fWu4EpQLFNf6+8t66hu7aisl0cljAWfRvWatGtTroVsQY2Xyb4GperVq+aiyNjcW1Vr1EBeTKBQYFa8wTVePByUoUp0k5XpUL2ZO1Sqh1HLj0VQ) format('woff2');}
+@font-face{font-family:cmmi7;src:url(data:application/x-font-woff2;base64,d09GMgABAAAAAAVgAAoAAAAACFAAAAUUAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAAPAqKDIdjCxAAATYCJAMcBCAFgjIHIBtmBgCO1FZ3IElumv93079JgJakfhKKWo1SVaqSR5hSt7lWlKY7MHMPzRPzrwnxX7e997MEE8tK4GYCjKOE0iaQADRr6HL6a9BvoAmgf2c/cYGMWVsLNKAlEki2qQAXQaCcQOqmxqefDSpJ8dnYGOwGgGQQGgFcAH7gp+9wMDwi6FcuQFTjA1J5gLYKgALUHfMbBbaGOo2A9wICghMcsO/fZwDASADAZy4UAocR5Y1CYE11Wh031EmsvXe+qazDAw/UB0HHoRsAeATEczgA+XsR0BJOFIUHyDBNUqONFO4wTzFZm5/JnZexszKHS+sgiPOshKIodM+2/QTGspLjLNb/VDZ1AT0nn9xumBTo9xxwSUls/9Y9gl6biyHPTMud17H+g6KVU1rdXmzv/aTDxyXUC3J62spSTgNLnX0qog8b+veKbFQgbTqWs48xHyFPMDdj+tkQmm61HWdz3U934i4zfkLocgGXrv91lBMjHFtCp4xXzvfZVYGS7RSrcZ6KvcOETuEkKRVO7EH3HYIkdpqeRDdPCmgao86fxTvdRwMdlyWrMMJBrHwRvedZ5BXmLOjhp7ndHzhkKpaiaYJwbCGFDGndJt81nbOPSb7BiFa+zN7LLtjBxF90A4ac0DLkvWm5bWKfwF4BCXlZv5vcp9VO4A5C1x9IbXuGMmUTQoa0TYCdboxlqVWn9GfQM+cg531d/1niMlvLUhJWQhN5J86Eml1m6QnhDkboOiDYJ3GyUbQTYq3bgm9ZNwvyiQlUMMk9Nu0wG+emJ+4YT0jyzTe/H1+TngkbHbB3GlGu4X7/849ffRmlLNBK6bB/faxFr/z1X5b7WHHbx9YMnSboDOIdLpAy/3/8P/Tz+9CxVDRof+1v+BIoz85rQz0zFsBfzcGTvJQC/woY+0x0BlKZL4VcsHcKZtXkIenA1qFSuC69+GufPIsN7rLcDXf4eZeCUZ7pggmNzowayTT8m+2b7gtKepU8Q3v9WhtIf4vjT5RHrszmpJ72kiURwZdujPirTiquSf39R8t5nfu4Ya+Nyz29gp+/JjKITD+8rPtkaeaC7woC8hXL1i3e1sL3g72zhy3J8p+0/H/4PqyHhXc6EwPhFzKD2j0ScRkLGCnnB6hvrnoVc2pBZC6Y0ewNUB5SnV2CpJVZGuBi0LRhhWLgv1ZK6kubR0bLOaLslfK80RbE5hOZEW67taNIXdQoW4lGtym/mqcCGyymfOv8FmOFCWkpznwvoeLrwIuC6H+z/OJvYjvW+mXHFhrr0jNnIDn2gge/r9tR9deayi93CEadt31WmEqR4T9eRuT6WSx+YX5e+ZbkKnjFENStXrTis6iuywHigRPBG+68Ca4GD4dUM/TlH+sKd86rWlntycvRZBie/TP0TXvCQqJ+212QMSGoem2YPlkHWfD8kZDl1UjsnChZ8Dz+qjJPRFr0S3a+9kUFh1qiGr2AUTAPWvbjDrtv8n9jBQfQwfca+B78CgDgCXbCG88e+APq/wV8JgAlHrmXyQwKswjNEVCs7qeFBpFpcAFH66EIUnE5NajlIAXqC9c6B5evzoXBdR4uxXGUkBYCGvgAIpfcdA7UTJ1LoE7nQS1uUWZrH3PhX+ya2vb25rjXxizCZN5b+AjwaN385t75je3KKFMssOjUrss8fer1UCoOt64XHWq1c9UsjrV/26tZpw5KEUzMGjTX7XC61dXQuqLGIspI5mt2J/M1IlGKwu6xEAQAAAA=) format('woff2');}
+@font-face{font-family:cmmi5;src:url(data:application/x-font-woff2;base64,d09GMgABAAAAAAL8AAoAAAAABOAAAAKyAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAANAqDPIJrCwgAATYCJAMMBCAFgjIHIBvWA0CuCmw6XOgL24eZS1PkkCJnWFpm+WEujQdof/2fmbm7770vOkFJbEaCMplgxk1f6Vd14Q6sy4c0U4lOhg91zmv7f5dtDqj3RbLEs/btBSZXtOxJ5HvfFCxw4f7+Jj+O2ud/g+S0pnYBbfAulUTGBMo0iljTbSoGPhEDSbWnRzo6IMWveJcC8Ugs/UfTysPJ6R0qMIqYgU+ZszovBSHM0yQ5kpA1m+cgIqHO4OrAaKHMZJ5ofmY+Lwc5KhAlC8X5hO24BMj0tyCIY7pzU0JlJcua04DhOiQ9dFT5VtOK+TYdXKWpM/FayFRYgbTvdNhypi55avM+gy7xUcgdUKp/v9LtZp1D7Tt5yrWq7bKB5IOnNtdp52SHAkAlI+tdqr6jredsPlSnw8ho4gq+0jhkHHB8B015H3JBBbZbb7SWTCZmTJrapc1bdL4JaM4DiGMllS1Yo6vrY+0A14fKyoca2uqfSE85LeSWuq3KTF233+eWJ9qRVnOheIiRNhP2VIlaZ8C7qzp2nE12+bG2L3rFGAUN5JZ6rcrY2x/+B1HK0GH9xqynRsIieV1EzZrFa2z3RpfFH67HNawpw3uF0cuP/qfmcfji3L08gh8r46HIdEdUM5Hj46zhHqhmY+1iUa1+bxE1WijS9v/2DnFo37i1ilHd/R/FOXKiur8o3/87gIDAv4xbDH3It/KUwa28S5oUX6NcBIFrt05S5cdXgkSQYusoPrQulsyFkYypH5Guko1wHKrbO5IpqE4KKqtDigqaz1fSgCK0kFUImrEkkqlkBimoJ5EUVbK2r6SHmqbC/jOsS8jKSjNq0ks9bV3P4Mn1icS8tOy8lCxZA21jhIPFZHU5VXbAy6JwNcsmQR0tWD500zOgR5uugks010XxLChFvM+KiW6d4+WNCTCgzRgaAAA=) format('woff2');}
+@font-face{font-family:cmr10;src:url(data:application/x-font-woff2;base64,d09GMgABAAAAAAKIAAoAAAAABEgAAAI/AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAANAqCKIIZCwYAATYCJAMIBCAFgjIHIBuAAyCOwradM04pZw2+hFFSPHzt9zt3n3xELEQL5TXwZJKINPPpMh1iZ2jlV3Z6vfehJr9Q2Rs1tbdbSTpy5Nbr/1yO/ztdC2jh0Qkc0lgj4ElxL5VeGo8JFAUWacCZu5rDPmhlNj5S8nOHIv3GCKhI3+j6X8VwK+KzKKyEJHyNEKhdXFVlAzHNYQXIKITbyZwBJBQYiQYoEQtQQsyanLMh4r5glnBzlPk54NOIlB8ibSqXm5g3PaVoJG3DipR62rV4SiFSLYlUiq4uvTrjYrJr8iRF7luRNIpuTdGJ1HUOCKz33ehtPbmQFiN9/yrhO6nqujqZAlun1HZuTI6eUggidJnyn55mPv7Jzo8h7cuIxLMxtLoJhr/gEdFTlRLP0CDsjOPjVGYXHoPt/mlTZWu3/z8hmarJX5jNuo3PhD1oJDl9i8vsQOWAt5OgmnKO52GKRVOD9P+mBaFmI4mwoh4JUVrHUP7Jy7qBn4sjAPerzztyvh/nvyOtMSWAFrSY4lIYqGE36wcABILzn5A9vrxPWwKX5KXcRh/pAR0SCHZJO8OTR/oQKG16d9iESM4n78C8yysYoB+JeanSr4qVbiNirTJv4NQEE1iUncIcHxJLXY7FypgMsdblcdFlUcf5d373PE8vLHN0uE/PHO0chrZeR9+RcZtbXpVdaOBs5waCFStUolKFTGUMxCqWQceLpCtUxpEDWh3L5TrsL2LAkR0HhvC4aGIsXAwyfpSmloEMVXKVq5KtkAFndtxgohcA) format('woff2');}
+text.f0 {font-family:cmex7;font-size:6.973848px}
+text.f1 {font-family:cmmi10;font-size:9.96264px}
+text.f2 {font-family:cmmi7;font-size:6.973848px}
+text.f3 {font-family:cmmi5;font-size:4.98132px}
+text.f4 {font-family:cmr10;font-size:9.96264px}
+
+</style>
+<g id='page1'>
+<g stroke-miterlimit='10' transform='translate(66.985514,0)scale(0.996264,-0.996264)'>
+<g fill='#000' stroke='#000'>
+<g stroke-width='0.4'>
+<g transform='translate(-67.23671,-33.62498)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(75.792743,-60.19094)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(90.577555,-60.19094)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(104.78882,-60.19094)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(119.000085,-60.19094)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(134.66356,-60.19094)scale(0.996264,-0.996264)'>
+<g transform='translate(-5.41667,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(134.66356,-60.19094)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f1' x='134.66356' y='-60.19094'>W</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(75.792743,-48.574772)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(90.577555,-48.574772)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(104.78882,-48.574772)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(119.000085,-48.574772)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(134.66356,-48.574772)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(75.792743,-30.040121)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(90.577555,-30.040121)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(104.78882,-30.040121)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.95901,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(104.78882,-30.040121)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f1' x='104.78882' y='-30.040121'>U</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(119.000085,-30.040121)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(134.66356,-30.040121)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.8889,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(134.66356,-30.040121)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f4' x='134.66356' y='-30.040121'>@</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(150.327036,-30.040121)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(164.6068,-30.040121)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.02777,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(164.6068,-30.040121)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f1' x='164.6068' y='-30.040121'>V</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(75.792743,-18.423952)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(90.577555,-18.423952)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(104.78882,-18.423952)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(119.000085,-18.423952)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(134.66356,-18.423952)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(75.792743,0)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.53471,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(75.792743,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f1' x='75.792743' y='0'>X</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(90.577555,0)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(104.78882,0)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(119.000085,0)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(134.66356,0)scale(0.996264,-0.996264)'>
+<g transform='translate(-4.01389,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(134.66356,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f1' x='134.66356' y='0'>Y</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(150.327036,0)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(164.6068,0)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(178.886564,0)scale(0.996264,-0.996264)'/>
+<g stroke='#000' stroke-miterlimit='10' transform='translate(192.910345,0)scale(0.996264,-0.996264)'>
+<g transform='translate(-3.77083,0.0)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(192.910345,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f1' x='192.910345' y='0'>Z</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-5.60608 22.93195L-20.89398 7.5049' fill='none'/>
+<g transform='matrix(-0.70387,-0.71027,0.71027,-0.70387,-21.03473,7.36287)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-20.42526,17.42914)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f2' x='66.985514' y='0'>h</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M7.01079 22.93195L22.33403 7.50458' fill='none'/>
+<g transform='matrix(0.70468,-0.70946,0.70946,0.70468,22.47495,7.3627)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(17.16608,18.79022)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f2' x='66.985514' y='0'>γ</text>
+</g>
+</g>
+</g>
+</g>
+<g transform='matrix(0.70468,-0.70946,0.70946,0.70468,12.89876,13.45656)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<rect x='66.985514' y='-5.147324' height='5.147324' width='.3985'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-35.43001-7.33194L-50.21219-22.64421' fill='none'/>
+<g transform='matrix(-0.69452,-0.71944,0.71944,-0.69452,-50.35107,-22.78807)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-49.99681,-11.41809)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f2' x='66.985514' y='0'>f</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-22.96724-7.33194L-7.73305-22.64839' fill='none'/>
+<g transform='matrix(0.70517,-0.70898,0.70898,0.70517,-7.59204,-22.79016)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-12.85638,-12.77919)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f2' x='66.985514' y='0'>α</text>
+</g>
+</g>
+</g>
+</g>
+<g transform='matrix(0.70517,-0.70898,0.70898,0.70517,-17.12262,-16.75308)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<rect x='66.985514' y='-5.147324' height='5.147324' width='.3985'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M24.4118-7.33194L9.14227-22.64871' fill='none'/>
+<g transform='matrix(-0.70598,-0.70818,0.70818,-0.70598,9.00108,-22.79033)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(10.13068,-11.4181)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f2' x='66.985514' y='0'>g</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M36.74239-7.33194L51.16833-22.64088' fill='none'/>
+<g transform='matrix(0.68578,-0.72775,0.72775,0.68578,51.30547,-22.7864)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(46.44525,-11.41809)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f2' x='66.985514' y='0'>β</text>
+</g>
+</g>
+</g>
+</g>
+<g transform='matrix(0.68578,-0.72775,0.72775,0.68578,42.13597,-16.70084)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<rect x='66.985514' y='-5.147324' height='5.147324' width='.3985'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M-49.3562-31.12498H-8.22426' fill='none'/>
+<g transform='translate(-8.02428,-31.12498)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(-38.32913,-38.72777)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f0' x='66.985514' y='-5.230432'></text>
+<text class='f3' x='75.356923' y='2.24164'>f</text>
+<text class='f2' x='81.211159' y='0'>α</text>
+</g>
+</g>
+</g>
+</g>
+<g transform='translate(-28.79025,-33.62498)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<rect x='66.985514' y='-5.147324' height='5.147324' width='.3985'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width='0.39998'>
+<path d='M9.21455-31.12498H50.48401' fill='none'/>
+<g transform='translate(50.68399,-31.12498)'>
+<g stroke-dasharray='none' stroke-dashoffset='0.0'>
+ <g stroke-linecap='round'>
+ <g stroke-linejoin='round'>
+ <path d='M-2.07988 2.39986C-1.69989 .95992-.85313 .27998 0 0C-.85313-.27998-1.69989-.95992-2.07988-2.39986' fill='none'/>
+ </g>
+ </g>
+ </g>
+</g>
+<g transform='translate(20.62677,-38.72777)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<text class='f0' x='66.985514' y='-5.230432'></text>
+<text class='f3' x='75.356923' y='2.24164'>g</text>
+<text class='f2' x='80.884245' y='0'>β</text>
+</g>
+</g>
+</g>
+</g>
+<g transform='translate(29.84926,-33.62498)'>
+<g stroke='none' transform='scale(-1.00375,1.00375)translate(66.985514,0)scale(-1,-1)'>
+<g fill='#000'>
+<g stroke='none'>
+<rect x='66.985514' y='-5.147324' height='5.147324' width='.3985'/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+Since cells in <math id="p4.m14" class="ltx_Math" alttext="\mathbb{M}" display="inline"><mi>𝕄</mi></math> (like <math id="p4.m15" class="ltx_Math" alttext="@" display="inline"><mi mathvariant="normal">@</mi></math>) are defined by reindexing (which, for non-injective functions, duplicate elements),
+this can be indeed seen as a kind of generalized distributive law, holding in any cartesian multicategory.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">If <math id="p5.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is a monoid, we have the "cocartesian" operad <math id="p5.m2" class="ltx_Math" alttext="\mathbb{R}_{\triangleright}" display="inline"><msub><mi>ℝ</mi><mo>▷</mo></msub></math> associated to the multiplicative species <math id="p5.m3" class="ltx_Math" alttext="R^{I}" display="inline"><msup><mi>R</mi><mi>I</mi></msup></math> of labellings in <math id="p5.m4" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>:
+a structure over a set <math id="p5.m5" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> is a family <math id="p5.m6" class="ltx_Math" alttext="\alpha:I\to R" display="inline"><mrow><mi>α</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>I</mi><mo stretchy="false">→</mo><mi>R</mi></mrow></mrow></math>.
+Cartesian structures on <math id="p5.m7" class="ltx_Math" alttext="\mathbb{R}_{\triangleright}" display="inline"><msub><mi>ℝ</mi><mo>▷</mo></msub></math> correspond to rig structures on <math id="p5.m8" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, and the distributive law therein is of course the usual one.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">On the other hand, for any set <math id="p6.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>, the species <math id="p6.m2" class="ltx_Math" alttext="S^{S^{I}}" display="inline"><msup><mi>S</mi><msup><mi>S</mi><mi>I</mi></msup></msup></math> gives the endomorphism operad <math id="p6.m3" class="ltx_Math" alttext="\mathbb{E}{\rm{nd}}(S)" display="inline"><mrow><mi>𝔼</mi><mo>⁢</mo><mi>nd</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></math> which is also cartesian:
+sums are given by duplication-deletion of variables in the multivariate functions <math id="p6.m4" class="ltx_Math" alttext="\alpha:S^{I}\to S" display="inline"><mrow><mi>α</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>S</mi><mi>I</mi></msup><mo stretchy="false">→</mo><mi>S</mi></mrow></mrow></math>, and the distributive law says,
+for instance, that the two ways of calculating <math id="p6.m5" class="ltx_Math" alttext="\beta(\alpha(x);\alpha(x))" display="inline"><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math> are equivalent:
+we can either duplicate the value <math id="p6.m6" class="ltx_Math" alttext="\alpha(x)" display="inline"><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and evaluate <math id="p6.m7" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math> at it, or duplicate the function <math id="p6.m8" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math> itself,
+compose it with <math id="p6.m9" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math> and evaluate it at the duplicate of <math id="p6.m10" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>.
+Cartesian morphisms <math id="p6.m11" class="ltx_Math" alttext="\mathbb{R}_{\triangleright}\to\mathbb{E}{\rm{nd}}(S)" display="inline"><mrow><msub><mi>ℝ</mi><mo>▷</mo></msub><mo stretchy="false">→</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mi>nd</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> amount to modules <math id="p6.m12" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> on <math id="p6.m13" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, and can themselves be considered as cartesian
+multicategories over <math id="p6.m14" class="ltx_Math" alttext="\mathbb{R}_{\triangleright}" display="inline"><msub><mi>ℝ</mi><mo>▷</mo></msub></math>; their loose arrows over <math id="p6.m15" class="ltx_Math" alttext="(r_{i})_{i\in I}" display="inline"><msub><mrow><mo stretchy="false">(</mo><msub><mi>r</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></msub></math> are "combinations" <math id="p6.m16" class="ltx_Math" alttext="(r_{i}s_{i})_{i\in I}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>s</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></msub></math>
+and sums reduce them on equal <math id="p6.m17" class="ltx_Math" alttext="s_{i}" display="inline"><msub><mi>s</mi><mi>i</mi></msub></math>.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock"> C. Pisani, <em class="ltx_emph ltx_font_italic">Unbiased multicategory theory</em>, Theory and Applications of Categories <span class="ltx_text ltx_font_bold">44</span> (2025), 826–868.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

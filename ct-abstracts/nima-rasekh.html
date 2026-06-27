@@ -1,0 +1,84 @@
+---
+layout: abstract
+title: "From Filter Quotient Model Categories to Type Theory"
+author: "Nima Rasekh"
+slug: nima-rasekh
+permalink: /ct/abstracts/nima-rasekh/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">From Filter Quotient Model Categories to Type Theory</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Nima Rasekh
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Categorical logic is an area of category theory that uses categorical methods to construct and study models of various mathematical foundations, such as set theories and type theories. The idea is to construct categories whose objects axiomatically behave like sets or types, and then use the categorical structure to interpret the logical operations and axioms of the chosen foundation. We can use this approach to construct both standard and non-standard models of various foundations. One elegant way to construct non-standard models is via <em class="ltx_emph ltx_font_italic">filter quotients</em> of categories. It has, in particular, been used to construct models of set theory where the continuum hypothesis fails <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Here, for a given category <math id="p2.m1" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math> and a suitable poset of subterminal objects <math id="p2.m2" class="ltx_Math" alttext="\Phi" display="inline"><mi mathvariant="normal">Φ</mi></math> in <math id="p2.m3" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math>, the <em class="ltx_emph ltx_font_italic">filter quotient</em> <math id="p2.m4" class="ltx_Math" alttext="\mathcal{C}_{\Phi}" display="inline"><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">Φ</mi></msub></math> is given as a filtered colimit <math id="p2.m5" class="ltx_Math" alttext="\mathrm{colim}_{U\in\Phi^{op}}\mathcal{C}_{/U}" display="inline"><mrow><msub><mi>colim</mi><mrow><mi>U</mi><mo>∈</mo><msup><mi mathvariant="normal">Φ</mi><mrow><mi>o</mi><mo>⁢</mo><mi>p</mi></mrow></msup></mrow></msub><mo>⁢</mo><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mrow><mi></mi><mo>/</mo><mi>U</mi></mrow></msub></mrow></math>. This construction in particular comes with a projection functor <math id="p2.m6" class="ltx_Math" alttext="P_{\Phi}\colon\mathcal{C}\to\mathcal{C}_{\Phi}" display="inline"><mrow><msub><mi>P</mi><mi mathvariant="normal">Φ</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo stretchy="false">→</mo><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">Φ</mi></msub></mrow></mrow></math>, which preserves much of the structure of <math id="p2.m7" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math>, hence preserving the property of being a model of a given foundation, resulting in new models.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">In recent decades, we have seen the rise of homotopical foundations for mathematics, and in particular, various <em class="ltx_emph ltx_font_italic">homotopy type theories (HoTT)</em>. Analogously, we have also witnessed the development of <math id="p3.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categorical models of homotopy theory, proving that the <math id="p3.m2" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-category of spaces and of sheaves on spaces are indeed models of HoTT. However, the study of non-standard models of HoTT via <math id="p3.m3" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categorical filter quotients has remained largely unexplored. Here, for a given <math id="p3.m4" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-category <math id="p3.m5" class="ltx_Math" alttext="\mathcal{C}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒞</mi></math> and a suitable poset <math id="p3.m6" class="ltx_Math" alttext="\Phi" display="inline"><mi mathvariant="normal">Φ</mi></math>, the <math id="p3.m7" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categorical filter quotient is defined analogously as a filtered colimit of slice <math id="p3.m8" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories <math id="p3.m9" class="ltx_Math" alttext="\mathcal{C}_{\Phi}=\mathrm{colim}_{U\in\Phi^{op}}\mathcal{C}_{/U}" display="inline"><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">Φ</mi></msub><mo>=</mo><mrow><msub><mi>colim</mi><mrow><mi>U</mi><mo>∈</mo><msup><mi mathvariant="normal">Φ</mi><mrow><mi>o</mi><mo>⁢</mo><mi>p</mi></mrow></msup></mrow></msub><mo>⁢</mo><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mrow><mi></mi><mo>/</mo><mi>U</mi></mrow></msub></mrow></mrow></math>, which again comes with the projection functor <math id="p3.m10" class="ltx_Math" alttext="P_{\Phi}\colon\mathcal{C}\to\mathcal{C}_{\Phi}" display="inline"><mrow><msub><mi>P</mi><mi mathvariant="normal">Φ</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo stretchy="false">→</mo><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">Φ</mi></msub></mrow></mrow></math> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Constructing models of HoTT via <math id="p4.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories requires overcoming major technical challenges. Due to their syntactic nature, type theories are very strict, whereas <math id="p4.m2" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories are inherently weak structures. One effective way to bridge this gap is to leverage <em class="ltx_emph ltx_font_italic">model categories</em>. Indeed, model categories are strict categories that nonetheless come with an <em class="ltx_emph ltx_font_italic">underlying <math id="p4.m3" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-category</em>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">This approach breaks down the task into a two-step process. First, one constructs a suitable model category for a chosen <math id="p5.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-category. Then, one shows that the model category satisfies the conditions necessary to model HoTT. In the case of the <math id="p5.m2" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-category of spaces, this has been realized via the Kan model structure on simplicial sets, whereas for <math id="p5.m3" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories of sheaves (Grothendieck <math id="p5.m4" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-topoi) this goal has been achieved via <em class="ltx_emph ltx_font_italic">type-theoretic model topoi</em> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">In this talk, I will show how this two-step approach can be extended to filter quotient <math id="p6.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories, resulting in new non-standard models of HoTT. More specifically, I show that many filter quotient <math id="p6.m2" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-categories admit <em class="ltx_emph ltx_font_italic">filter quotient model categories</em> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>. Moreover, I demonstrate that the projection functor <math id="p6.m3" class="ltx_Math" alttext="P_{\Phi}" display="inline"><msub><mi>P</mi><mi mathvariant="normal">Φ</mi></msub></math> preserves the property of being a model for HoTT, resulting in new non-standard models of HoTT <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">5</span>, <span class="ltx_ref ltx_ref_self">6</span>]</cite>. These non-standard models exhibit intriguing behaviors, such as non-standard natural numbers, that enrich our understanding of homotopical foundations.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+S. Mac Lane and I. Moerdijk, <span class="ltx_text ltx_font_italic">Sheaves in geometry and logic</span>, corrected reprint of the 1992 edition,
+Universitext, Springer, New York, 1994; MR1300636
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+N. Rasekh, <em class="ltx_emph ltx_font_italic">Filter quotients and non-presentable <math id="bib.bib2.m1" class="ltx_Math" alttext="(\infty,1)" display="inline"><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>-toposes</em>, J. Pure Appl. Algebra <span class="ltx_text ltx_font_bold">225</span> (2021), no. 12, Paper No. 106770, 36 pp.
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+M. Shulman, <em class="ltx_emph ltx_font_italic">All <math id="bib.bib3.m1" class="ltx_Math" alttext="(\infty,1)" display="inline"><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>-toposes have strict univalent universes</em>, preprint <a href="https://arxiv.org/abs/1904.07004" title="" class="ltx_ref ltx_href">arXiv:1904.07004</a>, 2019.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+N. Rasekh, <em class="ltx_emph ltx_font_italic">Filter Quotient Model Structures</em>, preprint <a href="https://arxiv.org/abs/2508.07735" title="" class="ltx_ref ltx_href">arXiv:2508.07735</a>, 2024.
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+N. Rasekh, <em class="ltx_emph ltx_font_italic">Non-Standard Models of Homotopy Type Theory</em>, preprint <a href="https://arxiv.org/abs/2508.07736" title="" class="ltx_ref ltx_href">arXiv:2508.07736</a>, 2024.
+
+</span>
+</li>
+<li id="bib.bib6" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock">
+N. Rasekh, <em class="ltx_emph ltx_font_italic">Simplicial Homotopy Type Theory is not just Simplicial: What are <math id="bib.bib6.m1" class="ltx_Math" alttext="\infty" display="inline"><mi mathvariant="normal">∞</mi></math>-Categories?</em>, preprint <a href="https://arxiv.org/abs/2508.07737" title="" class="ltx_ref ltx_href">arXiv:2508.07737</a>, 2025.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

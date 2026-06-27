@@ -1,0 +1,122 @@
+---
+layout: abstract
+title: "Pointed Univalence"
+author: "Yufeng Li"
+slug: yufeng-li
+permalink: /ct/abstracts/yufeng-li/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Pointed Univalence</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Yufeng Li
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Joint work with:<span class="ltx_text ltx_font_medium"> Krzysztof Kapulkin</span></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Voevodsky’s Univalence Axiom is perhaps the most fundamental logical principle
+introduced in the 21st century.
+A universe of (small) types satisfies the univalence axiom if, for any two types
+in that universe, their type of equalities (or identifications) is equivalent to
+the type of equivalences between them.
+Thus, for example, two logically equivalent propositions or bijective sets can
+be treated as equal, and hence substituted for each other in all contexts.
+While convenient and often assumed in informal mathematical practice, the
+univalence axiom requires formal justification.
+The first such justification comes from Voevodsky’s celebrated simplicial model
+<cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite>; the model that not only satisfies, but in fact inspired, the
+univalence axiom.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">In <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite>, the goal is to build a single model of homotopy type theory (in
+simplicial sets), and when it comes to verifying univalence, the authors do just
+that: they translate the statement into a statement about simplicial sets and
+check it directly.
+In contrast, in <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>, we make two further contributions to
+categorical univalent type theory.
+First, we provide a more general semantic treatment of univalence at the level
+of Voevodsky’s universe categories <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">5</span>]</cite> by rephrasing the condition in a
+way that is easy to check across various models.
+We also aim to avoid using the internal language formulations which, while
+elegant, might occasionally conceal important details, possibly leading to
+incomplete arguments.
+Altogether, the upshot of our formulation is that, when verifying univalence in
+a universe category model, one does not need to work with syntax at all.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Interestingly, to arrive at a formulation of univalence that can be easily
+verified in a universe category, we actually give a stronger statement than the
+one commonly used and given in the HoTT Book <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>, which brings us
+our second contribution.
+As mentioned before, univalence traditionally formulated by saying that a
+certain map from the identity type between two types in a universe to the type
+of equivalences between them is itself an equivalence.
+Our strengthening requires that the homotopy inverse of this map sends the
+identity equivalence to the reflexivity term.
+To differentiate the two, we call the version found in <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">4</span>]</cite>
+<em class="ltx_emph ltx_font_italic">book univalence</em> and our new version <em class="ltx_emph ltx_font_italic">pointed univalence</em>, which is
+based on a lifting condition.
+While book univalence asks for a certain commutative square to admit a diagonal
+filler making only the lower triangle commute, pointed univalence requires that
+both resulting triangles commute.
+As such, pointed univalence is natural to verify in models coming from Quillen
+model categories, where fillers make both triangles commute.
+Furthermore, since maps from the left class to fibrations axiomatize pattern
+matching, our pointed univalence is also computationally desirable, as it
+justifies performing pattern matching on equivalences.
+Thus, we believe this strengthening constitutes a new notion of independent
+interest with strong semantic justification.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Our semantic study of pointed univalence includes studying closure properties of
+models under two fundamental constructions: Artin–Wraith gluing and inverse
+diagrams.
+For book univalence, these were verified in the seminal work of Shulman
+<cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite>, and we provide the “pointed counterpart” of his results.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+Krzysztof Kapulkin and Yufeng Li, <em class="ltx_emph ltx_font_italic">(Pointed) Univalence in Universe Category Models of Type Theory</em>. 2025. arXiv: <span class="ltx_text ltx_font_typewriter">2512.16697 [CS.LO]</span>.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+Krzysztof Kapulkin and Peter LeFanu Lumsdaine. “The Simplicial Model of Univalent Foundations (after Voevodsky)”. In: <span class="ltx_text ltx_font_italic">Journal of the European Mathematical Society</span> 23.6 (2021), pp. 2071–2126.
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+Michael Shulman. “Univalence for inverse diagrams and homotopy canonicity”. In: <span class="ltx_text ltx_font_italic">Mathematical Structures in Computer Science</span> 25.5 (2015), pp. 1203–1277.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+The Univalent Foundations Program. <span class="ltx_text ltx_font_italic">Homotopy Type Theory: Univalent Foundations of Mathematics.</span> Institute for Aaadvanced Study: <a href="https://homotopytypetheory.org/book" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://homotopytypetheory.org/book</a>, 2013.
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+Vladimir Voevodsky. “A C-system defined by a universe category”. In: <span class="ltx_text ltx_font_italic">Theory and Applications of Categories</span> 30.37 (2015), pp. 1181–1214.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}

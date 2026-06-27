@@ -1,0 +1,208 @@
+# CT2026 programme — talks reference abstract slugs in _data/abstracts.yml.
+# `last`: surname shown in the week grid (explicit so compound names 
+#         are not truncated).
+# `mode: zoom` marks a remote speaker. Plenary talks are in the room below;
+# parallel & lightning rooms are indexed to the `rooms:` list (in order).
+
+rooms:
+  - "Krieger 205"
+  - "Krieger 170"
+  - "Krieger 180"
+plenary_room: "Mudd 26"
+
+days:
+  - id: sun
+    label: Sun
+    full: Sunday
+    date: "2026-07-12"
+    note: "Welcome reception only"
+    socials:
+      - { time: "17:00", until: "19:00", title: Reception, venue: "Glass Pavilion at Levering Hall" }
+
+  - id: mon
+    label: Mon
+    full: Monday
+    date: "2026-07-13"
+    invited: { slug: geoff-cruttwell, last: Cruttwell, time: "09:00" }
+    contributed:
+      - { slug: brenda-johnson, last: Johnson, time: "10:00" }
+      - { slug: gabriele-lobbia, last: Lobbia, time: "11:00", mode: zoom }
+      - { slug: michael-ching, last: Ching, time: "11:30" }
+      - { slug: noam-zeilberger, last: Zeilberger, time: "12:00" }
+    parallel:
+      time: "14:30"
+      rooms:
+        - # Krieger 205
+          - { slug: kimball-strong, last: Strong, time: "14:30" }
+          - { slug: martina-rovelli, last: Rovelli, time: "15:00" }
+          - { slug: daniel-ramras, last: Ramras, time: "15:30" }
+        - # Krieger 170
+          - { slug: j-robert-morissette, last: Morissette, time: "14:30" }
+          - { slug: matthew-kukla, last: Kukla, time: "15:00" }
+          - { slug: ea-e-t, last: "T", time: "15:30" }
+        - # Krieger 180
+          - { slug: sridhar-ramesh, last: Ramesh, time: "14:30" }
+          - { slug: paul-taylor, last: Taylor, time: "15:00", mode: zoom }
+          - { slug: joshua-wrigley, last: Wrigley, time: "15:30", mode: zoom }
+    lightning:
+      time: "16:30"
+      rooms:
+        - # Krieger 205
+          - { slug: daniel-carranza, last: Carranza, time: "16:30" }
+          - { slug: eleftherios-chatzitheodoridis, last: Chatzitheodoridis, time: "16:40" }
+          - { slug: kian-cho, last: Cho, time: "16:50" }
+        - # Krieger 170
+          - { slug: diego-manco, last: Manco, time: "16:30" }
+          - { slug: nelson-niu, last: Niu, time: "16:40" }
+          - { slug: georg-lehner, last: Lehner, time: "16:50", mode: zoom }
+        - # Krieger 180
+          - { slug: joseph-hua, last: Hua, time: "16:30" }
+          - { slug: joão-j-xarez, last: Xarez, time: "16:40", mode: zoom }
+          - { slug: yuto-kawase, last: Kawase, time: "16:50", mode: zoom }
+
+  - id: tue
+    label: Tue
+    full: Tuesday
+    date: "2026-07-14"
+    invited: { slug: ieke-moerdijk, last: Moerdijk, time: "09:00", mode: zoom }
+    contributed:
+      - { slug: amar-hadzihasanovic, last: Hadzihasanovic, time: "10:00" }
+      - { slug: david-spivak, last: Spivak, time: "11:00" }
+      - { slug: julie-bergner, last: Bergner, time: "11:30" }
+      - { slug: robert-paré, last: Paré, time: "12:00", mode: zoom }
+    parallel:
+      time: "14:30"
+      rooms:
+        - # Krieger 205
+          - { slug: sam-van-gool, last: "van Gool", time: "14:30", mode: zoom }
+          - { slug: gabriel-saadia, last: Saadia, time: "15:00", mode: zoom }
+          - { slug: marcello-lanfranchi, last: Lanfranchi, time: "15:30" }
+        - # Krieger 170
+          - { slug: matthew-di-meglio, last: "Di Meglio", time: "14:30", mode: zoom }
+          - { slug: geoff-vooys, last: Vooys, time: "15:00", mode: zoom }
+          - { slug: khyathi-komalan, last: Komalan, time: "15:30" }
+        - # Krieger 180
+          - { slug: dali-zangurashvili, last: Zangurashvili, time: "14:30", mode: zoom }
+          - { slug: sergei-burkin, last: Burkin, time: "15:00", mode: zoom }
+          - { slug: omar-dennaoui, last: Dennaoui, time: "15:30" }
+    lightning:
+      time: "16:30"
+      rooms:
+        - # Krieger 205
+          - { slug: rubén-maldonado, last: Maldonado, time: "16:30", mode: zoom }
+          - { slug: yuki-imamura, last: Imamura, time: "16:40", mode: zoom }
+          - { slug: giuseppe-leoncini, last: Leoncini, time: "16:50" }
+        - # Krieger 170
+          - { slug: josé-siqueira, last: Siqueira, time: "16:30", mode: zoom }
+          - { slug: yufeng-li, last: Li, time: "16:40", mode: zoom }
+          - { slug: owen-milner, last: Milner, time: "16:50" }
+
+  - id: wed
+    label: Wed
+    full: Wednesday
+    date: "2026-07-15"
+    note: "Morning talks, then excursion"
+    excursion: true
+    invited: { slug: chelsea-walton, last: Walton, time: "09:00" }
+    contributed:
+      - { slug: agustina-czenky, last: Czenky, time: "10:00" }
+      - { slug: luca-mesiti, last: Mesiti, time: "11:00", mode: zoom }
+      - { slug: nicola-gambino, last: Gambino, time: "11:30", mode: zoom }
+      - { slug: marino-gran, last: Gran, time: "12:00" }
+    socials:
+      - { time: "afternoon", title: Excursion }
+
+  - id: thu
+    label: Thu
+    full: Thursday
+    date: "2026-07-16"
+    invited: { slug: michael-hoefnagel, last: Hoefnagel, time: "09:00" }
+    contributed:
+      - { slug: eugenia-cheng, last: Cheng, time: "10:00" }
+      - { slug: rory-lucyshyn-wright, last: Lucyshyn-Wright, time: "11:00", mode: zoom }
+      - { slug: roy-ferguson, last: Ferguson, time: "11:30", mode: zoom }
+      - { slug: steve-lack, last: Lack, time: "12:00" }
+    parallel:
+      time: "14:30"
+      rooms:
+        - # Krieger 205
+          - { slug: rose-kudzman-blais, last: Kudzman-Blais, time: "14:30" }
+          - { slug: chun-yu-lin, last: Lin, time: "15:00", mode: zoom }
+          - { slug: claudio-pisani, last: Pisani, time: "15:30", mode: zoom }
+        - # Krieger 170
+          - { slug: noah-d-ortiz, last: Ortiz, time: "14:30" }
+          - { slug: jonathan-weinberger, last: Weinberger, time: "15:00" }
+          - { slug: maximilian-petrowitsch, last: Petrowitsch, time: "15:30", mode: zoom }
+        - # Krieger 180
+          - { slug: ülo-reimaa, last: Reimaa, time: "14:30" }
+          - { slug: nadja-egner, last: Egner, time: "15:00", mode: zoom }
+          - { slug: manuel-cortés-izurdiaga, last: Cortés-Izurdiaga, time: "15:30", mode: zoom }
+    lightning:
+      time: "16:30"
+      rooms:
+        - # Krieger 205
+          - { slug: arghan-dutta, last: Dutta, time: "16:30" }
+          - { slug: stiéphen-pradal, last: Pradal, time: "16:40" }
+          - { slug: johnathon-taylor, last: Taylor, time: "16:50" }
+        - # Krieger 170
+          - { slug: florian-schwarz, last: Schwarz, time: "16:30" }
+          - { slug: ruiliang-li, last: Li, time: "16:40", mode: zoom }
+          - { slug: jean-baptiste-vienney, last: Vienney, time: "16:50", mode: zoom }
+        - # Krieger 180
+          - { slug: minkyu-kim, last: Kim, time: "16:30" }
+          - { slug: ariel-e-rosenfield, last: Rosenfield, time: "16:40" }
+          - { slug: david-green, last: Green, time: "16:50" }
+    socials:
+      - { time: "19:00", until: "21:30", title: "Conference dinner", venue: "Scott Bates Commons Banquet Room" }
+
+  - id: fri
+    label: Fri
+    full: Friday
+    date: "2026-07-17"
+    invited: { slug: susan-niefield, last: Niefield, time: "09:00" }
+    contributed:
+      - { slug: evan-patterson, last: Patterson, time: "10:00" }
+      - { slug: joseph-helfer, last: Helfer, time: "11:00" }
+      - { slug: lingyuan-ye, last: Ye, time: "11:30", mode: zoom }
+      - { slug: davide-trotta, last: Trotta, time: "12:00", mode: zoom }
+    parallel:
+      time: "14:30"
+      rooms:
+        - # Krieger 205
+          - { slug: giacomo-tendas, last: Tendas, time: "14:30", mode: zoom }
+          - { slug: aaron-david-fairbanks, last: Fairbanks, time: "15:00" }
+          - { slug: jason-brown, last: Brown, time: "15:30" }
+        - # Krieger 170
+          - { slug: james-hefford, last: Hefford, time: "14:30", mode: zoom }
+          - { slug: joe-moeller, last: Moeller, time: "15:00" }
+          - { slug: andre-kornell, last: Kornell, time: "15:30" }
+        - # Krieger 180
+          - { slug: quentin-aristote, last: Aristote, time: "14:30", mode: zoom }
+          - { slug: elena-caviglia, last: Caviglia, time: "15:00", mode: zoom }
+          - { slug: victoria-vollmer, last: Vollmer, time: "15:30" }
+    lightning:
+      time: "16:30"
+      rooms:
+        - # Krieger 205
+          - { slug: arne-mertens, last: Mertens, time: "16:30", mode: zoom }
+          - { slug: nima-rasekh, last: Rasekh, time: "16:40", mode: zoom }
+          - { slug: jon-funk, last: Funk, time: "16:50" }
+        - # Krieger 170
+          - { slug: arnaud-duvieusart, last: Duvieusart, time: "16:30", mode: zoom }
+          - { slug: florian-de-leger, last: "De Leger", time: "16:40", mode: zoom }
+        - # Krieger 180
+          - { slug: léo-schelstraete, last: Schelstraete, time: "16:30", mode: zoom }
+          - { slug: christopher-townsend, last: Townsend, time: "16:40", mode: zoom }
+
+  - id: sat
+    label: Sat
+    full: Saturday
+    date: "2026-07-18"
+    note: "Morning only"
+    invited: { slug: tobias-fritz, last: Fritz, time: "09:00" }
+    contributed:
+      - { slug: isaiah-b-hilsenrath, last: Hilsenrath, time: "10:00" }
+      - { slug: owen-lynch, last: Lynch, time: "11:00" }
+      - { slug: paolo-perrone, last: Perrone, time: "11:30" }
+      - { slug: steve-awodey, last: Awodey, time: "12:00" }
+

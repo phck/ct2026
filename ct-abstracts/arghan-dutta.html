@@ -1,0 +1,233 @@
+---
+layout: abstract
+title: "The Morita (∞,2)-Category of a Monoidal Category as a 2-Complicial Set"
+author: "Arghan Dutta"
+slug: arghan-dutta
+permalink: /ct/abstracts/arghan-dutta/
+---
+
+{% raw %}
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">The Morita <math id="m1" class="ltx_Math" alttext="(\infty,2)" display="inline"><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>-Category of a Monoidal Category as a <math id="m2" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math>-Complicial Set</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Arghan Dutta
+</span></span>
+</div>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Joint work with:<span class="ltx_text ltx_font_medium"> Stefano Luneia, Martina Rovelli, Sam Silver</span></span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">We present an explicit and elementary construction of the Morita <math id="p2.m1" class="ltx_Math" alttext="(\infty,2)" display="inline"><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>-category associated to a monoidal category <math id="p2.m2" class="ltx_Math" alttext="\mathcal{C}^{\otimes}" display="inline"><msup><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>⊗</mo></msup></math> satisfying minimal conditions <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">1</span>]</cite>. This construction provides a self-contained approach to understanding the higher categorical structure formed by monoids, bimodules, and bimodule maps.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Our main result constructs this structure as a 3-coskeletal 2-complicial set <math id="p3.m1" class="ltx_Math" alttext="M^{\natural}(\mathcal{C}^{\otimes})" display="inline"><mrow><msup><mi>M</mi><mi mathvariant="normal">♮</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>⊗</mo></msup><mo stretchy="false">)</mo></mrow></mrow></math>—a model for <math id="p3.m2" class="ltx_Math" alttext="(\infty,2)" display="inline"><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>-categories based on marked simplicial sets due to Verity <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">2</span>]</cite>. In this construction, vertices encode monoids, edges represent bimodules, triangles capture bimodule maps <math id="p3.m3" class="ltx_Math" alttext="\varphi_{012}:M_{01}\otimes_{A_{1}}M_{12}\to M_{02}" display="inline"><mrow><msub><mi>φ</mi><mn>012</mn></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><msub><mi>M</mi><mn>01</mn></msub><msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>A</mi><mn>1</mn></msub></msub><msub><mi>M</mi><mn>12</mn></msub></mrow><mo stretchy="false">→</mo><msub><mi>M</mi><mn>02</mn></msub></mrow></mrow></math> from balanced tensor products, and tetrahedra encode coherence conditions of the form</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="(\varphi_{012}\otimes_{A_{2}}M_{23})\bullet\varphi_{023}=\alpha_{M_{01}|M_{12}%
+|M_{23}}\bullet(M_{01}\otimes_{A_{1}}\varphi_{123})\bullet\varphi_{013}." display="block"><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>φ</mi><mn>012</mn></msub><msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>A</mi><mn>2</mn></msub></msub><msub><mi>M</mi><mn>23</mn></msub></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">∙</mo><msub><mi>φ</mi><mn>023</mn></msub></mrow><mo>=</mo><mrow><msub><mi>α</mi><mrow><msub><mi>M</mi><mn>01</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">|</mo><msub><mi>M</mi><mn>12</mn></msub><mo stretchy="false">|</mo></mrow><mo>⁢</mo><msub><mi>M</mi><mn>23</mn></msub></mrow></msub><mo lspace="0.222em" rspace="0.222em">∙</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>M</mi><mn>01</mn></msub><msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>A</mi><mn>1</mn></msub></msub><msub><mi>φ</mi><mn>123</mn></msub></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">∙</mo><msub><mi>φ</mi><mn>013</mn></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The marking distinguishes invertible structure: marked edges correspond to invertible bimodules, while marked triangles represent bimodule isomorphisms.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">The key technical requirement is that <math id="p4.m1" class="ltx_Math" alttext="\mathcal{C}^{\otimes}" display="inline"><msup><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>⊗</mo></msup></math> admits a <em class="ltx_emph ltx_font_italic">calculus of balanced tensor products</em>—conditions ensuring that coequalizers of the form</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="M\otimes_{B}N\coloneqq\mathrm{coeq}\left[\leavevmode\hbox to157.59pt{\vbox to%
+32.2pt{\pgfpicture\makeatletter\hbox{\hskip 78.79318pt\lower-22.8819pt\hbox to%
+0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }\definecolor{pgfstrokecolor}{rgb}{%
+0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }\pgfsys@color@rgb@fill%
+{0}{0}{0}\pgfsys@invoke{ }\pgfsys@setlinewidth{0.4pt}\pgfsys@invoke{ }%
+\nullfont\hbox to0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }{}{}{}{{}}\hbox{%
+\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{\offinterlineskip{}{}{{{}}{{}}}{{{}%
+}}{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-78.79318pt}{-8.65971pt}\pgfsys@invoke{ }\hbox{\vbox{\halign{%
+\pgf@matrix@init@row\pgf@matrix@step@column{\pgf@matrix@startcell#%
+\pgf@matrix@endcell}&amp;#\pgf@matrix@padding&amp;&amp;\pgf@matrix@step@column{%
+\pgf@matrix@startcell#\pgf@matrix@endcell}&amp;#\pgf@matrix@padding\cr\hfil\hskip 3%
+4.41829pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}}\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-30.11275pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{%
+rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${{(M\otimes B)\otimes N%
+}}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}}}&amp;\hskip 34.41829pt\hfil&amp;%
+\hfil\hskip 23.99997pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@invoke%
+{\lxSVG@closescope }\pgfsys@endscope{}}}&amp;\hskip 0.0pt\hfil&amp;\hfil\hskip 44.3749%
+pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}}\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-16.06938pt}{0.0pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{%
+rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{${{M\otimes N}}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}&amp;\hskip 20.37492pt\hfil\cr%
+}}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}{{{{}}}{{}}{{}}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+{}{
+{}{}{}}{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{}{{{}{}}}\hbox{\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{{}}{}{}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}\hbox{{\pgfsys@beginscope%
+\pgfsys@invoke{ }{{}{{}}{}{}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+{{}}{}{{}}{}{{{{}}}{{{}}}}
+{{}}{{{}}{{}}}{}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{{}}{}{%
+}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+{{}}{{{}}{{}}}{}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{{}}{}{%
+}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+{{}}{}{{}}{}{{}}
+{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope\pgfsys@invoke{ }%
+\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{{
+{\pgfsys@beginscope
+\pgfsys@setdash{}{0.0pt}\pgfsys@roundcap\pgfsys@roundjoin{}
+{}{}{}
+{}{}{}
+\pgfsys@moveto{-2.07988pt}{2.39986pt}\pgfsys@curveto{-1.69989pt}{0.95992pt}{-0%
+.85313pt}{0.27998pt}{0.0pt}{0.0pt}\pgfsys@curveto{-0.85313pt}{-0.27998pt}{-1.6%
+9989pt}{-0.95992pt}{-2.07988pt}{-2.39986pt}\pgfsys@stroke\pgfsys@endscope}}
+}{}{}{{}}{}{}{{}}\pgfsys@moveto{-9.7566pt}{-1.33751pt}\pgfsys@lineto{37.44337%
+pt}{-1.33751pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}{%
+}{{}}{{{}}{{{}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.%
+0}{0.0}{1.0}{37.64336pt}{-1.33751pt}\pgfsys@invoke{ }\pgfsys@invoke{     %
+\lxSVG@closescope  }\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}%
+\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{4.2928pt}{2.38193pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}{%
+rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{r_{M}%
+\otimes N}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{
+{}{}{}}{}{
+{}{}{}}{}{
+{}{}{}}
+{{{{{}}{
+{}{}}{}{}{{}{}}}}}{}{{{{{}}{
+{}{}}{}{}{{}{}}}}}{{}}{}{}{}{}{}{{{}{}}}{}{}{{{}{}}}\hbox{\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{{}}{}{}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}\hbox{{\pgfsys@beginscope%
+\pgfsys@invoke{ }{{}{{}}{}{}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+{{}}{}{{}}{}{{{{}}}{{{}}}}
+{{}}{{{}}{{}}}{}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{{}}{}{%
+}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+{{}}{{{}}{{}}}{}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{{}}{}{%
+}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+{{}}{}{{}}{}{{}}
+{}{}{}{}{{{}{}}}{}{{}}{}{}{}{{{}{}}}\pgfsys@beginscope\pgfsys@invoke{ }%
+\pgfsys@setlinewidth{0.39998pt}\pgfsys@invoke{ }{}{}{}{}{{}}{}{}{{}}%
+\pgfsys@moveto{-9.7566pt}{-10.98192pt}\pgfsys@lineto{37.44337pt}{-10.98192pt}%
+\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}}}{{}{{}}{}{}{{}}{{{}}{{{}}%
+{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1.0}{37%
+.64336pt}{-10.98192pt}\pgfsys@invoke{ }\pgfsys@invoke{     \lxSVG@closescope  %
+}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}\hbox{\hbox{{%
+\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{
+{}{}}}{
+{}{}}
+{{}{{}}}{{}{}}{}{{}{}}
+{
+}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%
+.0}{-9.05112pt}{-18.58469pt}\pgfsys@invoke{ }\hbox{{\definecolor{%
+pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%
+\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{$\scriptstyle{\alpha_{M,%
+B,N}\bullet(M\otimes\ell_{N})}$}
+}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope
+\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{{
+{}{}{}}}{}{}\hss}\pgfsys@discardpath\pgfsys@invoke{\lxSVG@closescope }%
+\pgfsys@endscope\hss}}\lxSVG@closescope\endpgfpicture}}\right]" display="block"><mrow><mrow><mi>M</mi><msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>B</mi></msub><mi>N</mi></mrow><mo>≔</mo><mrow><mi>coeq</mi><mo>⁢</mo><mrow><mo>[</mo><mtext><svg class="ltx_picture" height="44.56" overflow="visible" version="1.1" width="218.05"><g fill="#000000" stroke="#000000" transform="translate(0,44.56) matrix(1 0 0 -1 0 0) translate(109.03,0) translate(0,31.66)"><g stroke-width="0.4pt" transform="matrix(1.0 0.0 0.0 1.0 -109.03 -11.98)"><g class="ltx_tikzmatrix" transform="matrix(1 0 0 -1 0 11.98)"><g class="ltx_tikzmatrix_row" transform="matrix(1 0 0 1 0 15.44)"><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 0 0) translate(47.62,0) matrix(1.0 0.0 0.0 1.0 -41.67 0)"><foreignObject height="13.84" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="83.33"><math class="ltx_Math" alttext="{{(M\otimes B)\otimes N}}" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>M</mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>B</mi></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">⊗</mo><mi>N</mi></mrow></math></foreignObject></g><g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 128.46 0) translate(61.4,0) matrix(1.0 0.0 0.0 1.0 -22.24 0)"><foreignObject height="10.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="44.47"><math class="ltx_Math" alttext="{{M\otimes N}}" display="inline"><mrow><mi>M</mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>N</mi></mrow></math></foreignObject></g></g></g></g><g stroke-width="0.39998pt"><path d="M -13.5 -1.85 L 51.81 -1.85" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.0 0.0 0.0 1.0 52.09 -1.85)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 5.94 3.3)"><foreignObject height="8.51" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="26.98"><math class="ltx_Math" alttext="\scriptstyle{r_{M}\otimes N}" display="inline"><mrow><msub><mi mathsize="70%">r</mi><mi mathsize="71%">M</mi></msub><mo lspace="0.222em" mathsize="70%" rspace="0.222em">⊗</mo><mi mathsize="70%">N</mi></mrow></math></foreignObject></g></g><g stroke-width="0.39998pt"><path d="M -13.5 -15.2 L 51.81 -15.2" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.0 0.0 0.0 1.0 52.09 -15.2)"><path d="M -2.88 3.32 C -2.35 1.33 -1.18 0.39 0 0 C -1.18 -0.39 -2.35 -1.33 -2.88 -3.32" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -12.52 -25.72)"><foreignObject height="10.23" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="63.91"><math class="ltx_Math" alttext="\scriptstyle{\alpha_{M,B,N}\bullet(M\otimes\ell_{N})}" display="inline"><mrow><msub><mi mathsize="70%">α</mi><mrow><mi mathsize="71%">M</mi><mo mathsize="71%">,</mo><mi mathsize="71%">B</mi><mo mathsize="71%">,</mo><mi mathsize="71%">N</mi></mrow></msub><mo lspace="0.222em" mathsize="70%" rspace="0.222em">∙</mo><mrow><mo maxsize="70%" minsize="70%">(</mo><mrow><mi mathsize="70%">M</mi><mo lspace="0.222em" mathsize="70%" rspace="0.222em">⊗</mo><msub><mi mathsize="70%" mathvariant="normal">ℓ</mi><mi mathsize="71%">N</mi></msub></mrow><mo maxsize="70%" minsize="70%">)</mo></mrow></mrow></math></foreignObject></g></g></g></svg></mtext><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">exist and that functors <math id="p4.m2" class="ltx_Math" alttext="M\otimes(-)" display="inline"><mrow><mi>M</mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">−</mo><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="p4.m3" class="ltx_Math" alttext="(-)\otimes P" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">−</mo><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">⊗</mo><mi>P</mi></mrow></math> preserve them appropriately. This framework encompasses important examples including <math id="p4.m4" class="ltx_Math" alttext="\mathbf{Ab}^{\otimes}" display="inline"><msup><mi>𝐀𝐛</mi><mo>⊗</mo></msup></math>, <math id="p4.m5" class="ltx_Math" alttext="\mathbf{Set}^{\amalg}" display="inline"><msup><mi>𝐒𝐞𝐭</mi><mo>∐</mo></msup></math>, and more generally, cocomplete closed monoidal categories.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Rather than directly verifying the bicategory axioms (a lengthy but well-believed result), we leverage the combinatorics of simplicial sets to reformulate these coherence conditions. We prove that <math id="p5.m1" class="ltx_Math" alttext="M^{\natural}(\mathcal{C}^{\otimes})" display="inline"><mrow><msup><mi>M</mi><mi mathvariant="normal">♮</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo>⊗</mo></msup><mo stretchy="false">)</mo></mrow></mrow></math> satisfies the defining properties of a 2-complicial set by establishing the appropriate lifting properties against complicial horns <math id="p5.m2" class="ltx_Math" alttext="\Lambda^{k}[m]\hookrightarrow\Delta^{k}[m]" display="inline"><mrow><mrow><msup><mi mathvariant="normal">Λ</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>m</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">↪</mo><mrow><msup><mi mathvariant="normal">Δ</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>m</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></math>, thinness extensions <math id="p5.m3" class="ltx_Math" alttext="\Delta^{k}[m]^{\prime}\hookrightarrow\Delta^{k}[m]^{\prime\prime}" display="inline"><mrow><mrow><msup><mi mathvariant="normal">Δ</mi><mi>k</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">[</mo><mi>m</mi><mo stretchy="false">]</mo></mrow><mo>′</mo></msup></mrow><mo stretchy="false">↪</mo><mrow><msup><mi mathvariant="normal">Δ</mi><mi>k</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">[</mo><mi>m</mi><mo stretchy="false">]</mo></mrow><mo>′′</mo></msup></mrow></mrow></math>, and saturation extensions <math id="p5.m4" class="ltx_Math" alttext="\Delta[3]^{\text{eq}}\star\Delta[\ell]\hookrightarrow\Delta[3]^{\sharp}\star%
+\Delta[\ell]" display="inline"><mrow><mrow><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">[</mo><mn>3</mn><mo rspace="0.055em" stretchy="false">]</mo></mrow><mtext>eq</mtext></msup></mrow><mo rspace="0.222em">⋆</mo><mi mathvariant="normal">Δ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi mathvariant="normal">ℓ</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">↪</mo><mrow><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">[</mo><mn>3</mn><mo rspace="0.055em" stretchy="false">]</mo></mrow><mi mathvariant="normal">♯</mi></msup></mrow><mo rspace="0.222em">⋆</mo><mi mathvariant="normal">Δ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi mathvariant="normal">ℓ</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">This approach offers both a proof of concept for efficiently encoding higher categorical structure and a pathway toward scaling these methods to even higher dimensions, such as when treating braided or symmetric monoidal categories. Our construction recovers known structures—such as <math id="p6.m1" class="ltx_Math" alttext="M^{\natural}(\mathbf{Ab}^{\otimes})\simeq N_{\text{Duskin}}(\mathbf{Alg^{bi}})" display="inline"><mrow><mrow><msup><mi>M</mi><mi mathvariant="normal">♮</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>𝐀𝐛</mi><mo>⊗</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><msub><mi>N</mi><mtext>Duskin</mtext></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>𝐀𝐥𝐠</mi><mi>𝐛𝐢</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></math> <cite class="ltx_cite ltx_citemacro_cite">[<span class="ltx_ref ltx_ref_self">3</span>]</cite> and <math id="p6.m2" class="ltx_Math" alttext="M^{\natural}(\mathbf{Set}^{\amalg})\simeq N_{\text{Duskin}}(\mathbf{Span})" display="inline"><mrow><mrow><msup><mi>M</mi><mi mathvariant="normal">♮</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>𝐒𝐞𝐭</mi><mo>∐</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><msub><mi>N</mi><mtext>Duskin</mtext></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐒𝐩𝐚𝐧</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>—while providing an explicit, elementary foundation that avoids heavy machinery.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+A. Dutta, S. Luneia, M. Rovelli, and S. Silver,
+<em class="ltx_emph ltx_font_italic">The Morita <math id="bib.bib1.m1" class="ltx_Math" alttext="(\infty,2)" display="inline"><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math>-category of a monoidal category as a 2-complicial set</em>,
+arXiv preprint arXiv:2509.21472, 2025.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+Dominic Verity.
+
+</span>
+<span class="ltx_bibblock">Complicial Sets.
+
+</span>
+<span class="ltx_bibblock">arXiv preprint math/0410412, 2005.
+
+</span>
+<span class="ltx_bibblock"><a href="https://arxiv.org/abs/math/0410412" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://arxiv.org/abs/math/0410412</a>.
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+N. Gurski.
+
+</span>
+<span class="ltx_bibblock">Nerves of bicategories as stratified simplicial sets.
+
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_font_italic">J. Pure Appl. Algebra</span>, 213(6):927–946, 2009.
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+{% endraw %}
