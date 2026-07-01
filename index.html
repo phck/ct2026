@@ -77,7 +77,11 @@ nav_show: true
                     </picture>
                 </div>
                 <div class="afosr-logo-container">
-                        <img src="{{ '/assets/AFOSR.jpeg' | relative_url }}" alt="U.S. Air Force Office of Scientific Research" class="afosr-logo">
+                    <picture>
+                        <source srcset="{{ '/assets/AFOSR-circle.avif' | relative_url }}" type="image/avif">
+                        <source srcset="{{ '/assets/AFOSR-circle.webp' | relative_url }}" type="image/webp">
+                        <img src="{{ '/assets/AFOSR-circle.png' | relative_url }}" alt="U.S. Air Force Office of Scientific Research" class="afosr-logo">
+                    </picture>
                 </div>
             </div>
         </div>

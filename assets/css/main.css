@@ -483,6 +483,19 @@ code, pre {
 }
 
 .nsf-logo {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+
+.afosr-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.afosr-logo {
+    display: block;
     width: 120px;
     height: auto;
 }
