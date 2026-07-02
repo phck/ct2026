@@ -48,7 +48,7 @@ days:
       time: "16:30"
       rooms:
         - # Krieger 205
-          - { slug: daniel-carranza, last: Carranza, time: "16:30" }
+          - { slug: daniel-carranza, last: Carranza, time: "16:30", mode: zoom }
           - { slug: eleftherios-chatzitheodoridis, last: Chatzitheodoridis, time: "16:40" }
           - { slug: kian-cho, last: Cho, time: "16:50" }
         - # Krieger 170
@@ -150,7 +150,7 @@ days:
           - { slug: jean-baptiste-vienney, last: Vienney, time: "16:50", mode: zoom }
         - # Krieger 180
           - { slug: minkyu-kim, last: Kim, time: "16:30" }
-          - { slug: ariel-e-rosenfield, last: Rosenfield, time: "16:40" }
+          - { slug: arnaud-duvieusart, last: Duvieusart, time: "16:40", mode: zoom }
           - { slug: david-green, last: Green, time: "16:50" }
     socials:
       - { time: "19:00", until: "21:30", title: "Conference dinner", venue: "Scott Bates Commons Banquet Room" }
@@ -188,11 +188,9 @@ days:
           - { slug: nima-rasekh, last: Rasekh, time: "16:40", mode: zoom }
           - { slug: jon-funk, last: Funk, time: "16:50" }
         - # Krieger 170
-          - { slug: arnaud-duvieusart, last: Duvieusart, time: "16:30", mode: zoom }
-          - { slug: florian-de-leger, last: "De Leger", time: "16:40", mode: zoom }
-        - # Krieger 180
           - { slug: léo-schelstraete, last: Schelstraete, time: "16:30", mode: zoom }
-          - { slug: christopher-townsend, last: Townsend, time: "16:40", mode: zoom }
+          - { slug: florian-de-leger, last: "De Leger", time: "16:40", mode: zoom }
+          - { slug: christopher-townsend, last: Townsend, time: "16:50", mode: zoom }
 
   - id: sat
     label: Sat

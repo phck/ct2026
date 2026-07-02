@@ -25,7 +25,7 @@ days:
       - { slug: nick-gurski, time: "09:30" }
       - { slug: john-bourke, time: "11:00" }
       - { slug: steve-lack,  time: "14:30" }
-      - { name: "Paula Verdugo", time: "16:00" }
+      - { slug: paula-verdugo, time: "16:00" }
     breaks:
       - { time: "10:30", title: "Coffee break" }
       - { time: "12:00", title: "Lunch break" }
