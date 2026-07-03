@@ -49,6 +49,6 @@ days:
     date: "2026-07-22"
     talks:
       - { name: "Mike Hopkins",   time: "09:30" }
-      - { name: "Dominic Verity", time: "11:00" }
+      - { slug: dom-verity, time: "11:00" }
     breaks:
       - { time: "10:30", title: "Coffee break" }
