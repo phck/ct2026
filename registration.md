@@ -10,7 +10,7 @@ nav_show: false
 
 Virtual registration is free and is still open: [register here](https://docs.google.com/forms/d/e/1FAIpQLScbsnKttE6PVBuNfiHCUOjIo7eiafMrtjnQr5VpsZdEJCkKAw/viewform?usp=dialog).
 
-In-person registration closed on May 15 and the fees below will be collected closer to the conference date.
+In-person registration **closed on May 15** and invoices for the fees below have been sent to all participants.
 
 | | CT26 | DV60 | Both |
 |---|---|---|---|

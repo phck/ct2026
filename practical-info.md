@@ -14,7 +14,13 @@ nav_show: true
 
 Both conferences will be held at Johns Hopkins University in Baltimore, Maryland.
 
-*Specific venue details will be announced soon.*
+**Campus Maps:** [jhu.edu/maps-directions](https://www.jhu.edu/maps-directions/)
+
+Talks are held in the following rooms:
+
+* **CT morning / plenary:** [Mudd 26](https://classrooms.johnshopkins.edu/classroom/mudd-26/)
+* **CT afternoon / parallel:** [Krieger 205](https://classrooms.johnshopkins.edu/classroom/krieger-205/), [Krieger 170](https://classrooms.johnshopkins.edu/classroom/krieger-170/), [Krieger 180](https://classrooms.johnshopkins.edu/classroom/krieger-180/)
+* **DV60:** [Krieger 205](https://classrooms.johnshopkins.edu/classroom/krieger-205/)
 
 ## Travel
 
@@ -64,7 +70,7 @@ Participants who prefer to stay in an apartment can search on [AirBNB](https://w
 
 Virtual registration is free and is still open: [register here](https://docs.google.com/forms/d/e/1FAIpQLScbsnKttE6PVBuNfiHCUOjIo7eiafMrtjnQr5VpsZdEJCkKAw/viewform?usp=dialog).
 
-In-person registration closed on May 15 and the fees below will be collected closer to the conference date.
+In-person registration **closed on May 15** and invoices for the fees below have been sent to all participants.
 
 | | CT26 | DV60 | Both |
 |---|---|---|---|
@@ -80,4 +86,15 @@ We will provide receipts for reimbursement purposes. Undergraduates, masters, an
 
 ## Social Events
 
-*Details about conference dinners, receptions, and excursions will be announced closer to the conference dates.*
+* **CT welcome reception** — Sun, July 12, 5:00–7:00 pm, Glass Pavilion at Levering Hall
+* **CT conference dinner** — Thu, July 16, 7:00–9:30 pm, Scott Bates Commons Banquet Room
+* **DV60 conference dinner** — Tue, July 21, 7:00–10:00 pm, Glass Pavilion at Levering Hall
+
+### Excursions
+
+There will be excursions for in-person participants of CT on the afternoon of Wednesday, July 15:
+
+* [American Visionary Art Museum](https://www.avam.org/):  outsider art in the Inner Harbor, with [exterior mosaics](https://www.avam.org/art/leroy-e.-hoffberger-shining-youth/shining-walls-mosaics) and harbor views from nearby Federal Hill.
+* [National Aquarium](https://aqua.org/): dolphins, sharks, coral reefs, and more, across the harbor from AVAM.
+* **Hike**: a moderate ~4 mi / 6.5 km hike in the [McKeldin Area](https://dnr.maryland.gov/publiclands/Pages/central/PatapscoValley/McKeldin/McKeldin-Area.aspx) of [Patapsco Valley State Park](https://dnr.maryland.gov/publiclands/pages/central/patapsco.aspx), with a chance to swim or relax by the river afterward.
+* **World Cup**: group outing to a local Baltimore brewery to watch the second World Cup semi-final (kickoff 3pm).
