@@ -17,6 +17,7 @@ Suggestions from local organizers for eating, drinking, and exploring around the
 * **[&pizza](https://andpizza.com/locations/baltimore-md-charles-village/)** — fast-food personal pizza (eat in or take away)
 * **Ajumma** — Korean
 * **[Bird in Hand](https://www.birdinhandcafe.com/)** — sandwiches and salads
+* **Carma's Café** — soups, sandwiches, salads, and more, in the Space Telescope Science Institute
 * **Charles Village Market** — grocery store for students, with some prepared-food options
 * **[Charles Village Pub](https://charlesvillagepubbaltimore.com/)** — pub / dive bar (decent food with those expectations)
 * **Chipotle Mexican Grill** — fast-food burritos and bowls (eat in or take away)
@@ -28,6 +29,7 @@ Suggestions from local organizers for eating, drinking, and exploring around the
 * **[Kajiken](https://www.kajiken-usa.com/)** — Japanese (eat in; very popular for seminar lunches)
 * **[Kitsch](https://www.kitsch.cafe/)** — café with sandwiches to take away
 * **Kyodai Express** — sushi
+* **Levering Kitchens** — food court in the basement of Levering Hall, with various options
 * **One World Café** — salads and sandwiches; good vegetarian options
 * **[Orient Express](https://www.orderorientexpress.com/)** — Chinese (eat in or take away)
 * **[R. House](https://r.housebaltimore.com/)** — food court with many options; can accommodate a large group
