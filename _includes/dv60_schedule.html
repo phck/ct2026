@@ -36,7 +36,7 @@
 {%- assign slots = times_str | split: "," | uniq | sort -%}
 
 <div class="dvsched">
-  <p class="dvs-note">All talks in {{ sched.room }} &middot; times shown in Baltimore (EDT, UTC&minus;4).</p>
+  <p class="dvs-note">All talks in {{ sched.room }} &middot; times shown in Baltimore (EDT, UTC&minus;4) &middot; <a href="{{ '/assets/pdf/dv60-program.pdf' | relative_url }}">download the full program (PDF)</a>.</p>
   <div class="dvs-grid">
     {%- comment -%} day columns: header (row 1) + talks/socials placed by time slot {%- endcomment -%}
     {%- for day in sched.days -%}

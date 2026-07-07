@@ -75,7 +75,7 @@
           + (day.date ? ' <span class="ddate">• '+esc(fmtDate(day.date))+'</span>' : '')
           + '</h2>';
     if (day.note) h += '<span class="dnote">'+esc(day.note)+'</span>';
-    h += '</div><div class="tznote">All times in Baltimore (EDT, UTC−4)</div><div class="stream">';
+    h += '</div><div class="tznote">All times in Baltimore (EDT, UTC−4) · <a href="'+BASE+'/assets/pdf/ct2026-program.pdf">download the full program (PDF)</a></div><div class="stream">';
     if (day.invited) h += plenaryCard("invited", "Invited · 55 min", res(day.invited), day.invited.time || "09:00");
     (day.contributed || []).forEach(function (t, i) {
       h += plenaryCard("contributed", "Contributed · 25 min", res(t), t.time);

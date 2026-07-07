@@ -13,7 +13,7 @@
 <div class="ctprog">
   <section id="ct-week" class="view">
     <div class="weekhead"><h2>Week at a glance</h2></div>
-    <div class="tznote">All times in Baltimore (EDT, UTC&minus;4)</div>
+    <div class="tznote">All times in Baltimore (EDT, UTC&minus;4) &middot; <a href="{{ '/assets/pdf/ct2026-program.pdf' | relative_url }}">download the full program (PDF)</a></div>
     <div class="grid-scroll" id="ct-grid"></div>
     <div class="legend">
       <span><i style="background:var(--invited)"></i>Invited (55 min)</span>
@@ -45,7 +45,7 @@
   <div class="sched-fb">
     {%- assign fb_rooms = site.data.schedule.rooms -%}
     {%- assign fb_proom = site.data.schedule.plenary_room -%}
-    <p class="note">All times in Baltimore (EDT, UTC&minus;4).</p>
+    <p class="note">All times in Baltimore (EDT, UTC&minus;4) &middot; <a href="{{ '/assets/pdf/ct2026-program.pdf' | relative_url }}">download the full program (PDF)</a>.</p>
     {%- for day in site.data.schedule.days -%}
       <h2>{{ day.full }}{% if day.date %} &mdash; {{ day.date | date: "%B %-d" }}{% endif %}</h2>
       {%- if day.note %}<p class="note">{{ day.note }}</p>{% endif -%}
