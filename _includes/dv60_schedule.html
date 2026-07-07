@@ -17,7 +17,8 @@
   inert, and cards simply flow in day-major DOM order (Mon's day, then Tue, then
   Wed). Breaks are hidden on mobile (as in CT's no-JS fallback).
 
-  Item types: talks have slug (-> abstract) or name (no abstract yet -> "TBA");
+  Item types: talks have slug (-> abstract) or name (no abstract page; shows
+  the item's inline `title` if given, else "TBA");
   socials have `until`; breaks live in the per-day `breaks:` list.
   Component styles live in assets/css/dv60-schedule.css; the DV60 palette
   vars (--dv60-*) come from assets/css/main.css.
@@ -60,7 +61,8 @@
           <div class="dvs-card talk" style="grid-row:{{ r }};grid-column:{{ c }}">
             <div class="dvs-top"><span class="dvs-time mono">{{ item.time }}</span>{% if sched.talk_minutes %}<span class="dvs-kind">{{ sched.talk_minutes }} min</span>{% endif %}</div>
             <div class="dvs-name">{% if abs.permalink %}<a class="lnk" href="{{ abs.permalink | relative_url }}">{{ who }}</a>{% else %}{{ who }}{% endif %}{% if item.mode == "zoom" %} <span class="dvs-tag">Zoom</span>{% endif %}</div>
-            {%- if abs.title -%}<div class="dvs-title">{% if abs.permalink %}<a class="lnk" href="{{ abs.permalink | relative_url }}">{{ abs.title }}</a>{% else %}{{ abs.title }}{% endif %}</div>{%- else -%}<div class="dvs-tba">TBA</div>{%- endif -%}
+            {%- assign dvtitle = abs.title | default: item.title -%}
+            {%- if dvtitle -%}<div class="dvs-title">{% if abs.permalink %}<a class="lnk" href="{{ abs.permalink | relative_url }}">{{ dvtitle }}</a>{% else %}{{ dvtitle }}{% endif %}</div>{%- else -%}<div class="dvs-tba">TBA</div>{%- endif -%}
           </div>
         {%- endif -%}
       {%- endfor -%}

@@ -4,8 +4,10 @@
 # Structure mirrors schedule.yml (CT). Per day:
 #   talks:   start `time` only
 #            `slug` joins to _data/dv60-abstracts.yml for title + link;
-#            `name` is used instead for speakers without an abstract page yet
-#            When their abstracts land, swap `name:` for the matching `slug:`.
+#            `name` is used instead for a speaker with no abstract page — add
+#            an inline `title` if it is known (shown as plain text, no link),
+#            otherwise the talk renders "TBA".
+#            When an abstract lands, swap `name:` (+ `title:`) for a `slug:`.
 #            `mode: zoom` marks a remote speaker.
 #   socials: events with `{ time, until, title }` — rendered as chips/cards
 #            (like CT's dinner/reception/excursion).
@@ -48,7 +50,7 @@ days:
   - full: Wednesday
     date: "2026-07-22"
     talks:
-      - { name: "Mike Hopkins",   time: "09:30" }
+      - { name: "Mike Hopkins",   time: "09:30", title: "The homotopy groups of spheres are purely algebraic" }
       - { slug: dom-verity, time: "11:00" }
     breaks:
       - { time: "10:30", title: "Coffee break" }
