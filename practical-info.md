@@ -98,3 +98,7 @@ There will be excursions for in-person participants of CT on the afternoon of We
 * [National Aquarium](https://aqua.org/): dolphins, sharks, coral reefs, and more, across the harbor from AVAM.
 * **Hike**: a moderate ~4 mi / 6.5 km hike in the [McKeldin Area](https://dnr.maryland.gov/publiclands/Pages/central/PatapscoValley/McKeldin/McKeldin-Area.aspx) of [Patapsco Valley State Park](https://dnr.maryland.gov/publiclands/pages/central/patapsco.aspx), with a chance to swim or relax by the river afterward.
 * **World Cup**: group outing to a local Baltimore brewery to watch the second World Cup semi-final (kickoff 3pm).
+
+## Local Recommendations
+
+For places to eat, drink, and explore near campus and around Baltimore, see our [local recommendations](/local/).
