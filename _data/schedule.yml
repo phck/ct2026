@@ -50,7 +50,6 @@ days:
         - # Krieger 205
           - { slug: daniel-carranza, last: Carranza, time: "16:30", mode: zoom }
           - { slug: eleftherios-chatzitheodoridis, last: Chatzitheodoridis, time: "16:40" }
-          - { slug: kian-cho, last: Cho, time: "16:50" }
         - # Krieger 170
           - { slug: diego-manco, last: Manco, time: "16:30" }
           - { slug: nelson-niu, last: Niu, time: "16:40" }

@@ -14,7 +14,7 @@ nav_show: true
 
 Both conferences will be held at Johns Hopkins University in Baltimore, Maryland.
 
-**Campus Maps:** [jhu.edu/maps-directions](https://www.jhu.edu/maps-directions/)
+**Campus Maps:** [jhu.edu/maps-directions](https://www.jhu.edu/maps-directions/) &middot; [conference buildings marked (PDF)]({{ '/assets/pdf/jhu-campus-map.pdf' | relative_url }})
 
 Talks are held in the following rooms:
 
