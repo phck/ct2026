@@ -90,7 +90,7 @@ days:
         - # Krieger 205
           - { slug: rubén-maldonado, last: Maldonado, time: "16:30", mode: zoom }
           - { slug: yuki-imamura, last: Imamura, time: "16:40", mode: zoom }
-          - { slug: giuseppe-leoncini, last: Leoncini, time: "16:50" }
+          - { slug: giuseppe-leoncini, last: Leoncini, time: "16:50", mode: zoom }
         - # Krieger 170
           - { slug: josé-siqueira, last: Siqueira, time: "16:30", mode: zoom }
           - { slug: yufeng-li, last: Li, time: "16:40", mode: zoom }
