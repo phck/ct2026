@@ -104,7 +104,7 @@ days:
     excursion: true
     invited: { slug: chelsea-walton, last: Walton, time: "09:00" }
     contributed:
-      - { slug: agustina-czenky, last: Czenky, time: "10:00" }
+      - { slug: agustina-czenky, last: Czenky, time: "10:00", mode: zoom }
       - { slug: luca-mesiti, last: Mesiti, time: "11:00", mode: zoom }
       - { slug: nicola-gambino, last: Gambino, time: "11:30", mode: zoom }
       - { slug: marino-gran, last: Gran, time: "12:00" }
