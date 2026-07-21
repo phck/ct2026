@@ -17,11 +17,13 @@ nav_show: true
     <p class="location-date">Baltimore • July 13 – 18, 2026</p>
 </header>
 
-<section class="registration-section">
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="{{ '/register/' | relative_url }}" class="registration-btn">Register Now</a>
-    </div>
-</section>
+<div class="hero-image-section">
+    <picture>
+        <source srcset="{{ '/assets/images/ct26-group-photo.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/ct26-group-photo.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/ct26-group-photo.jpg' | relative_url }}" alt="CT2026 attendees gathered on the Homewood campus of Johns Hopkins University" class="hero-image" style="object-position: center 62%;">
+    </picture>
+</div>
 
 <main class="main-content">
 
